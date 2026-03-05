@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medical AI Leaderboard Format",
+  "description": "JSON schema for the leaderboard data structure",
+  "type": "object",
+  "properties": {
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the leaderboard was last updated"
+    },
+    "questions": {
+      "type": "array",
+      "description": "List of medical questions in the leaderboard",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the question"
+          },
+          "question": {
+            "type": "string",
+            "description": "The medical question text"
+          },
+          "specialty": {
+            "type": "string",
+            "description": "Medical specialty area (e.g., 'Cardiology', 'Neurology')"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard", "expert"],
+            "description": "Difficulty level of the question"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When the question was added to the leaderboard"
+          }
+        },
+        "required": ["id", "question", "specialty", "difficulty"]
+      }
+    },
+    "solutions": {
+      "type": "object",
+      "description": "Reference answers (not included in public leaderboard)",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "correct_answer": {
+            "type": "string",
+            "description": "The correct answer text"
+          },
+          "reference_explanation": {
+            "type": "string",
+            "description": "Detailed explanation of why this answer is correct"
+          },
+          "key_points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Array of key points that should be mentioned in a good answer"
+          }
+        },
+        "required": ["correct_answer", "reference_explanation"]
+      }
+    },
+    "ai_models": {
+      "type": "array",
+      "description": "List of AI models ranked on the leaderboard",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the model"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the model"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Provider/company name (e.g., 'OpenAI', 'Anthropic')"
+          },
+          "overall_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Overall score across all questions (0-100)"
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Current ranking position"
+          },
+          "scores_by_specialty": {
+            "type": "object",
+            "description": "Scores broken down by medical specialty",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "scores_by_difficulty": {
+            "type": "object",
+            "description": "Scores broken down by difficulty level",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "question_results": {
+            "type": "array",
+            "description": "Individual question results",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question_id": {
+                  "type": "string",
+                  "description": "Reference to question.id"
+                },
+                "answer": {
+                  "type": "string",
+                  "description": "The model's answer"
+                },
+                "grading_score": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "description": "Score for this specific answer (0-100)"
+                },
+                "graded_at": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "When the answer was graded"
+                }
+              },
+              "required": ["question_id", "answer", "grading_score"]
+            }
+          }
+        },
+        "required": ["id", "name", "provider", "overall_score", "rank", "question_results"]
+      }
+    }
+  },
+  "required": ["last_updated", "questions", "ai_models"]
+}
