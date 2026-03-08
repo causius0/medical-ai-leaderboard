@@ -1,3 +1,7 @@
+# Environment variables - NEVER COMMIT
+.env
+.env.local
+
 # Correct answers - NEVER COMMIT
 data/solutions.json
 data/ssm_questions_with_solution.json
