@@ -1,0 +1,823 @@
+{
+  "model": "liquid",
+  "model_id": "liquid/lfm-2-24b-a2b",
+  "model_name": "Liquid LFM-2 24B",
+  "timestamp": "2026-03-11T14:37:13.408374",
+  "num_questions": 1060,
+  "num_answered": 202,
+  "usage": {
+    "prompt_tokens": 81004,
+    "completion_tokens": 6041,
+    "total_tokens": 87045
+  },
+  "answers": [
+    {
+      "id": "IT0112",
+      "answer": "C"
+    },
+    {
+      "id": "IT0113",
+      "answer": "A"
+    },
+    {
+      "id": "IT0114",
+      "answer": "A"
+    },
+    {
+      "id": "IT0115",
+      "answer": "A"
+    },
+    {
+      "id": "IT0116",
+      "answer": "A"
+    },
+    {
+      "id": "IT0117",
+      "answer": "B"
+    },
+    {
+      "id": "IT0118",
+      "answer": "D"
+    },
+    {
+      "id": "IT0119",
+      "answer": "A"
+    },
+    {
+      "id": "IT0120",
+      "answer": "A"
+    },
+    {
+      "id": "IT0121",
+      "answer": "E"
+    },
+    {
+      "id": "IT0122",
+      "answer": "A"
+    },
+    {
+      "id": "IT0123",
+      "answer": "B"
+    },
+    {
+      "id": "IT0124",
+      "answer": "B"
+    },
+    {
+      "id": "IT0125",
+      "answer": "A"
+    },
+    {
+      "id": "IT0126",
+      "answer": "A"
+    },
+    {
+      "id": "IT0127",
+      "answer": "A"
+    },
+    {
+      "id": "IT0132",
+      "answer": "A"
+    },
+    {
+      "id": "IT0133",
+      "answer": "D"
+    },
+    {
+      "id": "IT0134",
+      "answer": "A"
+    },
+    {
+      "id": "IT0135",
+      "answer": "A"
+    },
+    {
+      "id": "IT0128",
+      "answer": "A"
+    },
+    {
+      "id": "IT0129",
+      "answer": "A"
+    },
+    {
+      "id": "IT0139",
+      "answer": "C"
+    },
+    {
+      "id": "IT0140",
+      "answer": "A"
+    },
+    {
+      "id": "IT0141",
+      "answer": "B"
+    },
+    {
+      "id": "IT0142",
+      "answer": "A"
+    },
+    {
+      "id": "IT0143",
+      "answer": "B"
+    },
+    {
+      "id": "IT0144",
+      "answer": "A"
+    },
+    {
+      "id": "IT0145",
+      "answer": "A"
+    },
+    {
+      "id": "IT0146",
+      "answer": "B"
+    },
+    {
+      "id": "IT0147",
+      "answer": "A"
+    },
+    {
+      "id": "IT0148",
+      "answer": "A"
+    },
+    {
+      "id": "IT0149",
+      "answer": "A"
+    },
+    {
+      "id": "IT0150",
+      "answer": "A"
+    },
+    {
+      "id": "IT0151",
+      "answer": "A"
+    },
+    {
+      "id": "IT0152",
+      "answer": "A"
+    },
+    {
+      "id": "IT0153",
+      "answer": "D"
+    },
+    {
+      "id": "IT0154",
+      "answer": "A"
+    },
+    {
+      "id": "IT0155",
+      "answer": "D"
+    },
+    {
+      "id": "IT0156",
+      "answer": "B"
+    },
+    {
+      "id": "IT0157",
+      "answer": "A"
+    },
+    {
+      "id": "IT0158",
+      "answer": "D"
+    },
+    {
+      "id": "IT0159",
+      "answer": "D"
+    },
+    {
+      "id": "IT0160",
+      "answer": "D"
+    },
+    {
+      "id": "IT0161",
+      "answer": "C"
+    },
+    {
+      "id": "IT0162",
+      "answer": "A"
+    },
+    {
+      "id": "IT0163",
+      "answer": "A"
+    },
+    {
+      "id": "IT0164",
+      "answer": "C"
+    },
+    {
+      "id": "IT0220",
+      "answer": "C"
+    },
+    {
+      "id": "IT0221",
+      "answer": "E"
+    },
+    {
+      "id": "IT0222",
+      "answer": "D"
+    },
+    {
+      "id": "IT0223",
+      "answer": "A"
+    },
+    {
+      "id": "IT0234",
+      "answer": "D"
+    },
+    {
+      "id": "IT0237",
+      "answer": "A"
+    },
+    {
+      "id": "IT0240",
+      "answer": "A"
+    },
+    {
+      "id": "IT0231",
+      "answer": "B"
+    },
+    {
+      "id": "IT0232",
+      "answer": "D"
+    },
+    {
+      "id": "IT0233",
+      "answer": "A"
+    },
+    {
+      "id": "IT0241",
+      "answer": "A"
+    },
+    {
+      "id": "IT0230",
+      "answer": "B"
+    },
+    {
+      "id": "IT0244",
+      "answer": "B"
+    },
+    {
+      "id": "IT0254",
+      "answer": "A"
+    },
+    {
+      "id": "IT0255",
+      "answer": "A"
+    },
+    {
+      "id": "IT0246",
+      "answer": "A"
+    },
+    {
+      "id": "IT0247",
+      "answer": "A"
+    },
+    {
+      "id": "IT0248",
+      "answer": "B"
+    },
+    {
+      "id": "IT0249",
+      "answer": "A"
+    },
+    {
+      "id": "IT0251",
+      "answer": "A"
+    },
+    {
+      "id": "IT0252",
+      "answer": "A"
+    },
+    {
+      "id": "IT0253",
+      "answer": "A"
+    },
+    {
+      "id": "IT0242",
+      "answer": "A"
+    },
+    {
+      "id": "IT0243",
+      "answer": "A"
+    },
+    {
+      "id": "IT0245",
+      "answer": "A"
+    },
+    {
+      "id": "IT0534",
+      "answer": "A"
+    },
+    {
+      "id": "IT0535",
+      "answer": "B"
+    },
+    {
+      "id": "IT0536",
+      "answer": "B"
+    },
+    {
+      "id": "IT0541",
+      "answer": "C"
+    },
+    {
+      "id": "IT0542",
+      "answer": "A"
+    },
+    {
+      "id": "IT0543",
+      "answer": "A"
+    },
+    {
+      "id": "IT0550",
+      "answer": "A"
+    },
+    {
+      "id": "IT0551",
+      "answer": "A"
+    },
+    {
+      "id": "IT0544",
+      "answer": "B"
+    },
+    {
+      "id": "IT0555",
+      "answer": "A"
+    },
+    {
+      "id": "IT0546",
+      "answer": "A"
+    },
+    {
+      "id": "IT0547",
+      "answer": "A"
+    },
+    {
+      "id": "IT0558",
+      "answer": "C"
+    },
+    {
+      "id": "IT0559",
+      "answer": "A"
+    },
+    {
+      "id": "IT0560",
+      "answer": "A"
+    },
+    {
+      "id": "IT0561",
+      "answer": "A"
+    },
+    {
+      "id": "IT0552",
+      "answer": "B"
+    },
+    {
+      "id": "IT0564",
+      "answer": "D"
+    },
+    {
+      "id": "IT0565",
+      "answer": "A"
+    },
+    {
+      "id": "IT0566",
+      "answer": "A"
+    },
+    {
+      "id": "IT0567",
+      "answer": "C"
+    },
+    {
+      "id": "IT0568",
+      "answer": "B"
+    },
+    {
+      "id": "IT0569",
+      "answer": "A"
+    },
+    {
+      "id": "IT0570",
+      "answer": "A"
+    },
+    {
+      "id": "IT0571",
+      "answer": "A"
+    },
+    {
+      "id": "IT0572",
+      "answer": "D"
+    },
+    {
+      "id": "IT0573",
+      "answer": "A"
+    },
+    {
+      "id": "IT0574",
+      "answer": "B"
+    },
+    {
+      "id": "IT0575",
+      "answer": "A"
+    },
+    {
+      "id": "IT0576",
+      "answer": "A"
+    },
+    {
+      "id": "IT0577",
+      "answer": "A"
+    },
+    {
+      "id": "IT0578",
+      "answer": "A"
+    },
+    {
+      "id": "IT0579",
+      "answer": "A"
+    },
+    {
+      "id": "IT0580",
+      "answer": "A"
+    },
+    {
+      "id": "IT0581",
+      "answer": "B"
+    },
+    {
+      "id": "IT0582",
+      "answer": "C"
+    },
+    {
+      "id": "IT0583",
+      "answer": "C"
+    },
+    {
+      "id": "IT0584",
+      "answer": "A"
+    },
+    {
+      "id": "IT0585",
+      "answer": "A"
+    },
+    {
+      "id": "IT0586",
+      "answer": "A"
+    },
+    {
+      "id": "IT0587",
+      "answer": "A"
+    },
+    {
+      "id": "IT0588",
+      "answer": "A"
+    },
+    {
+      "id": "IT0594",
+      "answer": "B"
+    },
+    {
+      "id": "IT0595",
+      "answer": "A"
+    },
+    {
+      "id": "IT0591",
+      "answer": "A"
+    },
+    {
+      "id": "IT0600",
+      "answer": "A"
+    },
+    {
+      "id": "IT0601",
+      "answer": "A"
+    },
+    {
+      "id": "IT0602",
+      "answer": "A"
+    },
+    {
+      "id": "IT0603",
+      "answer": "B"
+    },
+    {
+      "id": "IT0599",
+      "answer": "A"
+    },
+    {
+      "id": "IT0604",
+      "answer": "A"
+    },
+    {
+      "id": "IT0605",
+      "answer": "A"
+    },
+    {
+      "id": "IT0606",
+      "answer": "A"
+    },
+    {
+      "id": "IT0610",
+      "answer": "A"
+    },
+    {
+      "id": "IT0611",
+      "answer": "A"
+    },
+    {
+      "id": "IT0612",
+      "answer": "D"
+    },
+    {
+      "id": "IT0613",
+      "answer": "B"
+    },
+    {
+      "id": "IT0614",
+      "answer": "A"
+    },
+    {
+      "id": "IT0615",
+      "answer": "A"
+    },
+    {
+      "id": "IT0616",
+      "answer": "B"
+    },
+    {
+      "id": "IT0617",
+      "answer": "A"
+    },
+    {
+      "id": "IT0618",
+      "answer": "A"
+    },
+    {
+      "id": "IT0619",
+      "answer": "A"
+    },
+    {
+      "id": "IT0620",
+      "answer": "A"
+    },
+    {
+      "id": "IT0621",
+      "answer": "A"
+    },
+    {
+      "id": "IT0622",
+      "answer": "A"
+    },
+    {
+      "id": "IT0623",
+      "answer": "A"
+    },
+    {
+      "id": "IT0624",
+      "answer": "A"
+    },
+    {
+      "id": "IT0625",
+      "answer": "A"
+    },
+    {
+      "id": "IT0626",
+      "answer": "A"
+    },
+    {
+      "id": "IT0627",
+      "answer": "A"
+    },
+    {
+      "id": "IT0628",
+      "answer": "C"
+    },
+    {
+      "id": "IT0629",
+      "answer": "D"
+    },
+    {
+      "id": "IT0630",
+      "answer": "D"
+    },
+    {
+      "id": "IT0631",
+      "answer": "D"
+    },
+    {
+      "id": "IT0632",
+      "answer": "A"
+    },
+    {
+      "id": "IT0633",
+      "answer": "A"
+    },
+    {
+      "id": "IT0634",
+      "answer": "D"
+    },
+    {
+      "id": "IT0635",
+      "answer": "A"
+    },
+    {
+      "id": "IT0636",
+      "answer": "A"
+    },
+    {
+      "id": "IT0637",
+      "answer": "C"
+    },
+    {
+      "id": "IT0638",
+      "answer": "A"
+    },
+    {
+      "id": "IT0639",
+      "answer": "A"
+    },
+    {
+      "id": "IT0640",
+      "answer": "D"
+    },
+    {
+      "id": "IT0641",
+      "answer": "C"
+    },
+    {
+      "id": "IT0642",
+      "answer": "A"
+    },
+    {
+      "id": "IT0643",
+      "answer": "A"
+    },
+    {
+      "id": "IT0644",
+      "answer": "A"
+    },
+    {
+      "id": "IT0650",
+      "answer": "A"
+    },
+    {
+      "id": "IT0651",
+      "answer": "E"
+    },
+    {
+      "id": "IT0646",
+      "answer": "D"
+    },
+    {
+      "id": "IT0647",
+      "answer": "B"
+    },
+    {
+      "id": "IT0652",
+      "answer": "A"
+    },
+    {
+      "id": "IT0660",
+      "answer": "B"
+    },
+    {
+      "id": "IT0661",
+      "answer": "B"
+    },
+    {
+      "id": "IT0662",
+      "answer": "D"
+    },
+    {
+      "id": "IT0663",
+      "answer": "A"
+    },
+    {
+      "id": "IT0649",
+      "answer": "A"
+    },
+    {
+      "id": "IT0657",
+      "answer": "E"
+    },
+    {
+      "id": "IT0658",
+      "answer": "A"
+    },
+    {
+      "id": "IT0680",
+      "answer": "B"
+    },
+    {
+      "id": "IT0681",
+      "answer": "C"
+    },
+    {
+      "id": "IT0682",
+      "answer": "A"
+    },
+    {
+      "id": "IT0670",
+      "answer": "A"
+    },
+    {
+      "id": "IT0671",
+      "answer": "A"
+    },
+    {
+      "id": "IT0664",
+      "answer": "A"
+    },
+    {
+      "id": "IT0665",
+      "answer": "C"
+    },
+    {
+      "id": "IT0666",
+      "answer": "A"
+    },
+    {
+      "id": "IT0667",
+      "answer": "E"
+    },
+    {
+      "id": "IT0672",
+      "answer": "E"
+    },
+    {
+      "id": "IT0673",
+      "answer": "D"
+    },
+    {
+      "id": "IT0674",
+      "answer": "C"
+    },
+    {
+      "id": "IT0677",
+      "answer": "A"
+    },
+    {
+      "id": "IT0678",
+      "answer": "A"
+    },
+    {
+      "id": "IT0679",
+      "answer": "E"
+    },
+    {
+      "id": "IT0668",
+      "answer": "B"
+    },
+    {
+      "id": "IT0669",
+      "answer": "E"
+    },
+    {
+      "id": "IT0675",
+      "answer": "C"
+    },
+    {
+      "id": "IT0676",
+      "answer": "A"
+    },
+    {
+      "id": "IT1108",
+      "answer": "E"
+    },
+    {
+      "id": "IT1109",
+      "answer": "A"
+    },
+    {
+      "id": "IT1110",
+      "answer": "A"
+    },
+    {
+      "id": "IT1111",
+      "answer": "A"
+    },
+    {
+      "id": "IT1112",
+      "answer": "A"
+    },
+    {
+      "id": "IT1115",
+      "answer": "A"
+    },
+    {
+      "id": "IT1116",
+      "answer": "D"
+    },
+    {
+      "id": "IT1117",
+      "answer": "A"
+    },
+    {
+      "id": "IT1119",
+      "answer": "A"
+    },
+    {
+      "id": "IT1120",
+      "answer": "E"
+    }
+  ]
+}

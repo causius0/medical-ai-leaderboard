@@ -1,0 +1,14 @@
+{
+  "model": "gemma",
+  "model_id": "google/gemma-3-4b-it:free",
+  "model_name": "Gemma 3 4B",
+  "timestamp": "2026-03-11T11:25:14.586059",
+  "num_questions": 1060,
+  "num_answered": 0,
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "answers": []
+}

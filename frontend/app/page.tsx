@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 
 interface SpecialtyBreakdown {
@@ -21,11 +21,21 @@ interface SourceBreakdown {
 
 interface Model {
   name: string;
+  model_id?: string;
+  provider?: string;
+  logo?: string;
   total_correct: number;
   total_questions: number;
   accuracy: number;
   specialty_breakdown: SpecialtyBreakdown;
   source_breakdown: SourceBreakdown;
+  metadata?: {
+    provider?: string;
+    cost?: string;
+    tokens?: number;
+    evaluation_method?: string;
+    context_window?: string;
+  };
 }
 
 interface LeaderboardData {
@@ -98,8 +108,28 @@ export default function Home() {
   }
 
   // Filter and sort models
-  let filteredModels = [...data.models];
+  let filteredModels = [...data.models].map((model) => {
+    // Create a modified model that displays filtered accuracy
+    const displayModel = { ...model };
 
+    if (specialtyFilter !== 'All' && model.specialty_breakdown[specialtyFilter]) {
+      // Show specialty-specific accuracy
+      const specialtyData = model.specialty_breakdown[specialtyFilter];
+      displayModel.accuracy = specialtyData.accuracy;
+      displayModel.total_correct = specialtyData.correct;
+      displayModel.total_questions = specialtyData.total;
+    } else if (sourceFilter !== 'All' && model.source_breakdown[sourceFilter]) {
+      // Show source-specific accuracy
+      const sourceData = model.source_breakdown[sourceFilter];
+      displayModel.accuracy = sourceData.accuracy;
+      displayModel.total_correct = sourceData.correct;
+      displayModel.total_questions = sourceData.total;
+    }
+
+    return displayModel;
+  });
+
+  // Filter to only include models that have the selected specialty/source
   if (specialtyFilter !== 'All') {
     filteredModels = filteredModels.filter((model) =>
       model.specialty_breakdown[specialtyFilter]
@@ -117,13 +147,29 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-            Medical AI Leaderboard
-          </h1>
-          <p className="text-lg text-gray-600">
-            Comparing AI model performance across medical specialties and exam sources
-          </p>
+        <header className="mb-8 flex justify-between items-start">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+              Medical AI Leaderboard
+            </h1>
+            <p className="text-lg text-gray-600">
+              Comparing AI model performance across medical specialties and exam sources
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <Link
+              href="/project"
+              className="px-6 py-2 bg-white border border-gray-200 rounded-full shadow-sm hover:shadow-md transition-all text-gray-700 font-medium"
+            >
+              About Project
+            </Link>
+            <Link
+              href="/team"
+              className="px-6 py-2 bg-white border border-gray-200 rounded-full shadow-sm hover:shadow-md transition-all text-gray-700 font-medium"
+            >
+              Meet the Team
+            </Link>
+          </div>
         </header>
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
@@ -182,29 +228,33 @@ export default function Home() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {filteredModels.map((model, index) => (
-                  <>
+                  <Fragment key={model.name}>
                     <tr
                       key={model.name}
                       className="hover:bg-gray-50 cursor-pointer transition-colors"
                       onClick={() => toggleRow(model.name)}
                     >
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          {index < 3 ? (
-                            <span
-                              className={`inline-flex items-center justify-center w-8 h-8 rounded-full ${getBadgeColor(
-                                index + 1
-                              )} text-white font-bold text-sm`}
-                            >
-                              {index + 1}
-                            </span>
-                          ) : (
-                            <span className="text-gray-900 font-medium">{index + 1}</span>
-                          )}
-                        </div>
+                      <td className="px-6 py-4 whitespace-nowrap w-12 text-center">
+                        <span className="text-sm font-medium text-gray-500">
+                          {index + 1}
+                        </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm font-semibold text-gray-900">{model.name}</div>
+                        <div className="flex items-center gap-3">
+                          {model.logo && (
+                            <img
+                              src={model.logo}
+                              alt={`${model.name} logo`}
+                              className="w-8 h-8 object-contain"
+                            />
+                          )}
+                          <div>
+                            <div className="text-sm font-semibold text-gray-900">{model.name}</div>
+                            {model.provider && (
+                              <div className="text-xs text-gray-500">{model.provider}</div>
+                            )}
+                          </div>
+                        </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
@@ -321,7 +371,7 @@ export default function Home() {
                         </td>
                       </tr>
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>
@@ -352,6 +402,13 @@ export default function Home() {
                       </span>
                     ) : (
                       <span className="text-gray-900 font-medium">{index + 1}</span>
+                    )}
+                    {model.logo && (
+                      <img
+                        src={model.logo}
+                        alt={`${model.name} logo`}
+                        className="w-6 h-6 object-contain"
+                      />
                     )}
                     <div className="text-sm font-semibold text-gray-900">{model.name}</div>
                   </div>

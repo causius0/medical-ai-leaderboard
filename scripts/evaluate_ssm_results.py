@@ -5,6 +5,7 @@ Compares the model's answers against the ground truth and calculates accuracy.
 """
 import json
 import sys
+import os
 from collections import defaultdict
 
 def load_json_file(filepath):
@@ -131,7 +132,7 @@ def print_results(results):
 def main():
     """Main evaluation function."""
     if len(sys.argv) < 2:
-        print("Usage: python evaluate_ssm_results.py <model_predictions.json>")
+        print("Usage: python evaluate_ssm_results.py <model_predictions.json> [solution_file]")
         print("\nThis script will:")
         print("  1. Load the model's predictions from the provided JSON file")
         print("  2. Load the ground truth from ssm_questions_with_solution.json")
@@ -141,7 +142,13 @@ def main():
 
     # File paths
     predictions_file = sys.argv[1]
-    solution_file = '/Users/causius/Desktop/ssm_questions_with_solution.json'
+    if len(sys.argv) >= 3:
+        solution_file = sys.argv[2]
+    else:
+        # Default to repo location
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        repo_root = os.path.dirname(script_dir)
+        solution_file = os.path.join(repo_root, "data", "ssm_questions_with_solution.json")
 
     # Load data
     print(f"Loading model predictions from: {predictions_file}")
