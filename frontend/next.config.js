@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Temporarily disabled for dev server
+  output: "export",
   typescript: {
     ignoreBuildErrors: true,
   },
