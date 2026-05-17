@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import Logo from "./components/Logo";
 
@@ -170,6 +171,9 @@ export default function LeaderboardPage() {
             <button className={view === "compare" ? "active" : ""} onClick={() => setView("compare")}>
               Compare{compareIds.length > 0 ? ` (${compareIds.length})` : ""}
             </button>
+            <Link href="/team">
+              <button>Team</button>
+            </Link>
           </nav>
         </div>
       </header>

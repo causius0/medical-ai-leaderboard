@@ -795,6 +795,84 @@ a:hover { text-decoration: underline; }
   font-variant-numeric: tabular-nums;
 }
 
+/* ─── Team Page ───────────────────────────────────── */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.team-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.team-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+.team-card-top {
+  text-align: center;
+  padding: 28px 20px 16px;
+}
+.team-avatar-wrap {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  background: var(--bg-hover);
+}
+.team-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.team-card-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.team-card-name a {
+  color: var(--text);
+  text-decoration: none;
+}
+.team-card-name a:hover {
+  color: var(--accent);
+}
+.team-card-role {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.team-card-bottom {
+  padding: 12px 20px 20px;
+  border-top: 1px solid var(--border-light);
+}
+.team-card-bottom p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
 /* Nothing selected state */
 .empty-state {
   text-align: center;
