@@ -297,6 +297,21 @@ a:hover { text-decoration: underline; }
 }
 .search-input::placeholder { color: var(--text-muted); }
 .search-input:focus { border-color: var(--accent); }
+.spec-select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  font-size: 0.84rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  color: var(--text);
+  font-family: var(--font);
+  cursor: pointer;
+  transition: border-color 0.15s;
+  max-width: 220px;
+}
+.spec-select:focus { border-color: var(--accent); }
+.spec-select option { background: var(--bg-elev); color: var(--text); }
 .search-wrap { position: relative; }
 .search-wrap svg {
   position: absolute;

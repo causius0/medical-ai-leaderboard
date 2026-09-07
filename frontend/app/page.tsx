@@ -115,17 +115,34 @@ export default function LeaderboardPage() {
       );
     }
 
+    // When a specialty is selected, only include models that have a score in it
+    const spec = selectedSpecialty === "all" ? null : selectedSpecialty;
+    if (spec) {
+      models = models.filter(
+        (m) => m.specialty_scores[spec] != null || m.specialty_breakdown?.[spec] != null
+      );
+    }
+
     // Sort
     models.sort((a, b) => {
       let cmp = 0;
-      if (sortKey === "rank") cmp = a.rank - b.rank;
-      else if (sortKey === "name") cmp = a.name.localeCompare(b.name);
-      else if (sortKey === "overall_accuracy") cmp = b.overall_accuracy - a.overall_accuracy;
+      if (spec) {
+        // Sort by accuracy in the selected specialty (desc)
+        const aAcc = a.specialty_scores[spec] ?? a.specialty_breakdown?.[spec]?.accuracy ?? 0;
+        const bAcc = b.specialty_scores[spec] ?? b.specialty_breakdown?.[spec]?.accuracy ?? 0;
+        cmp = bAcc - aAcc;
+      } else if (sortKey === "rank") {
+        cmp = a.rank - b.rank;
+      } else if (sortKey === "name") {
+        cmp = a.name.localeCompare(b.name);
+      } else if (sortKey === "overall_accuracy") {
+        cmp = b.overall_accuracy - a.overall_accuracy;
+      }
       return sortDir === "asc" ? cmp : -cmp;
     });
 
     return models;
-  }, [data, search, sortKey, sortDir]);
+  }, [data, search, sortKey, sortDir, selectedSpecialty]);
 
   // Top 10 specialties for the chart
   const topSpecialties = useMemo(() => {
@@ -241,6 +258,16 @@ export default function LeaderboardPage() {
               <div className="section-header">
                 <h2>Models ({sortedModels.length})</h2>
                 <div className="filters">
+                  <select
+                    className="spec-select"
+                    value={selectedSpecialty}
+                    onChange={(e) => setSelectedSpecialty(e.target.value)}
+                  >
+                    <option value="all">All Specialties</option>
+                    {topSpecialties.map((spec) => (
+                      <option key={spec} value={spec}>{spec}</option>
+                    ))}
+                  </select>
                   <div className="search-wrap">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <circle cx="11" cy="11" r="8" />
@@ -268,7 +295,7 @@ export default function LeaderboardPage() {
                       </th>
                       <th>Provider</th>
                       <th onClick={() => toggleSort("overall_accuracy")} className={sortKey === "overall_accuracy" ? "sorted" : ""}>
-                        Accuracy{sortKey === "overall_accuracy" ? (sortDir === "asc" ? "↑" : "↓") : ""}
+                        {selectedSpecialty === "all" ? "Accuracy" : `Accuracy · ${selectedSpecialty}`}{sortKey === "overall_accuracy" ? (sortDir === "asc" ? "↑" : "↓") : ""}
                       </th>
                       <th>Compare</th>
                     </tr>
@@ -301,15 +328,23 @@ export default function LeaderboardPage() {
                           </td>
                           <td style={{ color: "#6b7280", fontSize: "0.82rem" }}>{m.provider}</td>
                           <td>
-                            <div className="score-bar-wrap">
-                              <span className="score-value">{m.overall_accuracy.toFixed(1)}%</span>
-                              <div className="score-bar">
-                                <div
-                                  className="score-bar-fill bar-green"
-                                  style={{ width: `${(m.overall_accuracy / 100) * 100}%`, background: getModelColor(m.id) }}
-                                />
-                              </div>
-                            </div>
+                            {(() => {
+                              const spec = selectedSpecialty === "all" ? null : selectedSpecialty;
+                              const acc = spec
+                                ? (m.specialty_scores[spec] ?? m.specialty_breakdown?.[spec]?.accuracy ?? 0)
+                                : m.overall_accuracy;
+                              return (
+                                <div className="score-bar-wrap">
+                                  <span className="score-value">{acc.toFixed(1)}%</span>
+                                  <div className="score-bar">
+                                    <div
+                                      className="score-bar-fill bar-green"
+                                      style={{ width: `${(acc / 100) * 100}%`, background: getModelColor(m.id) }}
+                                    />
+                                  </div>
+                                </div>
+                              );
+                            })()}
                           </td>
                           <td />
                         </tr>
