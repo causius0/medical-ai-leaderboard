@@ -14,6 +14,7 @@ Usage:
 import argparse
 import json
 import re
+import signal
 import sys
 import time
 import urllib.request
@@ -57,7 +58,11 @@ def ollama_installed_models():
 
 
 def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, think=False):
-    """Query a local Ollama model. Returns raw text."""
+    """Query a local Ollama model. Returns raw text.
+    The urllib `timeout` only bounds socket-read idle time, so we ALSO enforce a
+    hard wall-clock deadline with signal.alarm to kill runaway generations
+    (e.g. thinking-mode token loops). Returns '' on timeout/error.
+    """
     payload = {
         "model": model,
         "prompt": prompt,
@@ -70,9 +75,30 @@ def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, th
     req = urllib.request.Request(
         OLLAMA_URL, data=body, headers={"Content-Type": "application/json"}
     )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = json.load(r)
-    return data.get("response", "").strip()
+    result = {"text": ""}
+
+    def _run():
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = json.load(r)
+        result["text"] = data.get("response", "").strip()
+
+    # Hard wall-clock deadline (covers total generation, not just read idle)
+    try:
+        signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(timeout)
+        _run()
+    except TimeoutError:
+        print(f"    ⚠ {model}: request exceeded {timeout}s, treating as refusal")
+        result["text"] = ""
+    except Exception as e:
+        result["text"] = ""
+    finally:
+        signal.alarm(0)
+    return result["text"]
+
+
+def _timeout_handler(signum, frame):
+    raise TimeoutError("request timed out")
 
 
 def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, timeout=300):
@@ -140,12 +166,15 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         prompt = USER_TEMPLATE.format(question=q["question"], options=opts)
 
         try:
-            # thinking mode needs a much larger token budget for hidden reasoning
+            # thinking mode: large token budget + generous hard timeout
+            # (signal.alarm kills runaway token loops so a single question
+            # can never hang the whole run)
             max_tokens = 2048 if think else 256
+            q_timeout = 300 if think else 60
             if endpoint:
-                raw = query_llamaserver(endpoint, model, prompt, max_tokens=max_tokens)
+                raw = query_llamaserver(endpoint, model, prompt, max_tokens=max_tokens, timeout=q_timeout)
             else:
-                raw = query_ollama(model, prompt, max_tokens=max_tokens, think=think)
+                raw = query_ollama(model, prompt, max_tokens=max_tokens, think=think, timeout=q_timeout)
         except Exception as e:
             raw = ""
             # record refusal/error
