@@ -63,21 +63,21 @@ function getModelColor(id: string) {
   return MODEL_COLORS[id] || "#6b7280";
 }
 
-/* ─── Heatmap color helper (dark theme) ───────────── */
+/* ─── Heatmap color helper (light theme) ───────────── */
 function scoreColor(score: number): string {
-  if (score >= 85) return "#2dd4a7";
-  if (score >= 75) return "#22d3ee";
-  if (score >= 65) return "#fbbf24";
-  if (score >= 55) return "#fb923c";
-  return "#f87171";
+  if (score >= 85) return "#059669";
+  if (score >= 75) return "#0d9488";
+  if (score >= 65) return "#b45309";
+  if (score >= 55) return "#c2410c";
+  return "#dc2626";
 }
 
 function scoreBg(score: number): string {
-  if (score >= 85) return "rgba(45, 212, 167, 0.16)";
-  if (score >= 75) return "rgba(34, 211, 238, 0.14)";
-  if (score >= 65) return "rgba(251, 191, 36, 0.14)";
-  if (score >= 55) return "rgba(251, 146, 60, 0.16)";
-  return "rgba(248, 113, 113, 0.16)";
+  if (score >= 85) return "#d1fae5";
+  if (score >= 75) return "#ccfbf1";
+  if (score >= 65) return "#fef3c7";
+  if (score >= 55) return "#ffedd5";
+  return "#fee2e2";
 }
 
 /* ─── Main Page ────────────────────────────────────── */
