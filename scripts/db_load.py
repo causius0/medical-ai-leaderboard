@@ -129,6 +129,11 @@ def ingest_result(conn, path: Path):
         return
 
     model_id = r["model_id"]
+    # Distinguish thinking-mode runs so they appear as separate rows (not collapsed
+    # with the same model's direct run by the 'latest per model' export)
+    think = r.get("metadata", {}).get("think", False)
+    if think:
+        model_id = f"{model_id}-thinking"
     # upsert model
     with conn.cursor() as cur:
         cur.execute(
@@ -256,8 +261,12 @@ def export_leaderboard(conn):
                 (mid,),
             )
             yrs = {str(y): a for y, a in cur.fetchall()}
+            # label thinking-mode rows distinctly
+            display_name = name
+            if mid.endswith("-thinking"):
+                display_name = f"{name} (thinking)"
             models.append({
-                "id": mid, "name": name, "provider": prov, "provider_logo": logo,
+                "id": mid, "name": display_name, "provider": prov, "provider_logo": logo,
                 "overall_accuracy": acc, "total_correct": correct,
                 "total_questions": total, "rank": rank,
                 "specialty_scores": spec, "year_scores": yrs, "test_date": date,

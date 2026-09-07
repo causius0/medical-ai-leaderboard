@@ -52,6 +52,7 @@ const MODEL_COLORS: Record<string, string> = {
   "llama-3.3-70b": "#0082FB",
   "gemma3-12b": "#4d7cfe",
   "qwen3-8b": "#FF6A00",
+  "qwen3-8b-thinking": "#FF6A00",
   "llama3.1-8b": "#0082FB",
   "mistral-7b": "#F70000",
   "LFM2.5-8B-A1B": "#22d3ee",

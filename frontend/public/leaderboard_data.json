@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T03:50:47.992878+00:00",
+  "last_updated": "2026-09-07T13:57:28.484611+00:00",
   "version": "2.1.0",
   "datasets": {
     "italian_ssm": {
@@ -107,6 +107,59 @@
   ],
   "models": [
     {
+      "id": "qwen3-8b-thinking",
+      "name": "qwen3:8b (thinking)",
+      "provider": "Local (Ollama)",
+      "provider_logo": "meta",
+      "overall_accuracy": 88.5,
+      "total_correct": 177,
+      "total_questions": 195,
+      "rank": 1,
+      "specialty_scores": {
+        "Accident and emergency medicine": 93.75,
+        "Allergology": 100.0,
+        "Anaesthetics": 100.0,
+        "Cardiology": 76.47,
+        "Dermatology": 100.0,
+        "Endocrinology": 100.0,
+        "Epidemiology and Biostatistics": 100.0,
+        "Gastro-enterologic surgery": 80.0,
+        "Gastroenterology": 91.67,
+        "General hematology": 71.43,
+        "General Practice": 100.0,
+        "Geriatrics": 100.0,
+        "Immunology": 100.0,
+        "Infectious diseases": 100.0,
+        "Laboratory medicine": 100.0,
+        "Legal medicine": 50.0,
+        "Microbiology": 100.0,
+        "Nephrology": 100.0,
+        "Neurology": 80.0,
+        "Obstetrics and gynecology": 75.0,
+        "Occupational medicine": 50.0,
+        "Ophthalmology": 100.0,
+        "Orthopaedics": 87.5,
+        "Paediatric surgery": 100.0,
+        "Paediatrics": 83.33,
+        "Pathology": 50.0,
+        "Pharmacology": 100.0,
+        "Physical medicine and rehabilitation": 100.0,
+        "Psychiatry": 75.0,
+        "Public health and Preventive Medicine": 100.0,
+        "Radiology": 100.0,
+        "Radiotherapy": 100.0,
+        "Respiratory medicine": 100.0,
+        "Rheumatology": 100.0,
+        "Thoracic surgery": 100.0,
+        "Vascular surgery": 66.67
+      },
+      "year_scores": {
+        "2017": 87.3,
+        "2018": 90.54
+      },
+      "test_date": "2026-09-07"
+    },
+    {
       "id": "gemma3-12b",
       "name": "gemma3:12b",
       "provider": "Local (Ollama)",
@@ -114,7 +167,7 @@
       "overall_accuracy": 81.04,
       "total_correct": 859,
       "total_questions": 1060,
-      "rank": 1,
+      "rank": 2,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 50.0,
         "Accident and emergency medicine": 77.36,
@@ -181,7 +234,7 @@
         "2023": 81.68,
         "2024": 75.0
       },
-      "test_date": "2026-09-06"
+      "test_date": "2026-09-07"
     },
     {
       "id": "qwen3-8b",
@@ -191,7 +244,7 @@
       "overall_accuracy": 79.34,
       "total_correct": 841,
       "total_questions": 1060,
-      "rank": 2,
+      "rank": 3,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 100.0,
         "Accident and emergency medicine": 71.7,
@@ -258,7 +311,7 @@
         "2023": 77.1,
         "2024": 77.27
       },
-      "test_date": "2026-09-06"
+      "test_date": "2026-09-07"
     },
     {
       "id": "mistral-7b",
@@ -268,7 +321,7 @@
       "overall_accuracy": 67.55,
       "total_correct": 716,
       "total_questions": 1060,
-      "rank": 3,
+      "rank": 4,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 100.0,
         "Accident and emergency medicine": 62.26,
@@ -335,7 +388,7 @@
         "2023": 56.49,
         "2024": 74.24
       },
-      "test_date": "2026-09-06"
+      "test_date": "2026-09-07"
     },
     {
       "id": "llama3.1-8b",
@@ -345,7 +398,7 @@
       "overall_accuracy": 65.19,
       "total_correct": 691,
       "total_questions": 1060,
-      "rank": 4,
+      "rank": 5,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 100.0,
         "Accident and emergency medicine": 66.04,
@@ -412,7 +465,7 @@
         "2023": 71.76,
         "2024": 62.88
       },
-      "test_date": "2026-09-06"
+      "test_date": "2026-09-07"
     }
   ]
 }
