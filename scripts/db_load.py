@@ -292,11 +292,11 @@ def export_leaderboard(conn):
                 (mid,),
             )
             specialty_breakdown = {}
-            for s, answered, corr, acc in cur.fetchall():
+            for s, answered, corr, acc_spec in cur.fetchall():
                 specialty_breakdown[s] = {
                     "answered": int(answered),
                     "correct": int(corr),
-                    "accuracy": float(acc),
+                    "accuracy": float(acc_spec),
                 }
             # label thinking-mode rows distinctly
             display_name = name
