@@ -76,14 +76,10 @@ def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, th
 
 
 def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, timeout=300):
-    """Query a llama.cpp OpenAI-compatible server. Returns raw text."""
-    url = f"{endpoint}/v1/chat/completions"
+    """Query a llama.cpp OpenAI-compatible server (raw completions). Returns raw text."""
+    url = f"{endpoint}/v1/completions"
     payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": prompt},
-        ],
+        "prompt": f"{SYSTEM_PROMPT}\n\n{prompt}",
         "temperature": temperature,
         "max_tokens": max_tokens,
         "stream": False,
@@ -92,7 +88,7 @@ def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, 
     req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         data = json.load(r)
-    return data["choices"][0]["message"]["content"].strip()
+    return data["choices"][0]["text"].strip()
 
 
 def parse_answer(text):
