@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import Logo from "./components/Logo";
+import QuestionsView from "./components/QuestionsView";
 
 /* ─── Types ────────────────────────────────────────── */
 interface Model {
@@ -18,6 +19,20 @@ interface Model {
   year_scores: Record<string, number>;
   test_date: string;
   specialty_breakdown?: Record<string, { answered: number; correct: number; accuracy: number }>;
+}
+
+interface QuestionResponse {
+  question_id: string;
+  specialty: string;
+  test_year: number;
+  correct_letter: string;
+  models: Record<string, { correct: boolean | null; answer: string | null }>;
+}
+
+interface QuestionResponses {
+  exported_at: string;
+  models: string[];
+  questions: QuestionResponse[];
 }
 
 interface Dataset {
@@ -83,7 +98,8 @@ function scoreBg(score: number): string {
 /* ─── Main Page ────────────────────────────────────── */
 export default function LeaderboardPage() {
   const [data, setData] = useState<LeaderboardData | null>(null);
-  const [view, setView] = useState<"leaderboard" | "analysis" | "compare">("leaderboard");
+  const [qdata, setQData] = useState<QuestionResponses | null>(null);
+  const [view, setView] = useState<"leaderboard" | "analysis" | "compare" | "questions">("leaderboard");
   const [search, setSearch] = useState("");
   const [sortKey, setSortKey] = useState<"rank" | "name" | "overall_accuracy">("rank");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("asc");
@@ -96,6 +112,9 @@ export default function LeaderboardPage() {
     fetch(`${base}/leaderboard_data.json`)
       .then((r) => r.json())
       .then(setData);
+    fetch(`${base}/question_responses.json`)
+      .then((r) => r.json())
+      .then(setQData);
   }, []);
 
   const toggleSort = useCallback((key: typeof sortKey) => {
@@ -195,6 +214,9 @@ export default function LeaderboardPage() {
             </button>
             <button className={view === "compare" ? "active" : ""} onClick={() => setView("compare")}>
               Compare{compareIds.length > 0 ? ` (${compareIds.length})` : ""}
+            </button>
+            <button className={view === "questions" ? "active" : ""} onClick={() => setView("questions")}>
+              Questions
             </button>
             <Link href="/team">
               <button>Team</button>
@@ -702,6 +724,11 @@ export default function LeaderboardPage() {
               </>
             )}
           </>
+        )}
+
+        {/* ─── QUESTIONS VIEW ──────────────────────── */}
+        {view === "questions" && (
+          <QuestionsView qdata={qdata} models={data.models} />
         )}
 
         {/* ─── Model Detail Panel ─────────────────── */}
