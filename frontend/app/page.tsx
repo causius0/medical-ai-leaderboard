@@ -50,27 +50,32 @@ const MODEL_COLORS: Record<string, string> = {
   "mistral-large": "#F70000",
   "gpt-4o-mini": "#6ee7b7",
   "llama-3.3-70b": "#0082FB",
+  "gemma3-12b": "#4d7cfe",
+  "qwen3-8b": "#FF6A00",
+  "llama3.1-8b": "#0082FB",
+  "mistral-7b": "#F70000",
+  "LFM2.5-8B-A1B": "#22d3ee",
 };
 
 function getModelColor(id: string) {
   return MODEL_COLORS[id] || "#6b7280";
 }
 
-/* ─── Heatmap color helper ─────────────────────────── */
+/* ─── Heatmap color helper (dark theme) ───────────── */
 function scoreColor(score: number): string {
-  if (score >= 85) return "#059669";
-  if (score >= 75) return "#10b981";
-  if (score >= 65) return "#f59e0b";
-  if (score >= 55) return "#f97316";
-  return "#ef4444";
+  if (score >= 85) return "#2dd4a7";
+  if (score >= 75) return "#22d3ee";
+  if (score >= 65) return "#fbbf24";
+  if (score >= 55) return "#fb923c";
+  return "#f87171";
 }
 
 function scoreBg(score: number): string {
-  if (score >= 85) return "#d1fae5";
-  if (score >= 75) return "#a7f3d0";
-  if (score >= 65) return "#fef3c7";
-  if (score >= 55) return "#ffedd5";
-  return "#fee2e2";
+  if (score >= 85) return "rgba(45, 212, 167, 0.16)";
+  if (score >= 75) return "rgba(34, 211, 238, 0.14)";
+  if (score >= 65) return "rgba(251, 191, 36, 0.14)";
+  if (score >= 55) return "rgba(251, 146, 60, 0.16)";
+  return "rgba(248, 113, 113, 0.16)";
 }
 
 /* ─── Main Page ────────────────────────────────────── */
@@ -187,6 +192,28 @@ export default function LeaderboardPage() {
             {data.models.length} models evaluated across {Object.keys(data.specialties).length} specialties.
             Last updated {new Date(data.last_updated).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}.
           </p>
+        </div>
+
+        {/* ─── Stats Strip ─────────────────────────── */}
+        <div className="stats-strip">
+          <div className="stat-card">
+            <div className="stat-value">{data.models.length}</div>
+            <div className="stat-label">Models Benchmarked</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">{Object.keys(data.specialties).length}</div>
+            <div className="stat-label">Medical Specialties</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">
+              {data.models[0] ? `${data.models[0].overall_accuracy.toFixed(1)}%` : "—"}
+            </div>
+            <div className="stat-label">Top Model Accuracy</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">{data.years.length}</div>
+            <div className="stat-label">Exam Years Covered</div>
+          </div>
         </div>
 
         {/* ─── Dataset Cards ──────────────────────── */}

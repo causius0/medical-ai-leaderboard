@@ -56,13 +56,13 @@ def ollama_installed_models():
         return set()
 
 
-def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180):
+def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, think=False):
     """Query a local Ollama model. Returns raw text."""
     payload = {
         "model": model,
         "prompt": prompt,
         "system": SYSTEM_PROMPT,
-        "think": False,  # Qwen3: skip hidden reasoning (fast direct answers)
+        "think": think,  # Qwen3: False=fast direct answers, True=let it reason first
         "stream": False,
         "options": {"temperature": temperature, "num_predict": max_tokens},
     }
@@ -73,6 +73,26 @@ def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180):
     with urllib.request.urlopen(req, timeout=timeout) as r:
         data = json.load(r)
     return data.get("response", "").strip()
+
+
+def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, timeout=300):
+    """Query a llama.cpp OpenAI-compatible server. Returns raw text."""
+    url = f"{endpoint}/v1/chat/completions"
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "stream": False,
+    }
+    body = json.dumps(payload).encode()
+    req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        data = json.load(r)
+    return data["choices"][0]["message"]["content"].strip()
 
 
 def parse_answer(text):
@@ -92,7 +112,7 @@ def parse_answer(text):
     return None, text
 
 
-def run_model(model, questions, limit=None, progress_every=50):
+def run_model(model, questions, limit=None, progress_every=50, think=False, endpoint=None):
     """Run one model over the questions. Returns result dict in frontend schema."""
     if limit:
         questions = questions[:limit]
@@ -106,7 +126,12 @@ def run_model(model, questions, limit=None, progress_every=50):
         prompt = USER_TEMPLATE.format(question=q["question"], options=opts)
 
         try:
-            raw = query_ollama(model, prompt)
+            # thinking mode needs a much larger token budget for hidden reasoning
+            max_tokens = 2048 if think else 256
+            if endpoint:
+                raw = query_llamaserver(endpoint, model, prompt, max_tokens=max_tokens)
+            else:
+                raw = query_ollama(model, prompt, max_tokens=max_tokens, think=think)
         except Exception as e:
             raw = ""
             # record refusal/error
@@ -185,10 +210,11 @@ def run_model(model, questions, limit=None, progress_every=50):
         "responses": responses,
         "metadata": {
             "generated_by": "run_evaluation.py",
-            "generation_method": "ollama_local",
+            "generation_method": "llamaserver_local" if endpoint else "ollama_local",
             "evaluation_pipeline_version": "2.0.0",
-            "backend": "Ollama (Metal)",
-            "note": "REAL local evaluation via Ollama on Apple Silicon.",
+            "backend": "llama.cpp" if endpoint else "Ollama (Metal)",
+            "think": think,
+            "note": "REAL local evaluation.",
             "elapsed_seconds": round(elapsed, 1),
         },
     }
@@ -250,6 +276,8 @@ def main():
     ap.add_argument("--models", default="qwen3:8b")
     ap.add_argument("--limit", type=int, default=None, help="run only first N questions")
     ap.add_argument("--rebuild", action="store_true", help="only rebuild leaderboard from existing result files")
+    ap.add_argument("--thinking", action="store_true", help="enable Qwen3 thinking mode (reason first, slower)")
+    ap.add_argument("--endpoint", default=None, help="llama.cpp OpenAI-compatible server URL (e.g. http://127.0.0.1:8081)")
     args = ap.parse_args()
 
     questions = load_questions()
@@ -258,18 +286,19 @@ def main():
     available = ollama_installed_models()
     if not args.rebuild:
         models = [m.strip() for m in args.models.split(",") if m.strip()]
-        missing = [m for m in models if m not in available]
-        if missing:
-            print(f"Models not installed locally: {missing}. Run 'ollama pull <model>'")
-            sys.exit(1)
+        if not args.endpoint:
+            missing = [m for m in models if m not in available]
+            if missing:
+                print(f"Models not installed locally: {missing}. Run 'ollama pull <model>'")
+                sys.exit(1)
         print(f"Local models found: {available}")
-        print(f"Evaluating: {models}\n")
+        print(f"Evaluating: {models} (endpoint={args.endpoint})\n")
 
         RESULTS_DIR.mkdir(parents=True, exist_ok=True)
         all_results = []
         for model in models:
-            print(f"▶ Running {model} on {len(questions[:args.limit])} questions...")
-            result = run_model(model, questions, limit=args.limit)
+            print(f"▶ Running {model} on {len(questions[:args.limit])} questions... (thinking={args.thinking})")
+            result = run_model(model, questions, limit=args.limit, think=args.thinking, endpoint=args.endpoint)
             stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             fname = f"{result['model_id']}_{stamp}.json"
             with open(RESULTS_DIR / fname, "w", encoding="utf-8") as f:
