@@ -91,6 +91,24 @@ def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, 
     return data["choices"][0]["text"].strip()
 
 
+def _logo_for(model):
+    """Map a model string to its brand logo key (used by the frontend Logo component)."""
+    m = model.lower()
+    if "gemma" in m:
+        return "google"
+    if "qwen" in m:
+        return "alibaba"
+    if "llama" in m:
+        return "meta"
+    if "mistral" in m:
+        return "mistral"
+    if "lfm" in m or "liquid" in m:
+        return "liquid"
+    if "deepseek" in m:
+        return "deepseek"
+    return "meta"
+
+
 def parse_answer(text):
     """Extract the answer letter (A-E) from a model response."""
     if not text:
@@ -188,7 +206,7 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         "model_name": model,
         "model_id": model.replace(":", "-"),
         "provider": "Local (Ollama)",
-        "provider_logo": "meta",  # generic; adjust per model below
+        "provider_logo": _logo_for(model),
         "openrouter_model_id": f"ollama/{model}",
         "test_date": datetime.now().strftime("%Y-%m-%d"),
         "test_date_iso": datetime.now(timezone.utc).isoformat(),

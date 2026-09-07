@@ -51,6 +51,13 @@ const logos: Record<string, React.FC<{ size?: number }>> = {
       <path d="M6 7h2.5v4.5L12 7h3l-3.5 5L15 17h-3l-2.5-4.5V17H7V7h-1zm6.5 0h3l2 3.5 2-3.5h3l-3.5 5 3.5 5h-3l-2-3.5-2 3.5h-3l3.5-5-3.5-5z" fill="white"/>
     </svg>
   ),
+  liquid: ({ size = 26 }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="4" fill="#22d3ee"/>
+      <path d="M12 3c2.8 4.5 6 8.2 6 12a6 6 0 01-12 0c0-3.8 3.2-7.5 6-12z" fill="white" opacity="0.9"/>
+      <path d="M12 9c1.4 2.2 3 4 3 6a3 3 0 01-6 0c0-2 1.6-3.8 3-6z" fill="#0891b2"/>
+    </svg>
+  ),
 };
 
 export default function Logo({

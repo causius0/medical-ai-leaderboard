@@ -232,6 +232,24 @@ def ingest_result(conn, path: Path):
     print(f"  ✓ {path.name} → run_id={run_id} acc={r['overall_accuracy']}%")
 
 
+def _logo_for_id(model_id):
+    """Map a model_id to its brand logo key for the frontend."""
+    mid = (model_id or "").lower()
+    if "gemma" in mid:
+        return "google"
+    if "qwen" in mid:
+        return "alibaba"
+    if "llama" in mid:
+        return "meta"
+    if "mistral" in mid:
+        return "mistral"
+    if "lfm" in mid or "liquid" in mid:
+        return "liquid"
+    if "deepseek" in mid:
+        return "deepseek"
+    return "meta"
+
+
 def export_leaderboard(conn):
     """Rebuild leaderboard_data.json straight from Postgres."""
     with conn.cursor() as cur:
@@ -254,22 +272,42 @@ def export_leaderboard(conn):
                 "(SELECT MAX(run_id) FROM runs WHERE model_id=%s) ORDER BY specialty",
                 (mid,),
             )
-            spec = {s: a for s, a in cur.fetchall()}
+            spec = {s: float(a) for s, a in cur.fetchall()}
             cur.execute(
                 "SELECT test_year, accuracy FROM year_scores WHERE run_id = "
                 "(SELECT MAX(run_id) FROM runs WHERE model_id=%s) ORDER BY test_year",
                 (mid,),
             )
-            yrs = {str(y): a for y, a in cur.fetchall()}
+            yrs = {str(y): float(a) for y, a in cur.fetchall()}
+            # per-specialty breakdown of questions the model ANSWERED (correct/total/accuracy)
+            cur.execute(
+                """
+                SELECT q.specialty, COUNT(*) AS answered,
+                       COUNT(*) FILTER (WHERE r.is_correct) AS correct,
+                       ROUND(100.0 * COUNT(*) FILTER (WHERE r.is_correct) / COUNT(*), 2) AS acc
+                FROM responses r JOIN questions q USING (question_id)
+                WHERE r.run_id = (SELECT MAX(run_id) FROM runs WHERE model_id=%s)
+                GROUP BY q.specialty ORDER BY answered DESC
+                """,
+                (mid,),
+            )
+            specialty_breakdown = {}
+            for s, answered, corr, acc in cur.fetchall():
+                specialty_breakdown[s] = {
+                    "answered": int(answered),
+                    "correct": int(corr),
+                    "accuracy": float(acc),
+                }
             # label thinking-mode rows distinctly
             display_name = name
             if mid.endswith("-thinking"):
                 display_name = f"{name} (thinking)"
             models.append({
-                "id": mid, "name": display_name, "provider": prov, "provider_logo": logo,
+                "id": mid, "name": display_name, "provider": prov, "provider_logo": _logo_for_id(mid),
                 "overall_accuracy": acc, "total_correct": correct,
                 "total_questions": total, "rank": rank,
                 "specialty_scores": spec, "year_scores": yrs, "test_date": date,
+                "specialty_breakdown": specialty_breakdown,
             })
 
         cur.execute("SELECT specialty, COUNT(*) FROM questions GROUP BY specialty")
@@ -295,8 +333,16 @@ def export_leaderboard(conn):
         "models": models,
     }
     with open(LEADERBOARD_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        json.dump(data, f, indent=2, ensure_ascii=False, default=_json_default)
     print(f"✓ leaderboard_data.json rebuilt from Postgres: {len(models)} models")
+
+
+def _json_default(o):
+    """Serialize Decimals (Postgres numeric) as floats for JSON."""
+    from decimal import Decimal
+    if isinstance(o, Decimal):
+        return float(o)
+    raise TypeError(f"Object of type {o.__class__.__name__} is not JSON serializable")
 
 
 def main():

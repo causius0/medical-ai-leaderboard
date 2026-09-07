@@ -17,6 +17,7 @@ interface Model {
   specialty_scores: Record<string, number>;
   year_scores: Record<string, number>;
   test_date: string;
+  specialty_breakdown?: Record<string, { answered: number; correct: number; accuracy: number }>;
 }
 
 interface Dataset {
@@ -203,38 +204,11 @@ export default function LeaderboardPage() {
             <div className="stat-label">Models Benchmarked</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">{Object.keys(data.specialties).length}</div>
-            <div className="stat-label">Medical Specialties</div>
-          </div>
-          <div className="stat-card">
             <div className="stat-value">
               {data.models[0] ? `${data.models[0].overall_accuracy.toFixed(1)}%` : "—"}
             </div>
             <div className="stat-label">Top Model Accuracy</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-value">{data.years.length}</div>
-            <div className="stat-label">Exam Years Covered</div>
-          </div>
-        </div>
-
-        {/* ─── Dataset Cards ──────────────────────── */}
-        <div className="datasets-row">
-          {Object.entries(data.datasets).map(([key, ds]) => (
-            <div key={key} className={`dataset-card ${ds.status === "upcoming" ? "upcoming" : ""}`}>
-              <div className="flag">{ds.country.split(" ").slice(-1)[0]}</div>
-              <div className="name">{ds.name}</div>
-              <div className="detail">{ds.full_name}</div>
-              <div className="detail">
-                {ds.status === "active"
-                  ? `${ds.question_count.toLocaleString()} questions · ${ds.language}`
-                  : `${ds.language} · Coming soon`}
-              </div>
-              <span className={`badge ${ds.status === "active" ? "badge-active" : "badge-upcoming"}`}>
-                {ds.status === "active" ? "Active" : "Upcoming"}
-              </span>
-            </div>
-          ))}
         </div>
 
         {/* ─── LEADERBOARD VIEW ───────────────────── */}
@@ -296,17 +270,11 @@ export default function LeaderboardPage() {
                       <th onClick={() => toggleSort("overall_accuracy")} className={sortKey === "overall_accuracy" ? "sorted" : ""}>
                         Accuracy{sortKey === "overall_accuracy" ? (sortDir === "asc" ? "↑" : "↓") : ""}
                       </th>
-                      <th>
-                        {selectedSpecialty === "all" ? "Score" : selectedSpecialty}
-                      </th>
                       <th>Compare</th>
                     </tr>
                   </thead>
                   <tbody>
                     {sortedModels.map((m) => {
-                      const specScore = selectedSpecialty === "all"
-                        ? m.overall_accuracy
-                        : m.specialty_scores[selectedSpecialty] ?? null;
                       return (
                         <tr
                           key={m.id}
@@ -342,21 +310,6 @@ export default function LeaderboardPage() {
                                 />
                               </div>
                             </div>
-                          </td>
-                          <td>
-                            {specScore !== null ? (
-                              <div className="score-bar-wrap">
-                                <span className="score-value">{specScore.toFixed(1)}%</span>
-                                <div className="score-bar">
-                                  <div
-                                    className="score-bar-fill bar-blue"
-                                    style={{ width: `${(specScore / 100) * 100}%`, background: getModelColor(m.id), opacity: 0.7 }}
-                                  />
-                                </div>
-                              </div>
-                            ) : (
-                              <span style={{ color: "#d1d5db" }}>—</span>
-                            )}
                           </td>
                           <td />
                         </tr>
@@ -775,18 +728,30 @@ export default function LeaderboardPage() {
                 </div>
 
                 <div className="detail-section">
-                  <h3>All Specialties ({Object.keys(selectedModel.specialty_scores).length})</h3>
+                  <h3>Specialty Breakdown ({Object.keys(selectedModel.specialty_scores).length})</h3>
                   <div className="spec-grid">
-                    {Object.entries(selectedModel.specialty_scores)
-                      .sort((a, b) => b[1] - a[1])
-                      .map(([spec, score]) => (
-                        <div key={spec} className="spec-item">
-                          <span className="spec-name">{spec}</span>
-                          <span className="spec-score" style={{ color: scoreColor(score) }}>
-                            {score.toFixed(1)}%
-                          </span>
-                        </div>
-                      ))}
+                    {(() => {
+                      const bd = selectedModel.specialty_breakdown;
+                      const rows = Object.entries(bd || selectedModel.specialty_scores).sort((a, b) => {
+                        const aAcc = bd ? (bd[a[0]].accuracy ?? a[1]) : a[1];
+                        const bAcc = bd ? (bd[b[0]].accuracy ?? b[1]) : b[1];
+                        return bAcc - aAcc;
+                      });
+                      return rows.map(([spec, v]) => {
+                        const acc = bd ? bd[spec].accuracy : (v as number);
+                        const answered = bd ? bd[spec].answered : null;
+                        const correct = bd ? bd[spec].correct : null;
+                        return (
+                          <div key={spec} className="spec-item">
+                            <span className="spec-name">{spec}</span>
+                            <span className="spec-meta">
+                              {answered !== null ? `${correct}/${answered} · ` : ""}
+                              <span style={{ color: scoreColor(acc) }}>{acc.toFixed(1)}%</span>
+                            </span>
+                          </div>
+                        );
+                      });
+                    })()}
                   </div>
                 </div>
 
