@@ -23,7 +23,7 @@ The system provides standardized metrics to compare model performance across dif
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/medical-ai-leaderboard.git
+git clone https://github.com/causius0/medical-ai-leaderboard.git
 cd medical-ai-leaderboard
 ```
 
@@ -192,7 +192,7 @@ If you use this leaderboard in your research, please cite:
   title={Medical AI Leaderboard: Comprehensive Evaluation of Medical LLMs},
   author={[Your Name]},
   year={2025},
-  url={https://github.com/yourusername/medical-ai-leaderboard}
+  url={https://github.com/causius0/medical-ai-leaderboard}
 }
 ```
 
