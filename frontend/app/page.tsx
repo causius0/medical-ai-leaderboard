@@ -90,7 +90,8 @@ export default function LeaderboardPage() {
   const [compareIds, setCompareIds] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch("/leaderboard_data.json")
+    const base = "/medical-ai-leaderboard";
+    fetch(`${base}/leaderboard_data.json`)
       .then((r) => r.json())
       .then(setData);
   }, []);
