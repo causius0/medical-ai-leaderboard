@@ -1,201 +1,93 @@
 # Medical AI Leaderboard
 
-A comprehensive benchmarking system for evaluating medical AI models on real medical examination questions from multiple countries and specialties.
+**Benchmark local LLMs on real European medical residency examinations — with a live, interactive leaderboard.**
 
-## Project Overview
+> 🚀 **Live demo:** [causius0.github.io/medical-ai-leaderboard](https://causius0.github.io/medical-ai-leaderboard/)
+>
+> Real models, real questions, real results — run locally on an Apple Silicon Mac.
 
-This leaderboard evaluates Large Language Models (LLMs) and medical AI systems on their ability to answer real medical examination questions from:
-- Italian National Medical Residency Exam (SSM - Selezione Specializzazioni in Medicina)
-- Spanish Medical Residency Exam (MIR - Médico Interno Residente)
-- Portuguese Medical Residency Examination
-- French Medical Residency Examination
+## What this is
 
-The system provides standardized metrics to compare model performance across different medical specialties and languages.
+A full-stack benchmark that runs **open-weight LLMs locally** (via Ollama / llama.cpp on Apple Silicon) against **1,060 real questions** from the **Italian national medical residency exam (SSM)**, sourced from the [EuropeMedQA](https://github.com/causius0/SIIAM) dataset. It scores each model across **54 medical specialties** and **8 exam years**, then publishes the results to a polished, interactive leaderboard.
 
-## Quick Start Guide
+## Key results (local models, zero-shot, temperature 0)
 
-### Prerequisites
+| Model | Accuracy |
+|---|---|
+| qwen3:8b (thinking) | **88.5%** |
+| gemma3:12b | 81.0% |
+| qwen3:8b | 79.3% |
+| mistral:7b | 67.6% |
+| llama3.1:8b | 65.2% |
+| LFM2.5-8B-A1B (Liquid) | 39.8% |
 
-- Python 3.8 or higher
-- Git
+Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 88.5%** — a ~9-point gain purely from reasoning.
 
-### Installation
+## Features
 
-1. Clone the repository:
-```bash
-git clone https://github.com/causius0/medical-ai-leaderboard.git
-cd medical-ai-leaderboard
-```
+- **Real local evaluation** — `scripts/run_evaluation.py` runs Ollama / llama.cpp models against the dataset, parses answer letters, and scores by specialty + year. (No fabricated/mock results.)
+- **PostgreSQL persistence** — `scripts/db_load.py` stores questions, runs, responses, and derived per-specialty/year scores in a local Postgres DB (`medbench`), which is the source of truth.
+- **Interactive leaderboard** — Next.js static site with:
+  - Live ranking with per-model brand logos
+  - **Filter by medical specialty** (rank models by accuracy in e.g. Cardiology)
+  - Per-model detail with full specialty breakdown (correct/total per specialty)
+  - Performance heatmap, year-over-year trends, and side-by-side model comparison
+  - Dark **and** light themes
+- **Real data discipline** — answer keys are never committed; only scored results are published.
 
-2. Create the data directory structure:
-```bash
-mkdir -p data results
-```
-
-3. Prepare your data:
-   - Add `data/solutions.json` with correct answers (see [SOLUTIONS-FORMAT.md](docs/SOLUTIONS-FORMAT.md))
-   - Add AI model responses to `data/` (see [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md))
-
-4. Run the evaluation:
-```bash
-python scripts/evaluate_model.py --answers data/model_x_answers.json --solutions data/solutions.json
-```
-
-## Workflow Explanation
+## Architecture
 
 ```
-1. Collect Questions → 2. Generate AI Responses → 3. Evaluate → 4. Update Leaderboard
+EuropeMedQA SSM (1060 Q) ──▶ run_evaluation.py ──▶ result JSONs
+                              (Ollama/llama.cpp)        │
+                                                       ▼
+                                PostgreSQL (medbench) ◀── db_load.py (ingest)
+                                                       │
+                                                       ▼
+                                frontend/public/leaderboard_data.json ──▶ GitHub Pages
 ```
 
-### Step 1: Collect Questions
-- Gather medical exam questions from official sources
-- Add to `data/solutions.json` with correct answers
-- Document source in `docs/SOURCES.md`
+## Tech stack
 
-### Step 2: Generate AI Responses
-- Use LM Studio or similar tool to prompt models
-- Output responses in JSON format (see [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md))
-- Save to `data/[model_name]_answers.json`
+- **Python** — evaluation pipeline, Postgres ingestion/export (psycopg)
+- **Ollama / llama.cpp** — local model inference (Metal-accelerated on Apple Silicon)
+- **PostgreSQL 16** — schema, ingestion, derived scores
+- **Next.js 16 / React 19 / TypeScript** — static leaderboard site
+- **GitHub Actions + Pages** — CI build and deployment
 
-### Step 3: Evaluate Performance
-- Run evaluation script to compare AI answers with solutions
-- Calculate accuracy, confidence scores, and specialty breakdowns
-- Generate detailed performance reports
-
-### Step 4: Update Leaderboard
-- Add results to `results/leaderboard.json`
-- Generate visualizations and summary statistics
-- Commit results (but never commit solutions!)
-
-## Directory Structure
-
-```
-medical-ai-leaderboard/
-├── README.md                          # This file
-├── .gitignore                         # Git ignore rules (solutions.json included)
-├── docs/
-│   ├── SOURCES.md                     # List of exam sources and templates
-│   ├── SOLUTIONS-FORMAT.md            # Solutions JSON specification
-│   └── ANSWERS-FORMAT.md              # AI answers JSON specification
-├── data/
-│   ├── solutions.json                 # Correct answers (GITIGNORED)
-│   └── [model_name]_answers.json      # AI model responses
-├── scripts/
-│   ├── evaluate_model.py              # Evaluation script
-│   ├── generate_leaderboard.py        # Leaderboard generator
-│   └── visualize_results.py           # Visualization tools
-└── results/
-    ├── leaderboard.json               # Current leaderboard
-    └── [model_name]_report.json       # Individual model reports
-```
-
-## How to Add New Model Results
-
-### 1. Generate Responses
-
-Use LM Studio or your preferred tool to prompt the model with questions. Structure your prompts to output JSON in the format specified in [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md).
-
-Example prompt structure:
-```
-Answer the following medical questions. For each question, provide:
-1. Your chosen answer (A, B, C, D, or E)
-2. Your confidence level (0-100)
-3. Brief explanation
-
-Output in JSON format with structure:
-{
-  "model_name": "Model Name",
-  "test_date": "2025-03-05",
-  "responses": [
-    {
-      "question_id": "unique_id",
-      "answer": "B",
-      "confidence": 85,
-      "explanation": "..."
-    }
-  ]
-}
-
-Questions:
-[Insert questions here]
-```
-
-### 2. Save Responses
-
-Save the model's output to `data/[model_name]_answers.json`
-
-### 3. Evaluate
-
-Run the evaluation script:
-```bash
-python scripts/evaluate_model.py \
-    --answers data/[model_name]_answers.json \
-    --solutions data/solutions.json \
-    --output results/[model_name]_report.json
-```
-
-### 4. Update Leaderboard
+## Running it yourself
 
 ```bash
-python scripts/generate_leaderboard.py
+# 1. Pull models locally
+ollama pull qwen3:8b
+ollama pull gemma3:12b
+ollama pull llama3.1:8b
+
+# 2. Run a real evaluation (full SSM set)
+python3 scripts/run_evaluation.py --models qwen3:8b,gemma3:12b,llama3.1:8b
+
+# 3. Persist to PostgreSQL (requires local Postgres 16 + psycopg)
+createdb medbench
+python3 scripts/db_load.py --init    # schema + load 1060 questions
+python3 scripts/db_load.py --ingest  # ingest results
+python3 scripts/db_load.py --export  # rebuild leaderboard JSON
+
+# 4. Serve the site
+cd frontend && npm install && npm run build
 ```
 
-## JSON Format Specifications
+See [`docs/REAL_EVALUATION.md`](docs/REAL_EVALUATION.md) for the full pipeline, Postgres schema, and example queries.
 
-The project uses two main JSON formats:
+## Roadmap
 
-### Solutions Format
-See [docs/SOLUTIONS-FORMAT.md](docs/SOLUTIONS-FORMAT.md) for the complete specification of the `solutions.json` file.
+- Add Spanish (MIR), Portuguese, and French residency exams from EuropeMedQA
+- Run vision-language models on image-based questions
+- Calibrated confidence scores and position-bias analysis
 
-**Important**: `solutions.json` contains correct answers and should NEVER be committed to Git. It is included in `.gitignore`.
+## Related
 
-### Answers Format
-See [docs/ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md) for the complete specification of AI model response format.
-
-## Metrics and Scoring
-
-The leaderboard tracks multiple metrics:
-
-- **Overall Accuracy**: Percentage of correct answers across all questions
-- **Specialty Breakdown**: Performance by medical specialty (Cardiology, Neurology, etc.)
-- **Source Breakdown**: Performance by exam source (Italian SSM, Spanish MIR, etc.)
-- **Confidence-Accuracy Correlation**: How well model confidence predicts correctness
-- **Confidence Score**: Weighted accuracy based on confidence levels
-
-## Contributing
-
-Contributions are welcome! To add new exam sources or improve evaluation:
-
-1. Document new sources in `docs/SOURCES.md`
-2. Follow the JSON format specifications in `docs/`
-3. Add evaluation scripts to `scripts/`
-4. Update this README with any workflow changes
-
-## Data Sources
-
-Current medical examination sources are documented in [docs/SOURCES.md](docs/SOURCES.md).
-
-Please see that file for:
-- Complete list of current sources
-- Templates for adding new sources
-- Source-specific considerations
+- [SIIAM](https://github.com/causius0/SIIAM) — EuropeMedQA dataset + medical vision-language research
 
 ## License
 
-[Your License Here]
-
-## Citation
-
-If you use this leaderboard in your research, please cite:
-```
-@software{medical_ai_leaderboard,
-  title={Medical AI Leaderboard: Comprehensive Evaluation of Medical LLMs},
-  author={[Your Name]},
-  year={2025},
-  url={https://github.com/causius0/medical-ai-leaderboard}
-}
-```
-
-## Contact
-
-[Your Contact Information]
+MIT
