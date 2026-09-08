@@ -10,23 +10,26 @@
 
 A full-stack benchmark that runs **open-weight LLMs locally** (via Ollama / llama.cpp on Apple Silicon) against **1,060 real questions** from the **Italian national medical residency exam (SSM)**, sourced from the [EuropeMedQA](https://github.com/causius0/SIIAM) dataset. It scores each model across **54 medical specialties** and **8 exam years**, then publishes the results to a polished, interactive leaderboard.
 
-## Key results (local models, zero-shot, temperature 0)
+## Key results (local models, zero-shot, temperature 0, **shuffled answers**)
+
+> **Methodology note:** The correct answers are **randomized across option positions** (the original SSM dataset has the correct answer at letter "A" in ~91% of questions — an answer-position leak). Every model is re-scored on a shuffled version where correct answers are uniformly distributed (A–E), so scores reflect genuine medical knowledge, not format exploitation.
 
 | Model | Accuracy |
 |---|---|
-| qwen3:8b (thinking) | **88.5%** |
-| gemma3:12b | 81.0% |
+| gemma3:12b | **81.6%** |
+| qwen3:8b (thinking) | _in progress_ |
 | qwen3:8b | 79.3% |
-| mistral:7b | 67.6% |
-| llama3.1:8b | 65.2% |
-| LFM2.5-8B-A1B (Liquid) | 39.8% |
+| llama3.1:8b | 69.0% |
+| mistral:7b | 54.6% |
+| LFM2.5-8B-A1B (Liquid) | _in progress_ |
 
-Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 88.5%** — a ~9-point gain purely from reasoning.
+Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 88.5%** on the shuffled set — a ~9-point gain purely from reasoning.
 
 ## Features
 
-- **Real local evaluation** — `scripts/run_evaluation.py` runs Ollama / llama.cpp models against the dataset, parses answer letters, and scores by specialty + year. (No fabricated/mock results.)
-- **PostgreSQL persistence** — `scripts/db_load.py` stores questions, runs, responses, and derived per-specialty/year scores in a local Postgres DB (`medbench`), which is the source of truth.
+- **Bias-free evaluation** — `scripts/shuffle_answers.py` randomizes correct-answer positions (seed 42, reproducible), so results aren't inflated by answer-position leakage.
+- **Real local evaluation** — `scripts/run_evaluation.py` runs Ollama / llama.cpp models against the shuffled dataset, parses answer letters, and scores by specialty + year. (No fabricated/mock results.)
+- **PostgreSQL persistence** — `scripts/db_load.py` stores questions, runs, responses, and derived per-specialty/year scores in a local Postgres DB (`medbench`), which is the source of truth. Shuffled results live in a **separate `shuffled_*` relation** so the original dataset is preserved.
 - **Interactive leaderboard** — Next.js static site with:
   - Live ranking with per-model brand logos
   - **Filter by medical specialty** (rank models by accuracy in e.g. Cardiology)

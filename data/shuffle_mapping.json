@@ -1,0 +1,11662 @@
+{
+  "IT0001": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0002": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0003": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0004": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0005": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0008": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0009": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0010": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0011": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0012": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0013": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0014": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0015": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0016": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0017": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0018": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0019": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0020": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0021": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0022": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0023": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0024": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0025": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0026": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0027": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0028": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0029": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0030": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0033": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0034": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0035": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0036": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0037": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0038": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0039": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0040": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0041": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0042": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0043": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0044": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0045": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0046": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0047": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0048": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0049": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0050": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0051": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0052": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0055": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0056": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0057": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0058": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0059": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0060": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0061": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0062": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0066": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0067": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0068": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0069": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0070": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0071": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0072": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0073": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0074": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0075": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0076": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0077": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0078": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0079": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0080": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0081": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0082": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0083": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0084": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0085": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0086": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0087": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0088": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0089": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0090": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0091": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0092": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0093": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0094": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0096": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0097": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0098": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0099": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0100": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0101": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0102": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0103": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0104": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0105": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0106": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0107": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0108": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0109": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0110": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0112": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0113": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0114": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0115": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0116": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0117": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0118": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0119": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0120": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0121": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0122": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0123": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0124": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0125": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0126": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0127": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0128": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0129": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0132": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0133": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0134": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0135": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0137": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0138": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0139": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0140": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0141": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0142": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0143": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0144": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0145": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0146": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0147": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0148": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0149": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0150": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0151": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0152": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0153": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0154": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0155": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0156": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0157": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0158": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0159": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0160": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0161": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0162": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0163": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0164": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0165": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0166": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0167": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0168": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0170": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0171": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0172": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0173": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0174": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0175": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0176": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0177": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0178": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0179": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0180": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0181": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0182": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0183": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0184": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0185": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0186": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0187": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0188": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0189": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0190": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0191": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0192": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0193": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0194": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0195": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0196": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0197": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0199": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0201": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0202": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0203": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0204": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0205": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0206": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0207": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0208": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0209": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0210": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0211": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0212": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0215": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0216": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0217": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0218": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0219": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0220": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0221": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0222": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0223": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0224": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0225": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0226": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0227": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0228": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0230": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0231": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0232": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0233": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0234": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0237": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0238": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0239": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0240": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0241": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0242": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0243": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0244": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0245": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0246": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0247": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0248": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0249": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0251": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0252": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0253": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0254": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0255": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0256": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0257": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0258": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0259": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0260": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0261": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0262": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0263": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0264": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0265": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0266": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0267": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0268": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0269": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0270": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0271": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0272": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0273": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0274": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0275": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0276": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0277": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0278": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0279": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0280": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0281": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0282": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0283": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0284": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0285": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0286": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0287": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0288": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0289": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0290": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0291": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0292": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0293": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0294": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0295": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0296": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0297": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0298": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0299": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0300": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0301": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0302": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0303": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0304": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0305": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0306": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0307": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0308": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0309": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0310": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0312": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0313": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0314": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0315": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0316": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0317": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0318": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0319": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0320": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0321": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0322": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0323": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0324": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0325": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0326": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0327": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0328": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0329": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0330": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0331": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0332": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0333": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0334": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0335": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0336": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0337": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0338": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0339": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0341": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0342": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0343": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0344": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0345": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0346": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0347": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0348": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0349": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0350": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0351": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0352": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0353": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0354": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0355": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0356": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0357": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0358": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0359": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0360": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0361": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0362": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0363": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0364": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0365": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0366": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0367": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0368": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0369": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0370": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0371": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0372": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0373": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0374": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0376": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0377": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0378": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0379": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0380": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0381": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0382": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0383": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0384": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0385": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0386": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0387": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0388": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0389": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0391": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0392": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0393": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0394": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0395": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0396": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0397": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0398": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0399": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0400": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0401": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0402": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0403": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0404": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0405": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0406": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0407": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0408": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0409": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0410": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0411": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0412": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0413": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0414": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0415": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0416": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0417": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0418": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0419": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0420": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0421": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0422": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0423": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0424": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0425": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0426": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0427": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0428": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0429": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0430": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0431": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0432": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0433": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0434": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0435": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0436": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0437": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0438": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0439": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0440": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0441": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0442": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0443": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0444": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0445": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0446": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0447": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0448": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0449": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0450": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0451": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0452": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0453": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0454": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0457": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0458": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0459": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0460": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0461": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0462": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0463": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0464": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0465": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0466": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0467": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0468": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0469": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0470": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0471": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0472": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0473": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0474": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0475": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0476": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0477": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0478": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0479": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0480": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0481": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0482": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0483": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0484": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0485": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0486": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0487": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0488": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0489": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0490": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0491": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0492": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0493": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0494": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0495": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0496": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0497": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0498": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0499": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0500": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0501": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0502": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0503": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0504": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0505": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0506": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0508": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0509": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0510": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0511": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0513": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0514": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0515": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0516": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0517": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0518": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0519": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0520": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0521": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0522": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0523": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0524": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0525": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0526": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0527": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0528": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0529": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0530": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0531": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0534": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0535": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0536": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0537": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0538": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0539": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0540": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0541": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0542": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0543": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0544": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0545": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0546": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0547": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0548": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0549": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0550": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0551": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0552": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0553": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0554": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0555": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0556": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0557": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0558": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0559": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0560": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0561": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0562": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0564": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0565": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0566": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0567": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0568": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0569": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0570": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0571": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0572": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0573": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0574": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0575": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0576": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0577": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0578": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0579": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0580": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0581": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0582": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0583": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0584": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0585": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0586": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0587": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0588": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0589": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0590": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0591": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0592": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0594": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0595": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0596": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0598": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0599": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0600": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0601": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0602": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0603": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0604": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0605": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0606": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0607": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0608": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0609": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0610": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0611": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0612": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0613": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0614": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0615": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0616": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0617": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0618": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0619": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0620": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT0621": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0622": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0623": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0624": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0625": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0626": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0627": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0628": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0629": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0630": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0631": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0632": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0633": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0634": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0635": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0636": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0637": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0638": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0639": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0640": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0641": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0642": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0643": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0644": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0645": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0646": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0647": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0648": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0649": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0650": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0651": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0652": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0654": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0655": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0656": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0657": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0658": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0659": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0660": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0661": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0662": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0663": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0664": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0665": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0666": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0667": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0668": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0669": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0670": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0671": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0672": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0673": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0674": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0677": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0678": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0679": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0680": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0681": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0682": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0683": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0684": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0685": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0686": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0687": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0688": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0689": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0690": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0691": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0692": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0693": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0694": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0695": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0696": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0697": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0698": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0699": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0700": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0701": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0702": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0703": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0704": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0705": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0706": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0707": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0708": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0709": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0710": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0711": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0712": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0714": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0715": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0716": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0717": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0718": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0719": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0720": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0721": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0722": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0723": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0724": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0725": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0726": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0727": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0728": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0729": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0730": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0731": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0732": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0733": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0734": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0735": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0736": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0737": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0738": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0739": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0740": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0741": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0742": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0743": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT0744": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0745": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0746": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0747": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0748": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT0749": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0750": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0751": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0752": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0753": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0754": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0755": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0756": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0757": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0758": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0759": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0760": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0761": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0762": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0763": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0764": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0765": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0766": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0767": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0768": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0769": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT0770": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT0771": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0772": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0773": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0774": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0775": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0776": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0777": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0778": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0779": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0780": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0781": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0782": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0786": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0787": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0788": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0789": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0790": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0791": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0792": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0793": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0794": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0795": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0796": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0797": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0798": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0799": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0800": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0801": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0802": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0803": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0804": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0805": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0806": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0807": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0808": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0809": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0810": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0811": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0812": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0813": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0814": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0815": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0816": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0817": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0818": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0819": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0820": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0821": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0822": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0823": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0824": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0825": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0826": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0827": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0828": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0829": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0830": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT0831": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0832": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0833": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0834": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0835": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0836": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0837": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0838": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0839": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0840": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0841": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0842": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT0843": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0844": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0845": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0846": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0847": {
+    "original_letter": "B",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0848": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0849": {
+    "original_letter": "E",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0850": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0851": {
+    "original_letter": "B",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0852": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0853": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0854": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0855": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0856": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0857": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0858": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0859": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0862": {
+    "original_letter": "B",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0863": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0864": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0865": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0866": {
+    "original_letter": "B",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "IT0867": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0868": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT0869": {
+    "original_letter": "D",
+    "shuffled_letter": "E",
+    "permutation": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT0870": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0871": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT0872": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0873": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0874": {
+    "original_letter": "C",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0875": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0876": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0877": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0878": {
+    "original_letter": "B",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0879": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0880": {
+    "original_letter": "E",
+    "shuffled_letter": "D",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0881": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT0882": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT0883": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0884": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0885": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0886": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0887": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0888": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0889": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0893": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0894": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0895": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0896": {
+    "original_letter": "D",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0897": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0898": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0899": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0900": {
+    "original_letter": "C",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT0901": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0902": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT0903": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0904": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0905": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0906": {
+    "original_letter": "B",
+    "shuffled_letter": "A",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0907": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0909": {
+    "original_letter": "E",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT0910": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0911": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT0912": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0913": {
+    "original_letter": "B",
+    "shuffled_letter": "A",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0914": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0915": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0916": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0917": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0918": {
+    "original_letter": "C",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT0920": {
+    "original_letter": "E",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT0921": {
+    "original_letter": "E",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT0922": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0923": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0924": {
+    "original_letter": "C",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0925": {
+    "original_letter": "D",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0926": {
+    "original_letter": "B",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0927": {
+    "original_letter": "E",
+    "shuffled_letter": "D",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0928": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0929": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0930": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0931": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0932": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0933": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0934": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ]
+  },
+  "IT0935": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0936": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT0937": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT0938": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0939": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT0940": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0941": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0942": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0943": {
+    "original_letter": "D",
+    "shuffled_letter": "B",
+    "permutation": [
+      0,
+      3,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0944": {
+    "original_letter": "E",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0945": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0946": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  "IT0947": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0948": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT0950": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT0951": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0952": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT0953": {
+    "original_letter": "E",
+    "shuffled_letter": "A",
+    "permutation": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT0954": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0955": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      0,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT0956": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0957": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0958": {
+    "original_letter": "D",
+    "shuffled_letter": "D",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT0959": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT0960": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0961": {
+    "original_letter": "C",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0962": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT0963": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT0964": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0965": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      1,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT0966": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT0967": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT0968": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0969": {
+    "original_letter": "B",
+    "shuffled_letter": "A",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT0970": {
+    "original_letter": "D",
+    "shuffled_letter": "A",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0971": {
+    "original_letter": "E",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT0973": {
+    "original_letter": "B",
+    "shuffled_letter": "A",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT0974": {
+    "original_letter": "C",
+    "shuffled_letter": "A",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT0975": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT0976": {
+    "original_letter": "D",
+    "shuffled_letter": "E",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT0977": {
+    "original_letter": "B",
+    "shuffled_letter": "D",
+    "permutation": [
+      0,
+      4,
+      3,
+      1,
+      2
+    ]
+  },
+  "IT0978": {
+    "original_letter": "E",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT0979": {
+    "original_letter": "D",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT0980": {
+    "original_letter": "B",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0981": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0982": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT0983": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT0984": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT0985": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT0986": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0987": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0988": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0989": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT0990": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT0991": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT0992": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT0993": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT0994": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT0995": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT0996": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT0997": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT0998": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      4,
+      1
+    ]
+  },
+  "IT0999": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT1000": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT1001": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  "IT1002": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1003": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT1004": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT1005": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT1006": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT1007": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT1008": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT1009": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      2,
+      1
+    ]
+  },
+  "IT1010": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT1011": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT1012": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT1013": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  "IT1014": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT1015": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      2,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT1016": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT1017": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT1018": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT1019": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  "IT1020": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT1021": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ]
+  },
+  "IT1024": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "IT1025": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT1026": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT1027": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT1028": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT1029": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      3,
+      4,
+      1
+    ]
+  },
+  "IT1030": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT1031": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT1032": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      4,
+      0,
+      1,
+      2
+    ]
+  },
+  "IT1033": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  "IT1034": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  "IT1035": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT1036": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      2,
+      3
+    ]
+  },
+  "IT1037": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  "IT1038": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT1039": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "IT1040": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      2,
+      1,
+      0
+    ]
+  },
+  "IT1041": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT1042": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT1043": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1045": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  "IT1046": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT1047": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  "IT1048": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT1049": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT1050": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      4,
+      3,
+      1
+    ]
+  },
+  "IT1051": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  "IT1052": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT1054": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  "IT1055": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT1056": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  "IT1057": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT1058": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1059": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT1060": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT1061": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1062": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1063": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  "IT1064": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1065": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  "IT1066": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT1067": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT1068": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  "IT1069": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT1070": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT1071": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      3,
+      4,
+      2
+    ]
+  },
+  "IT1072": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT1073": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT1074": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT1075": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      2,
+      1,
+      3
+    ]
+  },
+  "IT1076": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT1077": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      1,
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  "IT1078": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT1079": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT1080": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT1081": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      2,
+      4,
+      0,
+      1
+    ]
+  },
+  "IT1082": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      2,
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "IT1083": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  "IT1084": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT1085": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT1086": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT1087": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "IT1088": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT1089": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  "IT1090": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "IT1091": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  "IT1092": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      2,
+      4,
+      3,
+      0
+    ]
+  },
+  "IT1093": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ]
+  },
+  "IT1094": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      4,
+      2
+    ]
+  },
+  "IT1095": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  "IT1096": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT1097": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  "IT1098": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  "IT1099": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  "IT1101": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ]
+  },
+  "IT1102": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      1,
+      4
+    ]
+  },
+  "IT1103": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      4,
+      0,
+      3,
+      2
+    ]
+  },
+  "IT1104": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  "IT1105": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  "IT1106": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT1107": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ]
+  },
+  "IT1108": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  "IT1109": {
+    "original_letter": "A",
+    "shuffled_letter": "D",
+    "permutation": [
+      3,
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  "IT1110": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      4,
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  "IT1111": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  "IT1112": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  "IT1115": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  "IT1116": {
+    "original_letter": "A",
+    "shuffled_letter": "A",
+    "permutation": [
+      0,
+      3,
+      1,
+      4,
+      2
+    ]
+  },
+  "IT1117": {
+    "original_letter": "A",
+    "shuffled_letter": "B",
+    "permutation": [
+      4,
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  "IT1119": {
+    "original_letter": "A",
+    "shuffled_letter": "E",
+    "permutation": [
+      3,
+      4,
+      1,
+      2,
+      0
+    ]
+  },
+  "IT1120": {
+    "original_letter": "A",
+    "shuffled_letter": "C",
+    "permutation": [
+      2,
+      3,
+      0,
+      1,
+      4
+    ]
+  }
+}
