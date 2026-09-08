@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-09-07T14:46:46.683292+00:00",
-  "version": "2.1.0",
+  "last_updated": "2026-09-08T13:46:19.495325+00:00",
+  "version": "2.2.0",
   "datasets": {
     "italian_ssm": {
-      "name": "Italian SSM",
+      "name": "Italian SSM (shuffled)",
       "full_name": "Selezione Specializzazioni in Medicina",
       "language": "Italian",
       "country": "Italy 🇮🇹",
       "status": "active",
-      "description": "Italian National Medical Residency Examination",
+      "description": "Italian National Medical Residency Examination — correct answers randomized to remove position bias",
       "question_count": 1060
     },
     "spanish_mir": {
@@ -54,13 +54,13 @@
     "General Practice": 5,
     "Allergology": 7,
     "Gastroenterology": 69,
-    "Clinical biology": 2,
-    "Vascular surgery": 21,
     "Paediatric surgery": 6,
+    "Vascular surgery": 21,
+    "Clinical biology": 2,
     "Venereology": 2,
-    "Neurosurgery": 11,
-    "Geriatrics": 5,
     "Pathology": 7,
+    "Geriatrics": 5,
+    "Neurosurgery": 11,
     "General surgery": 6,
     "Urology": 26,
     "Obstetrics and gynecology": 74,
@@ -68,9 +68,9 @@
     "Neuro-psychiatry": 2,
     "Paediatrics": 35,
     "Gastro-enterologic surgery": 35,
-    "Neurology": 53,
     "Physical medicine and rehabilitation": 7,
     "Accident and emergency medicine": 53,
+    "Neurology": 53,
     "Nuclear medicine": 1,
     "Anaesthetics": 25,
     "Clinical chemistry": 1,
@@ -83,8 +83,8 @@
     "Dermatology": 13,
     "\"Dental, oral and maxillo-facial surgery\"": 2,
     "Pediatric Surgery": 2,
-    "Biological hematology": 10,
     "Legal medicine": 16,
+    "Biological hematology": 10,
     "Radiology": 23,
     "Stomatology": 2,
     "Rheumatology": 26,
@@ -111,362 +111,127 @@
       "name": "qwen3:8b (thinking)",
       "provider": "Local (Ollama)",
       "provider_logo": "alibaba",
-      "overall_accuracy": 88.5,
-      "total_correct": 177,
-      "total_questions": 195,
+      "overall_accuracy": 88.96,
+      "total_correct": 943,
+      "total_questions": 1039,
       "rank": 1,
       "specialty_scores": {
-        "Accident and emergency medicine": 93.75,
+        "\"Dental, oral and maxillo-facial surgery\"": 100.0,
+        "Accident and emergency medicine": 84.91,
         "Allergology": 100.0,
-        "Anaesthetics": 100.0,
-        "Cardiology": 76.47,
-        "Dermatology": 100.0,
-        "Endocrinology": 100.0,
-        "Epidemiology and Biostatistics": 100.0,
-        "Gastro-enterologic surgery": 80.0,
-        "Gastroenterology": 91.67,
-        "General hematology": 71.43,
-        "General Practice": 100.0,
-        "Geriatrics": 100.0,
-        "Immunology": 100.0,
-        "Infectious diseases": 100.0,
-        "Laboratory medicine": 100.0,
-        "Legal medicine": 50.0,
-        "Microbiology": 100.0,
-        "Nephrology": 100.0,
-        "Neurology": 80.0,
-        "Obstetrics and gynecology": 75.0,
-        "Occupational medicine": 50.0,
-        "Ophthalmology": 100.0,
-        "Orthopaedics": 87.5,
-        "Paediatric surgery": 100.0,
-        "Paediatrics": 83.33,
-        "Pathology": 50.0,
-        "Pharmacology": 100.0,
-        "Physical medicine and rehabilitation": 100.0,
-        "Psychiatry": 75.0,
-        "Public health and Preventive Medicine": 100.0,
-        "Radiology": 100.0,
-        "Radiotherapy": 100.0,
-        "Respiratory medicine": 100.0,
-        "Rheumatology": 100.0,
-        "Thoracic surgery": 100.0,
-        "Vascular surgery": 66.67
-      },
-      "year_scores": {
-        "2017": 87.3,
-        "2018": 90.54
-      },
-      "test_date": "2026-09-07",
-      "specialty_breakdown": {
-        "Cardiology": {
-          "answered": 17,
-          "correct": 13,
-          "accuracy": 76.47
-        },
-        "Respiratory medicine": {
-          "answered": 16,
-          "correct": 16,
-          "accuracy": 100.0
-        },
-        "Obstetrics and gynecology": {
-          "answered": 16,
-          "correct": 12,
-          "accuracy": 75.0
-        },
-        "Accident and emergency medicine": {
-          "answered": 16,
-          "correct": 15,
-          "accuracy": 93.75
-        },
-        "Gastroenterology": {
-          "answered": 12,
-          "correct": 11,
-          "accuracy": 91.67
-        },
-        "Endocrinology": {
-          "answered": 10,
-          "correct": 10,
-          "accuracy": 100.0
-        },
-        "Gastro-enterologic surgery": {
-          "answered": 10,
-          "correct": 8,
-          "accuracy": 80.0
-        },
-        "Orthopaedics": {
-          "answered": 8,
-          "correct": 7,
-          "accuracy": 87.5
-        },
-        "Pharmacology": {
-          "answered": 7,
-          "correct": 7,
-          "accuracy": 100.0
-        },
-        "Infectious diseases": {
-          "answered": 7,
-          "correct": 7,
-          "accuracy": 100.0
-        },
-        "General hematology": {
-          "answered": 7,
-          "correct": 5,
-          "accuracy": 71.43
-        },
-        "Nephrology": {
-          "answered": 6,
-          "correct": 6,
-          "accuracy": 100.0
-        },
-        "Paediatrics": {
-          "answered": 6,
-          "correct": 5,
-          "accuracy": 83.33
-        },
-        "Laboratory medicine": {
-          "answered": 5,
-          "correct": 5,
-          "accuracy": 100.0
-        },
-        "Neurology": {
-          "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
-        },
-        "Rheumatology": {
-          "answered": 5,
-          "correct": 5,
-          "accuracy": 100.0
-        },
-        "Psychiatry": {
-          "answered": 4,
-          "correct": 3,
-          "accuracy": 75.0
-        },
-        "Public health and Preventive Medicine": {
-          "answered": 4,
-          "correct": 4,
-          "accuracy": 100.0
-        },
-        "Thoracic surgery": {
-          "answered": 4,
-          "correct": 4,
-          "accuracy": 100.0
-        },
-        "Occupational medicine": {
-          "answered": 4,
-          "correct": 2,
-          "accuracy": 50.0
-        },
-        "Vascular surgery": {
-          "answered": 3,
-          "correct": 2,
-          "accuracy": 66.67
-        },
-        "Ophthalmology": {
-          "answered": 3,
-          "correct": 3,
-          "accuracy": 100.0
-        },
-        "Microbiology": {
-          "answered": 3,
-          "correct": 3,
-          "accuracy": 100.0
-        },
-        "Radiology": {
-          "answered": 3,
-          "correct": 3,
-          "accuracy": 100.0
-        },
-        "Pathology": {
-          "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
-        },
-        "Physical medicine and rehabilitation": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Allergology": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Anaesthetics": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Dermatology": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Legal medicine": {
-          "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
-        },
-        "Epidemiology and Biostatistics": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Paediatric surgery": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "Immunology": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "Radiotherapy": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "Geriatrics": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "General Practice": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        }
-      }
-    },
-    {
-      "id": "gemma3-12b",
-      "name": "gemma3:12b",
-      "provider": "Local (Ollama)",
-      "provider_logo": "google",
-      "overall_accuracy": 81.04,
-      "total_correct": 859,
-      "total_questions": 1060,
-      "rank": 2,
-      "specialty_scores": {
-        "\"Dental, oral and maxillo-facial surgery\"": 50.0,
-        "Accident and emergency medicine": 77.36,
-        "Allergology": 100.0,
-        "Anaesthetics": 68.0,
-        "Biological hematology": 80.0,
-        "Cardiology": 80.95,
+        "Anaesthetics": 88.0,
+        "Biological hematology": 90.0,
+        "Cardiology": 88.1,
         "Child psychiatry": 100.0,
         "Clinical biology": 100.0,
         "Clinical chemistry": 100.0,
         "Clinical radiology": 100.0,
-        "Dermatology": 92.31,
-        "Endocrinology": 75.0,
-        "Epidemiology and Biostatistics": 83.33,
+        "Dermatology": 100.0,
+        "Endocrinology": 92.5,
+        "Epidemiology and Biostatistics": 88.89,
         "Gastro-enterologic surgery": 80.0,
-        "Gastroenterology": 85.51,
-        "General hematology": 87.5,
-        "General Practice": 60.0,
-        "General surgery": 50.0,
-        "Geriatrics": 80.0,
-        "Immunology": 75.0,
-        "Infectious diseases": 85.29,
-        "Internal medicine": 81.25,
-        "Laboratory medicine": 57.14,
-        "Legal medicine": 81.25,
+        "Gastroenterology": 91.3,
+        "General hematology": 93.75,
+        "General Practice": 100.0,
+        "General surgery": 83.33,
+        "Geriatrics": 100.0,
+        "Immunology": 62.5,
+        "Infectious diseases": 94.12,
+        "Internal medicine": 93.75,
+        "Laboratory medicine": 100.0,
+        "Legal medicine": 56.25,
         "Microbiology": 75.0,
-        "Nephrology": 91.67,
+        "Nephrology": 94.44,
         "Neuro-psychiatry": 50.0,
-        "Neurology": 71.7,
-        "Neurosurgery": 100.0,
-        "Nuclear medicine": 0.0,
-        "Obstetrics and gynecology": 74.32,
-        "Occupational medicine": 37.5,
-        "Ophthalmology": 90.48,
-        "Orthopaedics": 76.19,
-        "Otorhinolaryngology": 82.61,
-        "Paediatric surgery": 66.67,
+        "Neurology": 86.79,
+        "Neurosurgery": 72.73,
+        "Nuclear medicine": 100.0,
+        "Obstetrics and gynecology": 93.24,
+        "Occupational medicine": 62.5,
+        "Ophthalmology": 85.71,
+        "Orthopaedics": 92.86,
+        "Otorhinolaryngology": 86.96,
+        "Paediatric surgery": 83.33,
         "Paediatrics": 82.86,
-        "Pathology": 57.14,
+        "Pathology": 71.43,
         "Pediatric Surgery": 50.0,
-        "Pharmacology": 94.44,
-        "Physical medicine and rehabilitation": 100.0,
-        "Plastic surgery": 100.0,
+        "Pharmacology": 97.22,
+        "Physical medicine and rehabilitation": 85.71,
+        "Plastic surgery": 0.0,
         "Psychiatry": 94.44,
         "Public health and Preventive Medicine": 80.0,
         "Radiology": 91.3,
         "Radiotherapy": 100.0,
-        "Respiratory medicine": 86.54,
+        "Respiratory medicine": 90.38,
         "Rheumatology": 92.31,
-        "Stomatology": 0.0,
-        "Thoracic surgery": 85.71,
-        "Tropical medicine": 80.0,
-        "Urology": 80.77,
-        "Vascular surgery": 71.43,
+        "Stomatology": 50.0,
+        "Thoracic surgery": 100.0,
+        "Tropical medicine": 100.0,
+        "Urology": 92.31,
+        "Vascular surgery": 95.24,
         "Venereology": 100.0
       },
       "year_scores": {
-        "2017": 84.13,
-        "2018": 82.44,
-        "2019": 86.76,
-        "2020": 76.12,
-        "2021": 78.36,
-        "2022": 83.82,
-        "2023": 81.68,
-        "2024": 75.0
+        "2017": 85.71,
+        "2018": 90.84,
+        "2019": 88.24,
+        "2020": 87.31,
+        "2021": 89.55,
+        "2022": 94.85,
+        "2023": 86.26,
+        "2024": 88.64
       },
       "test_date": "2026-09-07",
       "specialty_breakdown": {
         "Cardiology": {
           "answered": 84,
-          "correct": 68,
-          "accuracy": 80.95
+          "correct": 74,
+          "accuracy": 88.1
         },
         "Obstetrics and gynecology": {
           "answered": 74,
-          "correct": 55,
-          "accuracy": 74.32
+          "correct": 69,
+          "accuracy": 93.24
         },
         "Gastroenterology": {
           "answered": 69,
-          "correct": 59,
-          "accuracy": 85.51
+          "correct": 63,
+          "accuracy": 91.3
         },
         "Neurology": {
           "answered": 53,
-          "correct": 38,
-          "accuracy": 71.7
+          "correct": 46,
+          "accuracy": 86.79
         },
         "Accident and emergency medicine": {
           "answered": 53,
-          "correct": 41,
-          "accuracy": 77.36
+          "correct": 45,
+          "accuracy": 84.91
         },
         "Respiratory medicine": {
           "answered": 52,
-          "correct": 45,
-          "accuracy": 86.54
+          "correct": 47,
+          "accuracy": 90.38
         },
         "Orthopaedics": {
           "answered": 42,
-          "correct": 32,
-          "accuracy": 76.19
+          "correct": 39,
+          "accuracy": 92.86
         },
         "Endocrinology": {
           "answered": 40,
-          "correct": 30,
-          "accuracy": 75.0
+          "correct": 37,
+          "accuracy": 92.5
         },
         "Pharmacology": {
           "answered": 36,
-          "correct": 34,
-          "accuracy": 94.44
+          "correct": 35,
+          "accuracy": 97.22
         },
         "Nephrology": {
           "answered": 36,
-          "correct": 33,
-          "accuracy": 91.67
+          "correct": 34,
+          "accuracy": 94.44
         },
         "Paediatrics": {
           "answered": 35,
@@ -480,18 +245,18 @@
         },
         "Infectious diseases": {
           "answered": 34,
-          "correct": 29,
-          "accuracy": 85.29
+          "correct": 32,
+          "accuracy": 94.12
         },
         "General hematology": {
           "answered": 32,
-          "correct": 28,
-          "accuracy": 87.5
+          "correct": 30,
+          "accuracy": 93.75
         },
         "Urology": {
           "answered": 26,
-          "correct": 21,
-          "accuracy": 80.77
+          "correct": 24,
+          "accuracy": 92.31
         },
         "Rheumatology": {
           "answered": 26,
@@ -500,13 +265,13 @@
         },
         "Anaesthetics": {
           "answered": 25,
-          "correct": 17,
-          "accuracy": 68.0
+          "correct": 22,
+          "accuracy": 88.0
         },
         "Otorhinolaryngology": {
           "answered": 23,
-          "correct": 19,
-          "accuracy": 82.61
+          "correct": 20,
+          "accuracy": 86.96
         },
         "Radiology": {
           "answered": 23,
@@ -515,13 +280,13 @@
         },
         "Ophthalmology": {
           "answered": 21,
-          "correct": 19,
-          "accuracy": 90.48
+          "correct": 18,
+          "accuracy": 85.71
         },
         "Vascular surgery": {
           "answered": 21,
-          "correct": 15,
-          "accuracy": 71.43
+          "correct": 20,
+          "accuracy": 95.24
         },
         "Psychiatry": {
           "answered": 18,
@@ -530,18 +295,18 @@
         },
         "Epidemiology and Biostatistics": {
           "answered": 18,
-          "correct": 15,
-          "accuracy": 83.33
+          "correct": 16,
+          "accuracy": 88.89
         },
         "Internal medicine": {
           "answered": 16,
-          "correct": 13,
-          "accuracy": 81.25
+          "correct": 15,
+          "accuracy": 93.75
         },
         "Legal medicine": {
           "answered": 16,
-          "correct": 13,
-          "accuracy": 81.25
+          "correct": 9,
+          "accuracy": 56.25
         },
         "Public health and Preventive Medicine": {
           "answered": 15,
@@ -550,78 +315,78 @@
         },
         "Dermatology": {
           "answered": 13,
-          "correct": 12,
-          "accuracy": 92.31
+          "correct": 13,
+          "accuracy": 100.0
         },
         "Neurosurgery": {
           "answered": 11,
-          "correct": 11,
-          "accuracy": 100.0
+          "correct": 8,
+          "accuracy": 72.73
         },
         "Biological hematology": {
           "answered": 10,
-          "correct": 8,
-          "accuracy": 80.0
+          "correct": 9,
+          "accuracy": 90.0
         },
         "Immunology": {
           "answered": 8,
-          "correct": 6,
-          "accuracy": 75.0
+          "correct": 5,
+          "accuracy": 62.5
         },
         "Occupational medicine": {
           "answered": 8,
-          "correct": 3,
-          "accuracy": 37.5
+          "correct": 5,
+          "accuracy": 62.5
         },
         "Laboratory medicine": {
-          "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
-        },
-        "Physical medicine and rehabilitation": {
           "answered": 7,
           "correct": 7,
           "accuracy": 100.0
         },
-        "Thoracic surgery": {
+        "Physical medicine and rehabilitation": {
           "answered": 7,
           "correct": 6,
           "accuracy": 85.71
         },
-        "Allergology": {
+        "Thoracic surgery": {
           "answered": 7,
           "correct": 7,
           "accuracy": 100.0
         },
         "Pathology": {
           "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
+          "correct": 5,
+          "accuracy": 71.43
+        },
+        "Allergology": {
+          "answered": 7,
+          "correct": 7,
+          "accuracy": 100.0
         },
         "General surgery": {
           "answered": 6,
-          "correct": 3,
-          "accuracy": 50.0
+          "correct": 5,
+          "accuracy": 83.33
         },
         "Paediatric surgery": {
           "answered": 6,
-          "correct": 4,
-          "accuracy": 66.67
+          "correct": 5,
+          "accuracy": 83.33
         },
         "Geriatrics": {
           "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
+          "correct": 5,
+          "accuracy": 100.0
         },
         "Tropical medicine": {
           "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
+          "correct": 5,
+          "accuracy": 100.0
         },
         "General Practice": {
           "answered": 5,
-          "correct": 3,
-          "accuracy": 60.0
+          "correct": 5,
+          "accuracy": 100.0
         },
         "Microbiology": {
           "answered": 4,
@@ -640,8 +405,357 @@
         },
         "Stomatology": {
           "answered": 2,
+          "correct": 1,
+          "accuracy": 50.0
+        },
+        "\"Dental, oral and maxillo-facial surgery\"": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Pediatric Surgery": {
+          "answered": 2,
+          "correct": 1,
+          "accuracy": 50.0
+        },
+        "Neuro-psychiatry": {
+          "answered": 2,
+          "correct": 1,
+          "accuracy": 50.0
+        },
+        "Venereology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Plastic surgery": {
+          "answered": 1,
           "correct": 0,
           "accuracy": 0.0
+        },
+        "Child psychiatry": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        },
+        "Clinical radiology": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        },
+        "Nuclear medicine": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        },
+        "Clinical chemistry": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "id": "gemma3-12b",
+      "name": "gemma3:12b",
+      "provider": "Local (Ollama)",
+      "provider_logo": "google",
+      "overall_accuracy": 81.6,
+      "total_correct": 865,
+      "total_questions": 1060,
+      "rank": 2,
+      "specialty_scores": {
+        "\"Dental, oral and maxillo-facial surgery\"": 50.0,
+        "Accident and emergency medicine": 83.02,
+        "Allergology": 100.0,
+        "Anaesthetics": 72.0,
+        "Biological hematology": 90.0,
+        "Cardiology": 80.95,
+        "Child psychiatry": 100.0,
+        "Clinical biology": 100.0,
+        "Clinical chemistry": 100.0,
+        "Clinical radiology": 100.0,
+        "Dermatology": 100.0,
+        "Endocrinology": 77.5,
+        "Epidemiology and Biostatistics": 72.22,
+        "Gastro-enterologic surgery": 85.71,
+        "Gastroenterology": 84.06,
+        "General hematology": 87.5,
+        "General Practice": 60.0,
+        "General surgery": 66.67,
+        "Geriatrics": 80.0,
+        "Immunology": 75.0,
+        "Infectious diseases": 88.24,
+        "Internal medicine": 87.5,
+        "Laboratory medicine": 85.71,
+        "Legal medicine": 62.5,
+        "Microbiology": 100.0,
+        "Nephrology": 86.11,
+        "Neuro-psychiatry": 50.0,
+        "Neurology": 71.7,
+        "Neurosurgery": 81.82,
+        "Nuclear medicine": 0.0,
+        "Obstetrics and gynecology": 77.03,
+        "Occupational medicine": 37.5,
+        "Ophthalmology": 85.71,
+        "Orthopaedics": 76.19,
+        "Otorhinolaryngology": 69.57,
+        "Paediatric surgery": 83.33,
+        "Paediatrics": 82.86,
+        "Pathology": 71.43,
+        "Pediatric Surgery": 50.0,
+        "Pharmacology": 94.44,
+        "Physical medicine and rehabilitation": 85.71,
+        "Plastic surgery": 100.0,
+        "Psychiatry": 88.89,
+        "Public health and Preventive Medicine": 80.0,
+        "Radiology": 91.3,
+        "Radiotherapy": 100.0,
+        "Respiratory medicine": 80.77,
+        "Rheumatology": 100.0,
+        "Stomatology": 100.0,
+        "Thoracic surgery": 71.43,
+        "Tropical medicine": 60.0,
+        "Urology": 92.31,
+        "Vascular surgery": 76.19,
+        "Venereology": 100.0
+      },
+      "year_scores": {
+        "2017": 84.92,
+        "2018": 84.73,
+        "2019": 83.09,
+        "2020": 74.63,
+        "2021": 81.34,
+        "2022": 88.97,
+        "2023": 77.86,
+        "2024": 77.27
+      },
+      "test_date": "2026-09-07",
+      "specialty_breakdown": {
+        "Cardiology": {
+          "answered": 84,
+          "correct": 68,
+          "accuracy": 80.95
+        },
+        "Obstetrics and gynecology": {
+          "answered": 74,
+          "correct": 57,
+          "accuracy": 77.03
+        },
+        "Gastroenterology": {
+          "answered": 69,
+          "correct": 58,
+          "accuracy": 84.06
+        },
+        "Neurology": {
+          "answered": 53,
+          "correct": 38,
+          "accuracy": 71.7
+        },
+        "Accident and emergency medicine": {
+          "answered": 53,
+          "correct": 44,
+          "accuracy": 83.02
+        },
+        "Respiratory medicine": {
+          "answered": 52,
+          "correct": 42,
+          "accuracy": 80.77
+        },
+        "Orthopaedics": {
+          "answered": 42,
+          "correct": 32,
+          "accuracy": 76.19
+        },
+        "Endocrinology": {
+          "answered": 40,
+          "correct": 31,
+          "accuracy": 77.5
+        },
+        "Pharmacology": {
+          "answered": 36,
+          "correct": 34,
+          "accuracy": 94.44
+        },
+        "Nephrology": {
+          "answered": 36,
+          "correct": 31,
+          "accuracy": 86.11
+        },
+        "Paediatrics": {
+          "answered": 35,
+          "correct": 29,
+          "accuracy": 82.86
+        },
+        "Gastro-enterologic surgery": {
+          "answered": 35,
+          "correct": 30,
+          "accuracy": 85.71
+        },
+        "Infectious diseases": {
+          "answered": 34,
+          "correct": 30,
+          "accuracy": 88.24
+        },
+        "General hematology": {
+          "answered": 32,
+          "correct": 28,
+          "accuracy": 87.5
+        },
+        "Urology": {
+          "answered": 26,
+          "correct": 24,
+          "accuracy": 92.31
+        },
+        "Rheumatology": {
+          "answered": 26,
+          "correct": 26,
+          "accuracy": 100.0
+        },
+        "Anaesthetics": {
+          "answered": 25,
+          "correct": 18,
+          "accuracy": 72.0
+        },
+        "Otorhinolaryngology": {
+          "answered": 23,
+          "correct": 16,
+          "accuracy": 69.57
+        },
+        "Radiology": {
+          "answered": 23,
+          "correct": 21,
+          "accuracy": 91.3
+        },
+        "Ophthalmology": {
+          "answered": 21,
+          "correct": 18,
+          "accuracy": 85.71
+        },
+        "Vascular surgery": {
+          "answered": 21,
+          "correct": 16,
+          "accuracy": 76.19
+        },
+        "Psychiatry": {
+          "answered": 18,
+          "correct": 16,
+          "accuracy": 88.89
+        },
+        "Epidemiology and Biostatistics": {
+          "answered": 18,
+          "correct": 13,
+          "accuracy": 72.22
+        },
+        "Internal medicine": {
+          "answered": 16,
+          "correct": 14,
+          "accuracy": 87.5
+        },
+        "Legal medicine": {
+          "answered": 16,
+          "correct": 10,
+          "accuracy": 62.5
+        },
+        "Public health and Preventive Medicine": {
+          "answered": 15,
+          "correct": 12,
+          "accuracy": 80.0
+        },
+        "Dermatology": {
+          "answered": 13,
+          "correct": 13,
+          "accuracy": 100.0
+        },
+        "Neurosurgery": {
+          "answered": 11,
+          "correct": 9,
+          "accuracy": 81.82
+        },
+        "Biological hematology": {
+          "answered": 10,
+          "correct": 9,
+          "accuracy": 90.0
+        },
+        "Immunology": {
+          "answered": 8,
+          "correct": 6,
+          "accuracy": 75.0
+        },
+        "Occupational medicine": {
+          "answered": 8,
+          "correct": 3,
+          "accuracy": 37.5
+        },
+        "Laboratory medicine": {
+          "answered": 7,
+          "correct": 6,
+          "accuracy": 85.71
+        },
+        "Physical medicine and rehabilitation": {
+          "answered": 7,
+          "correct": 6,
+          "accuracy": 85.71
+        },
+        "Thoracic surgery": {
+          "answered": 7,
+          "correct": 5,
+          "accuracy": 71.43
+        },
+        "Pathology": {
+          "answered": 7,
+          "correct": 5,
+          "accuracy": 71.43
+        },
+        "Allergology": {
+          "answered": 7,
+          "correct": 7,
+          "accuracy": 100.0
+        },
+        "General surgery": {
+          "answered": 6,
+          "correct": 4,
+          "accuracy": 66.67
+        },
+        "Paediatric surgery": {
+          "answered": 6,
+          "correct": 5,
+          "accuracy": 83.33
+        },
+        "Geriatrics": {
+          "answered": 5,
+          "correct": 4,
+          "accuracy": 80.0
+        },
+        "Tropical medicine": {
+          "answered": 5,
+          "correct": 3,
+          "accuracy": 60.0
+        },
+        "General Practice": {
+          "answered": 5,
+          "correct": 3,
+          "accuracy": 60.0
+        },
+        "Microbiology": {
+          "answered": 4,
+          "correct": 4,
+          "accuracy": 100.0
+        },
+        "Radiotherapy": {
+          "answered": 4,
+          "correct": 4,
+          "accuracy": 100.0
+        },
+        "Clinical biology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Stomatology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
         },
         "\"Dental, oral and maxillo-facial surgery\"": {
           "answered": 2,
@@ -701,206 +815,206 @@
       "rank": 3,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 100.0,
-        "Accident and emergency medicine": 71.7,
+        "Accident and emergency medicine": 73.58,
         "Allergology": 85.71,
-        "Anaesthetics": 72.0,
+        "Anaesthetics": 76.0,
         "Biological hematology": 90.0,
-        "Cardiology": 80.95,
+        "Cardiology": 83.33,
         "Child psychiatry": 100.0,
         "Clinical biology": 100.0,
         "Clinical chemistry": 100.0,
         "Clinical radiology": 100.0,
-        "Dermatology": 100.0,
+        "Dermatology": 84.62,
         "Endocrinology": 77.5,
-        "Epidemiology and Biostatistics": 77.78,
-        "Gastro-enterologic surgery": 77.14,
-        "Gastroenterology": 79.71,
-        "General hematology": 78.13,
+        "Epidemiology and Biostatistics": 83.33,
+        "Gastro-enterologic surgery": 80.0,
+        "Gastroenterology": 78.26,
+        "General hematology": 84.38,
         "General Practice": 100.0,
-        "General surgery": 83.33,
-        "Geriatrics": 100.0,
-        "Immunology": 50.0,
-        "Infectious diseases": 79.41,
-        "Internal medicine": 62.5,
+        "General surgery": 66.67,
+        "Geriatrics": 80.0,
+        "Immunology": 62.5,
+        "Infectious diseases": 85.29,
+        "Internal medicine": 68.75,
         "Laboratory medicine": 100.0,
-        "Legal medicine": 75.0,
-        "Microbiology": 100.0,
+        "Legal medicine": 62.5,
+        "Microbiology": 75.0,
         "Nephrology": 75.0,
         "Neuro-psychiatry": 100.0,
-        "Neurology": 79.25,
+        "Neurology": 73.58,
         "Neurosurgery": 72.73,
-        "Nuclear medicine": 100.0,
-        "Obstetrics and gynecology": 79.73,
+        "Nuclear medicine": 0.0,
+        "Obstetrics and gynecology": 83.78,
         "Occupational medicine": 37.5,
-        "Ophthalmology": 90.48,
-        "Orthopaedics": 73.81,
-        "Otorhinolaryngology": 82.61,
-        "Paediatric surgery": 66.67,
-        "Paediatrics": 85.71,
-        "Pathology": 57.14,
+        "Ophthalmology": 85.71,
+        "Orthopaedics": 71.43,
+        "Otorhinolaryngology": 78.26,
+        "Paediatric surgery": 100.0,
+        "Paediatrics": 77.14,
+        "Pathology": 71.43,
         "Pediatric Surgery": 50.0,
         "Pharmacology": 91.67,
         "Physical medicine and rehabilitation": 85.71,
-        "Plastic surgery": 100.0,
-        "Psychiatry": 83.33,
-        "Public health and Preventive Medicine": 73.33,
-        "Radiology": 78.26,
+        "Plastic surgery": 0.0,
+        "Psychiatry": 88.89,
+        "Public health and Preventive Medicine": 80.0,
+        "Radiology": 73.91,
         "Radiotherapy": 100.0,
-        "Respiratory medicine": 78.85,
+        "Respiratory medicine": 82.69,
         "Rheumatology": 92.31,
         "Stomatology": 50.0,
         "Thoracic surgery": 85.71,
         "Tropical medicine": 60.0,
-        "Urology": 76.92,
-        "Vascular surgery": 76.19,
+        "Urology": 73.08,
+        "Vascular surgery": 71.43,
         "Venereology": 100.0
       },
       "year_scores": {
         "2017": 80.95,
-        "2018": 81.68,
-        "2019": 83.09,
-        "2020": 75.37,
-        "2021": 77.61,
-        "2022": 81.62,
-        "2023": 77.1,
-        "2024": 77.27
+        "2018": 78.63,
+        "2019": 78.68,
+        "2020": 74.63,
+        "2021": 75.37,
+        "2022": 87.5,
+        "2023": 80.15,
+        "2024": 78.79
       },
       "test_date": "2026-09-07",
       "specialty_breakdown": {
         "Cardiology": {
           "answered": 84,
-          "correct": 68,
-          "accuracy": 80.95
+          "correct": 70,
+          "accuracy": 83.33
         },
         "Obstetrics and gynecology": {
           "answered": 74,
-          "correct": 59,
-          "accuracy": 79.73
+          "correct": 62,
+          "accuracy": 83.78
         },
         "Gastroenterology": {
           "answered": 69,
-          "correct": 55,
-          "accuracy": 79.71
-        },
-        "Accident and emergency medicine": {
-          "answered": 53,
-          "correct": 38,
-          "accuracy": 71.7
+          "correct": 54,
+          "accuracy": 78.26
         },
         "Neurology": {
           "answered": 53,
-          "correct": 42,
-          "accuracy": 79.25
+          "correct": 39,
+          "accuracy": 73.58
+        },
+        "Accident and emergency medicine": {
+          "answered": 53,
+          "correct": 39,
+          "accuracy": 73.58
         },
         "Respiratory medicine": {
           "answered": 52,
-          "correct": 41,
-          "accuracy": 78.85
+          "correct": 43,
+          "accuracy": 82.69
         },
         "Orthopaedics": {
           "answered": 42,
-          "correct": 31,
-          "accuracy": 73.81
+          "correct": 30,
+          "accuracy": 71.43
         },
         "Endocrinology": {
           "answered": 40,
           "correct": 31,
           "accuracy": 77.5
         },
-        "Nephrology": {
-          "answered": 36,
-          "correct": 27,
-          "accuracy": 75.0
-        },
         "Pharmacology": {
           "answered": 36,
           "correct": 33,
           "accuracy": 91.67
         },
-        "Paediatrics": {
-          "answered": 35,
-          "correct": 30,
-          "accuracy": 85.71
+        "Nephrology": {
+          "answered": 36,
+          "correct": 27,
+          "accuracy": 75.0
         },
-        "Gastro-enterologic surgery": {
+        "Paediatrics": {
           "answered": 35,
           "correct": 27,
           "accuracy": 77.14
         },
+        "Gastro-enterologic surgery": {
+          "answered": 35,
+          "correct": 28,
+          "accuracy": 80.0
+        },
         "Infectious diseases": {
           "answered": 34,
-          "correct": 27,
-          "accuracy": 79.41
+          "correct": 29,
+          "accuracy": 85.29
         },
         "General hematology": {
           "answered": 32,
-          "correct": 25,
-          "accuracy": 78.13
+          "correct": 27,
+          "accuracy": 84.38
+        },
+        "Urology": {
+          "answered": 26,
+          "correct": 19,
+          "accuracy": 73.08
         },
         "Rheumatology": {
           "answered": 26,
           "correct": 24,
           "accuracy": 92.31
         },
-        "Urology": {
-          "answered": 26,
-          "correct": 20,
-          "accuracy": 76.92
-        },
         "Anaesthetics": {
           "answered": 25,
-          "correct": 18,
-          "accuracy": 72.0
+          "correct": 19,
+          "accuracy": 76.0
         },
         "Otorhinolaryngology": {
-          "answered": 23,
-          "correct": 19,
-          "accuracy": 82.61
-        },
-        "Radiology": {
           "answered": 23,
           "correct": 18,
           "accuracy": 78.26
         },
+        "Radiology": {
+          "answered": 23,
+          "correct": 17,
+          "accuracy": 73.91
+        },
         "Ophthalmology": {
           "answered": 21,
-          "correct": 19,
-          "accuracy": 90.48
+          "correct": 18,
+          "accuracy": 85.71
         },
         "Vascular surgery": {
           "answered": 21,
-          "correct": 16,
-          "accuracy": 76.19
-        },
-        "Epidemiology and Biostatistics": {
-          "answered": 18,
-          "correct": 14,
-          "accuracy": 77.78
+          "correct": 15,
+          "accuracy": 71.43
         },
         "Psychiatry": {
+          "answered": 18,
+          "correct": 16,
+          "accuracy": 88.89
+        },
+        "Epidemiology and Biostatistics": {
           "answered": 18,
           "correct": 15,
           "accuracy": 83.33
         },
         "Internal medicine": {
           "answered": 16,
-          "correct": 10,
-          "accuracy": 62.5
+          "correct": 11,
+          "accuracy": 68.75
         },
         "Legal medicine": {
           "answered": 16,
-          "correct": 12,
-          "accuracy": 75.0
+          "correct": 10,
+          "accuracy": 62.5
         },
         "Public health and Preventive Medicine": {
           "answered": 15,
-          "correct": 11,
-          "accuracy": 73.33
+          "correct": 12,
+          "accuracy": 80.0
         },
         "Dermatology": {
           "answered": 13,
-          "correct": 13,
-          "accuracy": 100.0
+          "correct": 11,
+          "accuracy": 84.62
         },
         "Neurosurgery": {
           "answered": 11,
@@ -912,20 +1026,20 @@
           "correct": 9,
           "accuracy": 90.0
         },
+        "Immunology": {
+          "answered": 8,
+          "correct": 5,
+          "accuracy": 62.5
+        },
         "Occupational medicine": {
           "answered": 8,
           "correct": 3,
           "accuracy": 37.5
         },
-        "Immunology": {
-          "answered": 8,
-          "correct": 4,
-          "accuracy": 50.0
-        },
-        "Pathology": {
+        "Laboratory medicine": {
           "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
+          "correct": 7,
+          "accuracy": 100.0
         },
         "Physical medicine and rehabilitation": {
           "answered": 7,
@@ -937,10 +1051,10 @@
           "correct": 6,
           "accuracy": 85.71
         },
-        "Laboratory medicine": {
+        "Pathology": {
           "answered": 7,
-          "correct": 7,
-          "accuracy": 100.0
+          "correct": 5,
+          "accuracy": 71.43
         },
         "Allergology": {
           "answered": 7,
@@ -949,18 +1063,18 @@
         },
         "General surgery": {
           "answered": 6,
-          "correct": 5,
-          "accuracy": 83.33
-        },
-        "Paediatric surgery": {
-          "answered": 6,
           "correct": 4,
           "accuracy": 66.67
         },
+        "Paediatric surgery": {
+          "answered": 6,
+          "correct": 6,
+          "accuracy": 100.0
+        },
         "Geriatrics": {
           "answered": 5,
-          "correct": 5,
-          "accuracy": 100.0
+          "correct": 4,
+          "accuracy": 80.0
         },
         "Tropical medicine": {
           "answered": 5,
@@ -974,8 +1088,8 @@
         },
         "Microbiology": {
           "answered": 4,
-          "correct": 4,
-          "accuracy": 100.0
+          "correct": 3,
+          "accuracy": 75.0
         },
         "Radiotherapy": {
           "answered": 4,
@@ -1014,8 +1128,357 @@
         },
         "Plastic surgery": {
           "answered": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "Child psychiatry": {
+          "answered": 1,
           "correct": 1,
           "accuracy": 100.0
+        },
+        "Clinical radiology": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        },
+        "Nuclear medicine": {
+          "answered": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "Clinical chemistry": {
+          "answered": 1,
+          "correct": 1,
+          "accuracy": 100.0
+        }
+      }
+    },
+    {
+      "id": "llama3.1-8b",
+      "name": "llama3.1:8b",
+      "provider": "Local (Ollama)",
+      "provider_logo": "meta",
+      "overall_accuracy": 68.96,
+      "total_correct": 731,
+      "total_questions": 1060,
+      "rank": 4,
+      "specialty_scores": {
+        "\"Dental, oral and maxillo-facial surgery\"": 100.0,
+        "Accident and emergency medicine": 64.15,
+        "Allergology": 85.71,
+        "Anaesthetics": 56.0,
+        "Biological hematology": 70.0,
+        "Cardiology": 60.71,
+        "Child psychiatry": 100.0,
+        "Clinical biology": 100.0,
+        "Clinical chemistry": 100.0,
+        "Clinical radiology": 100.0,
+        "Dermatology": 61.54,
+        "Endocrinology": 70.0,
+        "Epidemiology and Biostatistics": 72.22,
+        "Gastro-enterologic surgery": 62.86,
+        "Gastroenterology": 68.12,
+        "General hematology": 78.13,
+        "General Practice": 40.0,
+        "General surgery": 66.67,
+        "Geriatrics": 80.0,
+        "Immunology": 62.5,
+        "Infectious diseases": 76.47,
+        "Internal medicine": 68.75,
+        "Laboratory medicine": 42.86,
+        "Legal medicine": 62.5,
+        "Microbiology": 50.0,
+        "Nephrology": 63.89,
+        "Neuro-psychiatry": 50.0,
+        "Neurology": 60.38,
+        "Neurosurgery": 72.73,
+        "Nuclear medicine": 100.0,
+        "Obstetrics and gynecology": 71.62,
+        "Occupational medicine": 37.5,
+        "Ophthalmology": 85.71,
+        "Orthopaedics": 59.52,
+        "Otorhinolaryngology": 78.26,
+        "Paediatric surgery": 66.67,
+        "Paediatrics": 77.14,
+        "Pathology": 57.14,
+        "Pediatric Surgery": 50.0,
+        "Pharmacology": 77.78,
+        "Physical medicine and rehabilitation": 71.43,
+        "Plastic surgery": 0.0,
+        "Psychiatry": 88.89,
+        "Public health and Preventive Medicine": 66.67,
+        "Radiology": 78.26,
+        "Radiotherapy": 75.0,
+        "Respiratory medicine": 69.23,
+        "Rheumatology": 73.08,
+        "Stomatology": 100.0,
+        "Thoracic surgery": 71.43,
+        "Tropical medicine": 80.0,
+        "Urology": 80.77,
+        "Vascular surgery": 71.43,
+        "Venereology": 100.0
+      },
+      "year_scores": {
+        "2017": 65.87,
+        "2018": 66.41,
+        "2019": 69.85,
+        "2020": 67.16,
+        "2021": 70.15,
+        "2022": 72.06,
+        "2023": 70.99,
+        "2024": 68.94
+      },
+      "test_date": "2026-09-07",
+      "specialty_breakdown": {
+        "Cardiology": {
+          "answered": 84,
+          "correct": 51,
+          "accuracy": 60.71
+        },
+        "Obstetrics and gynecology": {
+          "answered": 74,
+          "correct": 53,
+          "accuracy": 71.62
+        },
+        "Gastroenterology": {
+          "answered": 69,
+          "correct": 47,
+          "accuracy": 68.12
+        },
+        "Neurology": {
+          "answered": 53,
+          "correct": 32,
+          "accuracy": 60.38
+        },
+        "Accident and emergency medicine": {
+          "answered": 53,
+          "correct": 34,
+          "accuracy": 64.15
+        },
+        "Respiratory medicine": {
+          "answered": 52,
+          "correct": 36,
+          "accuracy": 69.23
+        },
+        "Orthopaedics": {
+          "answered": 42,
+          "correct": 25,
+          "accuracy": 59.52
+        },
+        "Endocrinology": {
+          "answered": 40,
+          "correct": 28,
+          "accuracy": 70.0
+        },
+        "Pharmacology": {
+          "answered": 36,
+          "correct": 28,
+          "accuracy": 77.78
+        },
+        "Nephrology": {
+          "answered": 36,
+          "correct": 23,
+          "accuracy": 63.89
+        },
+        "Paediatrics": {
+          "answered": 35,
+          "correct": 27,
+          "accuracy": 77.14
+        },
+        "Gastro-enterologic surgery": {
+          "answered": 35,
+          "correct": 22,
+          "accuracy": 62.86
+        },
+        "Infectious diseases": {
+          "answered": 34,
+          "correct": 26,
+          "accuracy": 76.47
+        },
+        "General hematology": {
+          "answered": 32,
+          "correct": 25,
+          "accuracy": 78.13
+        },
+        "Urology": {
+          "answered": 26,
+          "correct": 21,
+          "accuracy": 80.77
+        },
+        "Rheumatology": {
+          "answered": 26,
+          "correct": 19,
+          "accuracy": 73.08
+        },
+        "Anaesthetics": {
+          "answered": 25,
+          "correct": 14,
+          "accuracy": 56.0
+        },
+        "Otorhinolaryngology": {
+          "answered": 23,
+          "correct": 18,
+          "accuracy": 78.26
+        },
+        "Radiology": {
+          "answered": 23,
+          "correct": 18,
+          "accuracy": 78.26
+        },
+        "Ophthalmology": {
+          "answered": 21,
+          "correct": 18,
+          "accuracy": 85.71
+        },
+        "Vascular surgery": {
+          "answered": 21,
+          "correct": 15,
+          "accuracy": 71.43
+        },
+        "Psychiatry": {
+          "answered": 18,
+          "correct": 16,
+          "accuracy": 88.89
+        },
+        "Epidemiology and Biostatistics": {
+          "answered": 18,
+          "correct": 13,
+          "accuracy": 72.22
+        },
+        "Internal medicine": {
+          "answered": 16,
+          "correct": 11,
+          "accuracy": 68.75
+        },
+        "Legal medicine": {
+          "answered": 16,
+          "correct": 10,
+          "accuracy": 62.5
+        },
+        "Public health and Preventive Medicine": {
+          "answered": 15,
+          "correct": 10,
+          "accuracy": 66.67
+        },
+        "Dermatology": {
+          "answered": 13,
+          "correct": 8,
+          "accuracy": 61.54
+        },
+        "Neurosurgery": {
+          "answered": 11,
+          "correct": 8,
+          "accuracy": 72.73
+        },
+        "Biological hematology": {
+          "answered": 10,
+          "correct": 7,
+          "accuracy": 70.0
+        },
+        "Immunology": {
+          "answered": 8,
+          "correct": 5,
+          "accuracy": 62.5
+        },
+        "Occupational medicine": {
+          "answered": 8,
+          "correct": 3,
+          "accuracy": 37.5
+        },
+        "Laboratory medicine": {
+          "answered": 7,
+          "correct": 3,
+          "accuracy": 42.86
+        },
+        "Physical medicine and rehabilitation": {
+          "answered": 7,
+          "correct": 5,
+          "accuracy": 71.43
+        },
+        "Thoracic surgery": {
+          "answered": 7,
+          "correct": 5,
+          "accuracy": 71.43
+        },
+        "Pathology": {
+          "answered": 7,
+          "correct": 4,
+          "accuracy": 57.14
+        },
+        "Allergology": {
+          "answered": 7,
+          "correct": 6,
+          "accuracy": 85.71
+        },
+        "General surgery": {
+          "answered": 6,
+          "correct": 4,
+          "accuracy": 66.67
+        },
+        "Paediatric surgery": {
+          "answered": 6,
+          "correct": 4,
+          "accuracy": 66.67
+        },
+        "Geriatrics": {
+          "answered": 5,
+          "correct": 4,
+          "accuracy": 80.0
+        },
+        "Tropical medicine": {
+          "answered": 5,
+          "correct": 4,
+          "accuracy": 80.0
+        },
+        "General Practice": {
+          "answered": 5,
+          "correct": 2,
+          "accuracy": 40.0
+        },
+        "Microbiology": {
+          "answered": 4,
+          "correct": 2,
+          "accuracy": 50.0
+        },
+        "Radiotherapy": {
+          "answered": 4,
+          "correct": 3,
+          "accuracy": 75.0
+        },
+        "Clinical biology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Stomatology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "\"Dental, oral and maxillo-facial surgery\"": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Pediatric Surgery": {
+          "answered": 2,
+          "correct": 1,
+          "accuracy": 50.0
+        },
+        "Neuro-psychiatry": {
+          "answered": 2,
+          "correct": 1,
+          "accuracy": 50.0
+        },
+        "Venereology": {
+          "answered": 2,
+          "correct": 2,
+          "accuracy": 100.0
+        },
+        "Plastic surgery": {
+          "answered": 1,
+          "correct": 0,
+          "accuracy": 0.0
         },
         "Child psychiatry": {
           "answered": 1,
@@ -1044,486 +1507,137 @@
       "name": "mistral:7b",
       "provider": "Local (Ollama)",
       "provider_logo": "mistral",
-      "overall_accuracy": 67.55,
-      "total_correct": 716,
-      "total_questions": 1060,
-      "rank": 4,
+      "overall_accuracy": 54.62,
+      "total_correct": 579,
+      "total_questions": 1059,
+      "rank": 5,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 100.0,
-        "Accident and emergency medicine": 62.26,
-        "Allergology": 28.57,
-        "Anaesthetics": 64.0,
-        "Biological hematology": 20.0,
-        "Cardiology": 61.9,
+        "Accident and emergency medicine": 50.94,
+        "Allergology": 14.29,
+        "Anaesthetics": 44.0,
+        "Biological hematology": 30.0,
+        "Cardiology": 50.0,
         "Child psychiatry": 100.0,
         "Clinical biology": 100.0,
         "Clinical chemistry": 100.0,
         "Clinical radiology": 0.0,
-        "Dermatology": 61.54,
-        "Endocrinology": 57.5,
-        "Epidemiology and Biostatistics": 61.11,
-        "Gastro-enterologic surgery": 85.71,
-        "Gastroenterology": 71.01,
-        "General hematology": 65.63,
-        "General Practice": 80.0,
-        "General surgery": 66.67,
-        "Geriatrics": 80.0,
+        "Dermatology": 38.46,
+        "Endocrinology": 47.5,
+        "Epidemiology and Biostatistics": 44.44,
+        "Gastro-enterologic surgery": 57.14,
+        "Gastroenterology": 59.42,
+        "General hematology": 50.0,
+        "General Practice": 40.0,
+        "General surgery": 50.0,
+        "Geriatrics": 40.0,
         "Immunology": 50.0,
-        "Infectious diseases": 70.59,
-        "Internal medicine": 75.0,
-        "Laboratory medicine": 71.43,
-        "Legal medicine": 68.75,
-        "Microbiology": 75.0,
-        "Nephrology": 72.22,
+        "Infectious diseases": 67.65,
+        "Internal medicine": 56.25,
+        "Laboratory medicine": 57.14,
+        "Legal medicine": 50.0,
+        "Microbiology": 50.0,
+        "Nephrology": 61.11,
         "Neuro-psychiatry": 50.0,
-        "Neurology": 64.15,
-        "Neurosurgery": 81.82,
-        "Nuclear medicine": 100.0,
-        "Obstetrics and gynecology": 68.92,
-        "Occupational medicine": 50.0,
-        "Ophthalmology": 61.9,
-        "Orthopaedics": 80.95,
-        "Otorhinolaryngology": 65.22,
-        "Paediatric surgery": 33.33,
-        "Paediatrics": 65.71,
-        "Pathology": 71.43,
-        "Pediatric Surgery": 0.0,
+        "Neurology": 52.83,
+        "Neurosurgery": 45.45,
+        "Nuclear medicine": 0.0,
+        "Obstetrics and gynecology": 58.11,
+        "Occupational medicine": 25.0,
+        "Ophthalmology": 47.62,
+        "Orthopaedics": 61.9,
+        "Otorhinolaryngology": 52.17,
+        "Paediatric surgery": 16.67,
+        "Paediatrics": 57.14,
+        "Pathology": 42.86,
+        "Pediatric Surgery": 50.0,
         "Pharmacology": 75.0,
         "Physical medicine and rehabilitation": 85.71,
         "Plastic surgery": 0.0,
-        "Psychiatry": 83.33,
-        "Public health and Preventive Medicine": 80.0,
-        "Radiology": 60.87,
+        "Psychiatry": 72.22,
+        "Public health and Preventive Medicine": 60.0,
+        "Radiology": 52.17,
         "Radiotherapy": 50.0,
-        "Respiratory medicine": 63.46,
-        "Rheumatology": 69.23,
+        "Respiratory medicine": 51.92,
+        "Rheumatology": 65.38,
         "Stomatology": 50.0,
         "Thoracic surgery": 57.14,
-        "Tropical medicine": 40.0,
-        "Urology": 84.62,
-        "Vascular surgery": 80.95,
-        "Venereology": 50.0
+        "Tropical medicine": 20.0,
+        "Urology": 69.23,
+        "Vascular surgery": 47.62,
+        "Venereology": 100.0
       },
       "year_scores": {
-        "2017": 68.25,
-        "2018": 67.18,
-        "2019": 65.44,
-        "2020": 62.69,
-        "2021": 76.12,
-        "2022": 69.85,
-        "2023": 56.49,
-        "2024": 74.24
+        "2017": 59.52,
+        "2018": 51.91,
+        "2019": 47.79,
+        "2020": 53.73,
+        "2021": 60.45,
+        "2022": 54.41,
+        "2023": 52.67,
+        "2024": 56.82
       },
       "test_date": "2026-09-07",
       "specialty_breakdown": {
         "Cardiology": {
           "answered": 84,
-          "correct": 52,
-          "accuracy": 61.9
+          "correct": 42,
+          "accuracy": 50.0
         },
         "Obstetrics and gynecology": {
           "answered": 74,
-          "correct": 51,
-          "accuracy": 68.92
+          "correct": 43,
+          "accuracy": 58.11
         },
         "Gastroenterology": {
           "answered": 69,
-          "correct": 49,
-          "accuracy": 71.01
-        },
-        "Accident and emergency medicine": {
-          "answered": 53,
-          "correct": 33,
-          "accuracy": 62.26
+          "correct": 41,
+          "accuracy": 59.42
         },
         "Neurology": {
           "answered": 53,
-          "correct": 34,
-          "accuracy": 64.15
+          "correct": 28,
+          "accuracy": 52.83
+        },
+        "Accident and emergency medicine": {
+          "answered": 53,
+          "correct": 27,
+          "accuracy": 50.94
         },
         "Respiratory medicine": {
           "answered": 52,
-          "correct": 33,
-          "accuracy": 63.46
+          "correct": 27,
+          "accuracy": 51.92
         },
         "Orthopaedics": {
           "answered": 42,
-          "correct": 34,
-          "accuracy": 80.95
+          "correct": 26,
+          "accuracy": 61.9
         },
         "Endocrinology": {
           "answered": 40,
-          "correct": 23,
-          "accuracy": 57.5
-        },
-        "Nephrology": {
-          "answered": 36,
-          "correct": 26,
-          "accuracy": 72.22
+          "correct": 19,
+          "accuracy": 47.5
         },
         "Pharmacology": {
           "answered": 36,
           "correct": 27,
           "accuracy": 75.0
         },
-        "Paediatrics": {
-          "answered": 35,
-          "correct": 23,
-          "accuracy": 65.71
-        },
-        "Gastro-enterologic surgery": {
-          "answered": 35,
-          "correct": 30,
-          "accuracy": 85.71
-        },
-        "Infectious diseases": {
-          "answered": 34,
-          "correct": 24,
-          "accuracy": 70.59
-        },
-        "General hematology": {
-          "answered": 32,
-          "correct": 21,
-          "accuracy": 65.63
-        },
-        "Rheumatology": {
-          "answered": 26,
-          "correct": 18,
-          "accuracy": 69.23
-        },
-        "Urology": {
-          "answered": 26,
-          "correct": 22,
-          "accuracy": 84.62
-        },
-        "Anaesthetics": {
-          "answered": 25,
-          "correct": 16,
-          "accuracy": 64.0
-        },
-        "Otorhinolaryngology": {
-          "answered": 23,
-          "correct": 15,
-          "accuracy": 65.22
-        },
-        "Radiology": {
-          "answered": 23,
-          "correct": 14,
-          "accuracy": 60.87
-        },
-        "Ophthalmology": {
-          "answered": 21,
-          "correct": 13,
-          "accuracy": 61.9
-        },
-        "Vascular surgery": {
-          "answered": 21,
-          "correct": 17,
-          "accuracy": 80.95
-        },
-        "Epidemiology and Biostatistics": {
-          "answered": 18,
-          "correct": 11,
-          "accuracy": 61.11
-        },
-        "Psychiatry": {
-          "answered": 18,
-          "correct": 15,
-          "accuracy": 83.33
-        },
-        "Internal medicine": {
-          "answered": 16,
-          "correct": 12,
-          "accuracy": 75.0
-        },
-        "Legal medicine": {
-          "answered": 16,
-          "correct": 11,
-          "accuracy": 68.75
-        },
-        "Public health and Preventive Medicine": {
-          "answered": 15,
-          "correct": 12,
-          "accuracy": 80.0
-        },
-        "Dermatology": {
-          "answered": 13,
-          "correct": 8,
-          "accuracy": 61.54
-        },
-        "Neurosurgery": {
-          "answered": 11,
-          "correct": 9,
-          "accuracy": 81.82
-        },
-        "Biological hematology": {
-          "answered": 10,
-          "correct": 2,
-          "accuracy": 20.0
-        },
-        "Occupational medicine": {
-          "answered": 8,
-          "correct": 4,
-          "accuracy": 50.0
-        },
-        "Immunology": {
-          "answered": 8,
-          "correct": 4,
-          "accuracy": 50.0
-        },
-        "Pathology": {
-          "answered": 7,
-          "correct": 5,
-          "accuracy": 71.43
-        },
-        "Physical medicine and rehabilitation": {
-          "answered": 7,
-          "correct": 6,
-          "accuracy": 85.71
-        },
-        "Thoracic surgery": {
-          "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
-        },
-        "Laboratory medicine": {
-          "answered": 7,
-          "correct": 5,
-          "accuracy": 71.43
-        },
-        "Allergology": {
-          "answered": 7,
-          "correct": 2,
-          "accuracy": 28.57
-        },
-        "General surgery": {
-          "answered": 6,
-          "correct": 4,
-          "accuracy": 66.67
-        },
-        "Paediatric surgery": {
-          "answered": 6,
-          "correct": 2,
-          "accuracy": 33.33
-        },
-        "Geriatrics": {
-          "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
-        },
-        "Tropical medicine": {
-          "answered": 5,
-          "correct": 2,
-          "accuracy": 40.0
-        },
-        "General Practice": {
-          "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
-        },
-        "Microbiology": {
-          "answered": 4,
-          "correct": 3,
-          "accuracy": 75.0
-        },
-        "Radiotherapy": {
-          "answered": 4,
-          "correct": 2,
-          "accuracy": 50.0
-        },
-        "Clinical biology": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Stomatology": {
-          "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
-        },
-        "\"Dental, oral and maxillo-facial surgery\"": {
-          "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
-        },
-        "Pediatric Surgery": {
-          "answered": 2,
-          "correct": 0,
-          "accuracy": 0.0
-        },
-        "Neuro-psychiatry": {
-          "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
-        },
-        "Venereology": {
-          "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
-        },
-        "Plastic surgery": {
-          "answered": 1,
-          "correct": 0,
-          "accuracy": 0.0
-        },
-        "Child psychiatry": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "Clinical radiology": {
-          "answered": 1,
-          "correct": 0,
-          "accuracy": 0.0
-        },
-        "Nuclear medicine": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        },
-        "Clinical chemistry": {
-          "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
-        }
-      }
-    },
-    {
-      "id": "llama3.1-8b",
-      "name": "llama3.1:8b",
-      "provider": "Local (Ollama)",
-      "provider_logo": "meta",
-      "overall_accuracy": 65.19,
-      "total_correct": 691,
-      "total_questions": 1060,
-      "rank": 5,
-      "specialty_scores": {
-        "\"Dental, oral and maxillo-facial surgery\"": 100.0,
-        "Accident and emergency medicine": 66.04,
-        "Allergology": 85.71,
-        "Anaesthetics": 56.0,
-        "Biological hematology": 70.0,
-        "Cardiology": 57.14,
-        "Child psychiatry": 100.0,
-        "Clinical biology": 50.0,
-        "Clinical chemistry": 100.0,
-        "Clinical radiology": 0.0,
-        "Dermatology": 76.92,
-        "Endocrinology": 62.5,
-        "Epidemiology and Biostatistics": 61.11,
-        "Gastro-enterologic surgery": 65.71,
-        "Gastroenterology": 66.67,
-        "General hematology": 65.63,
-        "General Practice": 40.0,
-        "General surgery": 66.67,
-        "Geriatrics": 80.0,
-        "Immunology": 12.5,
-        "Infectious diseases": 67.65,
-        "Internal medicine": 50.0,
-        "Laboratory medicine": 57.14,
-        "Legal medicine": 81.25,
-        "Microbiology": 75.0,
-        "Nephrology": 58.33,
-        "Neuro-psychiatry": 100.0,
-        "Neurology": 66.04,
-        "Neurosurgery": 72.73,
-        "Nuclear medicine": 100.0,
-        "Obstetrics and gynecology": 62.16,
-        "Occupational medicine": 37.5,
-        "Ophthalmology": 71.43,
-        "Orthopaedics": 57.14,
-        "Otorhinolaryngology": 65.22,
-        "Paediatric surgery": 50.0,
-        "Paediatrics": 62.86,
-        "Pathology": 28.57,
-        "Pediatric Surgery": 50.0,
-        "Pharmacology": 83.33,
-        "Physical medicine and rehabilitation": 71.43,
-        "Plastic surgery": 0.0,
-        "Psychiatry": 88.89,
-        "Public health and Preventive Medicine": 73.33,
-        "Radiology": 65.22,
-        "Radiotherapy": 75.0,
-        "Respiratory medicine": 63.46,
-        "Rheumatology": 65.38,
-        "Stomatology": 100.0,
-        "Thoracic surgery": 85.71,
-        "Tropical medicine": 80.0,
-        "Urology": 80.77,
-        "Vascular surgery": 71.43,
-        "Venereology": 100.0
-      },
-      "year_scores": {
-        "2017": 62.7,
-        "2018": 64.89,
-        "2019": 64.71,
-        "2020": 64.18,
-        "2021": 63.43,
-        "2022": 66.91,
-        "2023": 71.76,
-        "2024": 62.88
-      },
-      "test_date": "2026-09-07",
-      "specialty_breakdown": {
-        "Cardiology": {
-          "answered": 84,
-          "correct": 48,
-          "accuracy": 57.14
-        },
-        "Obstetrics and gynecology": {
-          "answered": 74,
-          "correct": 46,
-          "accuracy": 62.16
-        },
-        "Gastroenterology": {
-          "answered": 69,
-          "correct": 46,
-          "accuracy": 66.67
-        },
-        "Accident and emergency medicine": {
-          "answered": 53,
-          "correct": 35,
-          "accuracy": 66.04
-        },
-        "Neurology": {
-          "answered": 53,
-          "correct": 35,
-          "accuracy": 66.04
-        },
-        "Respiratory medicine": {
-          "answered": 52,
-          "correct": 33,
-          "accuracy": 63.46
-        },
-        "Orthopaedics": {
-          "answered": 42,
-          "correct": 24,
-          "accuracy": 57.14
-        },
-        "Endocrinology": {
-          "answered": 40,
-          "correct": 25,
-          "accuracy": 62.5
-        },
         "Nephrology": {
           "answered": 36,
-          "correct": 21,
-          "accuracy": 58.33
-        },
-        "Pharmacology": {
-          "answered": 36,
-          "correct": 30,
-          "accuracy": 83.33
+          "correct": 22,
+          "accuracy": 61.11
         },
         "Paediatrics": {
           "answered": 35,
-          "correct": 22,
-          "accuracy": 62.86
+          "correct": 20,
+          "accuracy": 57.14
         },
         "Gastro-enterologic surgery": {
           "answered": 35,
-          "correct": 23,
-          "accuracy": 65.71
+          "correct": 20,
+          "accuracy": 57.14
         },
         "Infectious diseases": {
           "answered": 34,
@@ -1532,138 +1646,138 @@
         },
         "General hematology": {
           "answered": 32,
-          "correct": 21,
-          "accuracy": 65.63
+          "correct": 16,
+          "accuracy": 50.0
+        },
+        "Urology": {
+          "answered": 26,
+          "correct": 18,
+          "accuracy": 69.23
         },
         "Rheumatology": {
           "answered": 26,
           "correct": 17,
           "accuracy": 65.38
         },
-        "Urology": {
-          "answered": 26,
-          "correct": 21,
-          "accuracy": 80.77
-        },
         "Anaesthetics": {
           "answered": 25,
-          "correct": 14,
-          "accuracy": 56.0
+          "correct": 11,
+          "accuracy": 44.0
         },
         "Otorhinolaryngology": {
           "answered": 23,
-          "correct": 15,
-          "accuracy": 65.22
+          "correct": 12,
+          "accuracy": 52.17
         },
         "Radiology": {
           "answered": 23,
-          "correct": 15,
-          "accuracy": 65.22
+          "correct": 12,
+          "accuracy": 52.17
         },
         "Ophthalmology": {
           "answered": 21,
-          "correct": 15,
-          "accuracy": 71.43
+          "correct": 10,
+          "accuracy": 47.62
         },
         "Vascular surgery": {
           "answered": 21,
-          "correct": 15,
-          "accuracy": 71.43
-        },
-        "Epidemiology and Biostatistics": {
-          "answered": 18,
-          "correct": 11,
-          "accuracy": 61.11
+          "correct": 10,
+          "accuracy": 47.62
         },
         "Psychiatry": {
           "answered": 18,
-          "correct": 16,
-          "accuracy": 88.89
+          "correct": 13,
+          "accuracy": 72.22
+        },
+        "Epidemiology and Biostatistics": {
+          "answered": 18,
+          "correct": 8,
+          "accuracy": 44.44
         },
         "Internal medicine": {
+          "answered": 16,
+          "correct": 9,
+          "accuracy": 56.25
+        },
+        "Legal medicine": {
           "answered": 16,
           "correct": 8,
           "accuracy": 50.0
         },
-        "Legal medicine": {
-          "answered": 16,
-          "correct": 13,
-          "accuracy": 81.25
-        },
         "Public health and Preventive Medicine": {
           "answered": 15,
-          "correct": 11,
-          "accuracy": 73.33
+          "correct": 9,
+          "accuracy": 60.0
         },
         "Dermatology": {
           "answered": 13,
-          "correct": 10,
-          "accuracy": 76.92
+          "correct": 5,
+          "accuracy": 38.46
         },
         "Neurosurgery": {
           "answered": 11,
-          "correct": 8,
-          "accuracy": 72.73
+          "correct": 5,
+          "accuracy": 45.45
         },
         "Biological hematology": {
           "answered": 10,
-          "correct": 7,
-          "accuracy": 70.0
-        },
-        "Occupational medicine": {
-          "answered": 8,
           "correct": 3,
-          "accuracy": 37.5
+          "accuracy": 30.0
         },
         "Immunology": {
           "answered": 8,
-          "correct": 1,
-          "accuracy": 12.5
+          "correct": 4,
+          "accuracy": 50.0
         },
-        "Pathology": {
-          "answered": 7,
+        "Occupational medicine": {
+          "answered": 8,
           "correct": 2,
-          "accuracy": 28.57
-        },
-        "Physical medicine and rehabilitation": {
-          "answered": 7,
-          "correct": 5,
-          "accuracy": 71.43
-        },
-        "Thoracic surgery": {
-          "answered": 7,
-          "correct": 6,
-          "accuracy": 85.71
+          "accuracy": 25.0
         },
         "Laboratory medicine": {
           "answered": 7,
           "correct": 4,
           "accuracy": 57.14
         },
-        "Allergology": {
+        "Physical medicine and rehabilitation": {
           "answered": 7,
           "correct": 6,
           "accuracy": 85.71
         },
-        "General surgery": {
-          "answered": 6,
+        "Thoracic surgery": {
+          "answered": 7,
           "correct": 4,
-          "accuracy": 66.67
+          "accuracy": 57.14
         },
-        "Paediatric surgery": {
+        "Pathology": {
+          "answered": 7,
+          "correct": 3,
+          "accuracy": 42.86
+        },
+        "Allergology": {
+          "answered": 7,
+          "correct": 1,
+          "accuracy": 14.29
+        },
+        "General surgery": {
           "answered": 6,
           "correct": 3,
           "accuracy": 50.0
         },
+        "Paediatric surgery": {
+          "answered": 6,
+          "correct": 1,
+          "accuracy": 16.67
+        },
         "Geriatrics": {
           "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
+          "correct": 2,
+          "accuracy": 40.0
         },
         "Tropical medicine": {
           "answered": 5,
-          "correct": 4,
-          "accuracy": 80.0
+          "correct": 1,
+          "accuracy": 20.0
         },
         "General Practice": {
           "answered": 5,
@@ -1672,23 +1786,23 @@
         },
         "Microbiology": {
           "answered": 4,
-          "correct": 3,
-          "accuracy": 75.0
+          "correct": 2,
+          "accuracy": 50.0
         },
         "Radiotherapy": {
           "answered": 4,
-          "correct": 3,
-          "accuracy": 75.0
+          "correct": 2,
+          "accuracy": 50.0
         },
         "Clinical biology": {
           "answered": 2,
-          "correct": 1,
-          "accuracy": 50.0
+          "correct": 2,
+          "accuracy": 100.0
         },
         "Stomatology": {
           "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
+          "correct": 1,
+          "accuracy": 50.0
         },
         "\"Dental, oral and maxillo-facial surgery\"": {
           "answered": 2,
@@ -1702,8 +1816,8 @@
         },
         "Neuro-psychiatry": {
           "answered": 2,
-          "correct": 2,
-          "accuracy": 100.0
+          "correct": 1,
+          "accuracy": 50.0
         },
         "Venereology": {
           "answered": 2,
@@ -1727,8 +1841,8 @@
         },
         "Nuclear medicine": {
           "answered": 1,
-          "correct": 1,
-          "accuracy": 100.0
+          "correct": 0,
+          "accuracy": 0.0
         },
         "Clinical chemistry": {
           "answered": 1,
@@ -1742,202 +1856,202 @@
       "name": "LFM2.5-8B-A1B",
       "provider": "Local (Ollama)",
       "provider_logo": "liquid",
-      "overall_accuracy": 39.81,
-      "total_correct": 422,
-      "total_questions": 987,
+      "overall_accuracy": 23.21,
+      "total_correct": 246,
+      "total_questions": 980,
       "rank": 6,
       "specialty_scores": {
         "\"Dental, oral and maxillo-facial surgery\"": 50.0,
-        "Accident and emergency medicine": 43.4,
-        "Allergology": 57.14,
-        "Anaesthetics": 56.0,
-        "Biological hematology": 0.0,
-        "Cardiology": 38.1,
-        "Child psychiatry": 0.0,
+        "Accident and emergency medicine": 18.87,
+        "Allergology": 42.86,
+        "Anaesthetics": 16.0,
+        "Biological hematology": 20.0,
+        "Cardiology": 29.76,
+        "Child psychiatry": 100.0,
         "Clinical biology": 0.0,
         "Clinical chemistry": 0.0,
         "Clinical radiology": 0.0,
-        "Dermatology": 46.15,
-        "Endocrinology": 40.0,
-        "Epidemiology and Biostatistics": 50.0,
-        "Gastro-enterologic surgery": 48.57,
-        "Gastroenterology": 40.58,
-        "General hematology": 37.5,
+        "Dermatology": 30.77,
+        "Endocrinology": 20.0,
+        "Epidemiology and Biostatistics": 11.11,
+        "Gastro-enterologic surgery": 28.57,
+        "Gastroenterology": 30.43,
+        "General hematology": 31.25,
         "General Practice": 20.0,
-        "General surgery": 33.33,
-        "Geriatrics": 0.0,
-        "Immunology": 25.0,
-        "Infectious diseases": 26.47,
-        "Internal medicine": 31.25,
-        "Laboratory medicine": 42.86,
-        "Legal medicine": 31.25,
-        "Microbiology": 50.0,
-        "Nephrology": 58.33,
+        "General surgery": 0.0,
+        "Geriatrics": 20.0,
+        "Immunology": 37.5,
+        "Infectious diseases": 20.59,
+        "Internal medicine": 43.75,
+        "Laboratory medicine": 14.29,
+        "Legal medicine": 12.5,
+        "Microbiology": 0.0,
+        "Nephrology": 16.67,
         "Neuro-psychiatry": 50.0,
-        "Neurology": 32.08,
-        "Neurosurgery": 18.18,
+        "Neurology": 16.98,
+        "Neurosurgery": 0.0,
         "Nuclear medicine": 0.0,
-        "Obstetrics and gynecology": 47.3,
-        "Occupational medicine": 37.5,
-        "Ophthalmology": 52.38,
-        "Orthopaedics": 40.48,
-        "Otorhinolaryngology": 30.43,
-        "Paediatric surgery": 50.0,
-        "Paediatrics": 45.71,
-        "Pathology": 28.57,
+        "Obstetrics and gynecology": 24.32,
+        "Occupational medicine": 25.0,
+        "Ophthalmology": 4.76,
+        "Orthopaedics": 23.81,
+        "Otorhinolaryngology": 13.04,
+        "Paediatric surgery": 33.33,
+        "Paediatrics": 17.14,
+        "Pathology": 0.0,
         "Pediatric Surgery": 0.0,
-        "Pharmacology": 33.33,
-        "Physical medicine and rehabilitation": 85.71,
+        "Pharmacology": 22.22,
+        "Physical medicine and rehabilitation": 57.14,
         "Plastic surgery": 0.0,
-        "Psychiatry": 27.78,
+        "Psychiatry": 22.22,
         "Public health and Preventive Medicine": 26.67,
-        "Radiology": 47.83,
-        "Radiotherapy": 50.0,
-        "Respiratory medicine": 42.31,
-        "Rheumatology": 30.77,
+        "Radiology": 21.74,
+        "Radiotherapy": 25.0,
+        "Respiratory medicine": 26.92,
+        "Rheumatology": 34.62,
         "Stomatology": 0.0,
-        "Thoracic surgery": 57.14,
-        "Tropical medicine": 40.0,
-        "Urology": 46.15,
-        "Vascular surgery": 38.1,
-        "Venereology": 0.0
+        "Thoracic surgery": 28.57,
+        "Tropical medicine": 20.0,
+        "Urology": 26.92,
+        "Vascular surgery": 23.81,
+        "Venereology": 50.0
       },
       "year_scores": {
-        "2017": 44.44,
-        "2018": 39.69,
-        "2019": 49.26,
-        "2020": 37.31,
-        "2021": 37.31,
-        "2022": 41.91,
-        "2023": 26.72,
-        "2024": 41.67
+        "2017": 23.02,
+        "2018": 19.08,
+        "2019": 30.15,
+        "2020": 25.37,
+        "2021": 17.16,
+        "2022": 22.79,
+        "2023": 22.9,
+        "2024": 25.0
       },
-      "test_date": "2026-09-07",
+      "test_date": "2026-09-08",
       "specialty_breakdown": {
         "Cardiology": {
           "answered": 84,
-          "correct": 32,
-          "accuracy": 38.1
+          "correct": 25,
+          "accuracy": 29.76
         },
         "Obstetrics and gynecology": {
           "answered": 74,
-          "correct": 35,
-          "accuracy": 47.3
+          "correct": 18,
+          "accuracy": 24.32
         },
         "Gastroenterology": {
           "answered": 69,
-          "correct": 28,
-          "accuracy": 40.58
-        },
-        "Accident and emergency medicine": {
-          "answered": 53,
-          "correct": 23,
-          "accuracy": 43.4
+          "correct": 21,
+          "accuracy": 30.43
         },
         "Neurology": {
           "answered": 53,
-          "correct": 17,
-          "accuracy": 32.08
+          "correct": 9,
+          "accuracy": 16.98
+        },
+        "Accident and emergency medicine": {
+          "answered": 53,
+          "correct": 10,
+          "accuracy": 18.87
         },
         "Respiratory medicine": {
           "answered": 52,
-          "correct": 22,
-          "accuracy": 42.31
+          "correct": 14,
+          "accuracy": 26.92
         },
         "Orthopaedics": {
           "answered": 42,
-          "correct": 17,
-          "accuracy": 40.48
+          "correct": 10,
+          "accuracy": 23.81
         },
         "Endocrinology": {
           "answered": 40,
-          "correct": 16,
-          "accuracy": 40.0
-        },
-        "Nephrology": {
-          "answered": 36,
-          "correct": 21,
-          "accuracy": 58.33
+          "correct": 8,
+          "accuracy": 20.0
         },
         "Pharmacology": {
           "answered": 36,
-          "correct": 12,
-          "accuracy": 33.33
+          "correct": 8,
+          "accuracy": 22.22
+        },
+        "Nephrology": {
+          "answered": 36,
+          "correct": 6,
+          "accuracy": 16.67
         },
         "Paediatrics": {
           "answered": 35,
-          "correct": 16,
-          "accuracy": 45.71
+          "correct": 6,
+          "accuracy": 17.14
         },
         "Gastro-enterologic surgery": {
           "answered": 35,
-          "correct": 17,
-          "accuracy": 48.57
+          "correct": 10,
+          "accuracy": 28.57
         },
         "Infectious diseases": {
           "answered": 34,
-          "correct": 9,
-          "accuracy": 26.47
+          "correct": 7,
+          "accuracy": 20.59
         },
         "General hematology": {
           "answered": 32,
-          "correct": 12,
-          "accuracy": 37.5
-        },
-        "Rheumatology": {
-          "answered": 26,
-          "correct": 8,
-          "accuracy": 30.77
+          "correct": 10,
+          "accuracy": 31.25
         },
         "Urology": {
           "answered": 26,
-          "correct": 12,
-          "accuracy": 46.15
+          "correct": 7,
+          "accuracy": 26.92
+        },
+        "Rheumatology": {
+          "answered": 26,
+          "correct": 9,
+          "accuracy": 34.62
         },
         "Anaesthetics": {
           "answered": 25,
-          "correct": 14,
-          "accuracy": 56.0
+          "correct": 4,
+          "accuracy": 16.0
         },
         "Otorhinolaryngology": {
           "answered": 23,
-          "correct": 7,
-          "accuracy": 30.43
+          "correct": 3,
+          "accuracy": 13.04
         },
         "Radiology": {
           "answered": 23,
-          "correct": 11,
-          "accuracy": 47.83
+          "correct": 5,
+          "accuracy": 21.74
         },
         "Ophthalmology": {
           "answered": 21,
-          "correct": 11,
-          "accuracy": 52.38
+          "correct": 1,
+          "accuracy": 4.76
         },
         "Vascular surgery": {
           "answered": 21,
-          "correct": 8,
-          "accuracy": 38.1
-        },
-        "Epidemiology and Biostatistics": {
-          "answered": 18,
-          "correct": 9,
-          "accuracy": 50.0
+          "correct": 5,
+          "accuracy": 23.81
         },
         "Psychiatry": {
           "answered": 18,
-          "correct": 5,
-          "accuracy": 27.78
+          "correct": 4,
+          "accuracy": 22.22
+        },
+        "Epidemiology and Biostatistics": {
+          "answered": 18,
+          "correct": 2,
+          "accuracy": 11.11
         },
         "Internal medicine": {
           "answered": 16,
-          "correct": 5,
-          "accuracy": 31.25
+          "correct": 7,
+          "accuracy": 43.75
         },
         "Legal medicine": {
           "answered": 16,
-          "correct": 5,
-          "accuracy": 31.25
+          "correct": 2,
+          "accuracy": 12.5
         },
         "Public health and Preventive Medicine": {
           "answered": 15,
@@ -1946,73 +2060,73 @@
         },
         "Dermatology": {
           "answered": 13,
-          "correct": 6,
-          "accuracy": 46.15
+          "correct": 4,
+          "accuracy": 30.77
         },
         "Neurosurgery": {
           "answered": 11,
-          "correct": 2,
-          "accuracy": 18.18
-        },
-        "Biological hematology": {
-          "answered": 10,
           "correct": 0,
           "accuracy": 0.0
         },
-        "Occupational medicine": {
+        "Biological hematology": {
+          "answered": 10,
+          "correct": 2,
+          "accuracy": 20.0
+        },
+        "Immunology": {
           "answered": 8,
           "correct": 3,
           "accuracy": 37.5
         },
-        "Immunology": {
+        "Occupational medicine": {
           "answered": 8,
           "correct": 2,
           "accuracy": 25.0
         },
-        "Pathology": {
+        "Laboratory medicine": {
+          "answered": 7,
+          "correct": 1,
+          "accuracy": 14.29
+        },
+        "Physical medicine and rehabilitation": {
+          "answered": 7,
+          "correct": 4,
+          "accuracy": 57.14
+        },
+        "Thoracic surgery": {
           "answered": 7,
           "correct": 2,
           "accuracy": 28.57
         },
-        "Physical medicine and rehabilitation": {
+        "Pathology": {
           "answered": 7,
-          "correct": 6,
-          "accuracy": 85.71
+          "correct": 0,
+          "accuracy": 0.0
         },
-        "Thoracic surgery": {
-          "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
-        },
-        "Laboratory medicine": {
+        "Allergology": {
           "answered": 7,
           "correct": 3,
           "accuracy": 42.86
         },
-        "Allergology": {
-          "answered": 7,
-          "correct": 4,
-          "accuracy": 57.14
-        },
         "General surgery": {
+          "answered": 6,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "Paediatric surgery": {
           "answered": 6,
           "correct": 2,
           "accuracy": 33.33
         },
-        "Paediatric surgery": {
-          "answered": 6,
-          "correct": 3,
-          "accuracy": 50.0
-        },
         "Geriatrics": {
           "answered": 5,
-          "correct": 0,
-          "accuracy": 0.0
+          "correct": 1,
+          "accuracy": 20.0
         },
         "Tropical medicine": {
           "answered": 5,
-          "correct": 2,
-          "accuracy": 40.0
+          "correct": 1,
+          "accuracy": 20.0
         },
         "General Practice": {
           "answered": 5,
@@ -2021,13 +2135,13 @@
         },
         "Microbiology": {
           "answered": 4,
-          "correct": 2,
-          "accuracy": 50.0
+          "correct": 0,
+          "accuracy": 0.0
         },
         "Radiotherapy": {
           "answered": 4,
-          "correct": 2,
-          "accuracy": 50.0
+          "correct": 1,
+          "accuracy": 25.0
         },
         "Clinical biology": {
           "answered": 2,
@@ -2056,8 +2170,8 @@
         },
         "Venereology": {
           "answered": 2,
-          "correct": 0,
-          "accuracy": 0.0
+          "correct": 1,
+          "accuracy": 50.0
         },
         "Plastic surgery": {
           "answered": 1,
@@ -2066,8 +2180,8 @@
         },
         "Child psychiatry": {
           "answered": 1,
-          "correct": 0,
-          "accuracy": 0.0
+          "correct": 1,
+          "accuracy": 100.0
         },
         "Clinical radiology": {
           "answered": 1,

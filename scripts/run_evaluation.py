@@ -14,6 +14,7 @@ Usage:
 import argparse
 import json
 import re
+import signal
 import sys
 import time
 import urllib.request
@@ -21,9 +22,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
-QUESTIONS_FILE = BASE / "data" / "ssm_questions_text_only.json"
+# Shuffled dataset: correct answers randomized across positions (bias-free).
+# The original had the correct answer at 'A' in ~91% of questions, which leaked
+# position and inflated scores. Use shuffled for valid results.
+QUESTIONS_FILE = BASE / "data" / "ssm_questions_shuffled.json"
 RESULTS_DIR = BASE / "results" / "openrouter"
 LEADERBOARD_FILE = BASE / "frontend" / "public" / "leaderboard_data.json"
+DATASET_NAME = "italian_ssm_shuffled"  # overridable via --dataset
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODELS_URL = "http://localhost:11434/api/tags"
@@ -57,7 +62,11 @@ def ollama_installed_models():
 
 
 def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, think=False):
-    """Query a local Ollama model. Returns raw text."""
+    """Query a local Ollama model. Returns raw text.
+    The urllib `timeout` only bounds socket-read idle time, so we ALSO enforce a
+    hard wall-clock deadline with signal.alarm to kill runaway generations
+    (e.g. thinking-mode token loops). Returns '' on timeout/error.
+    """
     payload = {
         "model": model,
         "prompt": prompt,
@@ -70,9 +79,30 @@ def query_ollama(model, prompt, temperature=0.0, max_tokens=256, timeout=180, th
     req = urllib.request.Request(
         OLLAMA_URL, data=body, headers={"Content-Type": "application/json"}
     )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = json.load(r)
-    return data.get("response", "").strip()
+    result = {"text": ""}
+
+    def _run():
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = json.load(r)
+        result["text"] = data.get("response", "").strip()
+
+    # Hard wall-clock deadline (covers total generation, not just read idle)
+    try:
+        signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.alarm(timeout)
+        _run()
+    except TimeoutError:
+        print(f"    ⚠ {model}: request exceeded {timeout}s, treating as refusal")
+        result["text"] = ""
+    except Exception as e:
+        result["text"] = ""
+    finally:
+        signal.alarm(0)
+    return result["text"]
+
+
+def _timeout_handler(signum, frame):
+    raise TimeoutError("request timed out")
 
 
 def query_llamaserver(endpoint, model, prompt, temperature=0.0, max_tokens=256, timeout=300):
@@ -126,8 +156,48 @@ def parse_answer(text):
     return None, text
 
 
-def run_model(model, questions, limit=None, progress_every=50, think=False, endpoint=None):
+def _write_checkpoint(path, resumed_ids, responses):
+    """Persist current responses to a checkpoint file (combined with any resumed)."""
+    try:
+        combined = []
+        seen = set()
+        if Path(path).exists():
+            with open(path, encoding="utf-8") as f:
+                combined = json.load(f)
+            seen = {r["question_id"] for r in combined}
+        for r in responses:
+            if r["question_id"] not in seen:
+                combined.append(r)
+                seen.add(r["question_id"])
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(combined, f)
+    except Exception as e:
+        print(f"    ⚠ checkpoint write failed: {e}")
+
+
+def _correct_for(questions, qid):
+    for q in questions:
+        if q["id"] == qid:
+            return q["correct_answer"]["letter"]
+    return None
+
+
+def run_model(model, questions, limit=None, progress_every=50, think=False, endpoint=None, checkpoint_path=None):
     """Run one model over the questions. Returns result dict in frontend schema."""
+    # Resume: load partial responses already computed from a prior attempt
+    resumed = set()
+    if checkpoint_path and Path(checkpoint_path).exists():
+        with open(checkpoint_path, encoding="utf-8") as f:
+            partial = json.load(f)
+        resumed = {r["question_id"] for r in partial}
+        print(f"    ↻ resuming: {len(resumed)} questions already answered")
+    # keep original order; filter out resumed questions
+    ordered = [q for q in questions]
+    if resumed:
+        questions = [q for q in questions if q["id"] not in resumed]
+        if not questions:
+            print("    ↻ all questions already answered in checkpoint")
+
     if limit:
         questions = questions[:limit]
 
@@ -140,12 +210,15 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         prompt = USER_TEMPLATE.format(question=q["question"], options=opts)
 
         try:
-            # thinking mode needs a much larger token budget for hidden reasoning
+            # thinking mode: large token budget + generous hard timeout
+            # (signal.alarm kills runaway token loops so a single question
+            # can never hang the whole run)
             max_tokens = 2048 if think else 256
+            q_timeout = 300 if think else 60
             if endpoint:
-                raw = query_llamaserver(endpoint, model, prompt, max_tokens=max_tokens)
+                raw = query_llamaserver(endpoint, model, prompt, max_tokens=max_tokens, timeout=q_timeout)
             else:
-                raw = query_ollama(model, prompt, max_tokens=max_tokens, think=think)
+                raw = query_ollama(model, prompt, max_tokens=max_tokens, think=think, timeout=q_timeout)
         except Exception as e:
             raw = ""
             # record refusal/error
@@ -169,13 +242,48 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         if is_correct:
             correct_count += 1
 
+        # Live terminal progress line (overwrites in place)
+        done = i + 1
+        elapsed_now = time.time() - t0
+        rate_now = done / elapsed_now if elapsed_now > 0 else 0
+        eta_min = (len(questions) - done) / rate_now / 60 if rate_now > 0 else 0
+        acc_now = correct_count / done * 100 if done > 0 else 0
+        bar_w = 28
+        filled = int(bar_w * done / len(questions))
+        bar = "█" * filled + "░" * (bar_w - filled)
+        sys.stdout.write(
+            f"\r  [{model}] {bar} {done}/{len(questions)} ({done/len(questions)*100:5.1f}%)  "
+            f"acc={acc_now:5.1f}%  {rate_now:4.1f} q/s  ETA {eta_min:5.0f} min"
+        )
+        sys.stdout.flush()
+
         if (i + 1) % progress_every == 0:
+            print()  # finalize the progress line at each milestone
             elapsed = time.time() - t0
             rate = (i + 1) / elapsed
             print(
                 f"  [{model}] {i+1}/{len(questions)}  acc={correct_count/(i+1)*100:.1f}%  "
                 f"({rate:.1f} q/s)"
             )
+            # Checkpoint partial progress so a crash can resume
+            if checkpoint_path:
+                _write_checkpoint(checkpoint_path, resumed, responses)
+
+    # Merge resumed responses back in original question order
+    if resumed and checkpoint_path and Path(checkpoint_path).exists():
+        with open(checkpoint_path, encoding="utf-8") as f:
+            partial = json.load(f)
+        by_id = {r["question_id"]: r for r in partial}
+        merged = []
+        for q in ordered:
+            if q["id"] in by_id:
+                merged.append(by_id[q["id"]])
+        # append the newly computed ones (skip if already in partial)
+        for r in responses:
+            if r["question_id"] not in by_id:
+                merged.append(r)
+        responses = merged
+        correct_count = sum(1 for r in responses if r["answer"] == _correct_for(ordered, r["question_id"]))
 
     elapsed = time.time() - t0
     total = len(questions)
@@ -210,7 +318,7 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         "openrouter_model_id": f"ollama/{model}",
         "test_date": datetime.now().strftime("%Y-%m-%d"),
         "test_date_iso": datetime.now(timezone.utc).isoformat(),
-        "dataset": "italian_ssm",
+        "dataset": DATASET_NAME,
         "temperature": 0.0,
         "top_p": 1.0,
         "max_tokens": 256,
@@ -292,7 +400,12 @@ def main():
     ap.add_argument("--rebuild", action="store_true", help="only rebuild leaderboard from existing result files")
     ap.add_argument("--thinking", action="store_true", help="enable Qwen3 thinking mode (reason first, slower)")
     ap.add_argument("--endpoint", default=None, help="llama.cpp OpenAI-compatible server URL (e.g. http://127.0.0.1:8081)")
+    ap.add_argument("--dataset", default=None, help="dataset label stored in results (default: italian_ssm_shuffled)")
     args = ap.parse_args()
+
+    # dataset label (module-level constant, read by run_model)
+    if args.dataset:
+        globals()["DATASET_NAME"] = args.dataset
 
     questions = load_questions()
     print(f"Loaded {len(questions)} questions from EuropeMedQA SSM (Italian)")
@@ -312,7 +425,13 @@ def main():
         all_results = []
         for model in models:
             print(f"▶ Running {model} on {len(questions[:args.limit])} questions... (thinking={args.thinking})")
-            result = run_model(model, questions, limit=args.limit, think=args.thinking, endpoint=args.endpoint)
+            # checkpoint file allows crash-resume; deleted once the run completes
+            ckpt = RESULTS_DIR / f"{model.replace(':','-')}_checkpoint.json"
+            result = run_model(model, questions, limit=args.limit, think=args.thinking,
+                               endpoint=args.endpoint, checkpoint_path=str(ckpt))
+            # clean up checkpoint on success
+            if ckpt.exists():
+                ckpt.unlink()
             stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             fname = f"{result['model_id']}_{stamp}.json"
             with open(RESULTS_DIR / fname, "w", encoding="utf-8") as f:
