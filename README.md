@@ -16,14 +16,14 @@ A full-stack benchmark that runs **open-weight LLMs locally** (via Ollama / llam
 
 | Model | Accuracy |
 |---|---|
+| qwen3:8b (thinking) | **89.0%** |
 | gemma3:12b | **81.6%** |
-| qwen3:8b (thinking) | _in progress_ |
 | qwen3:8b | 79.3% |
 | llama3.1:8b | 69.0% |
 | mistral:7b | 54.6% |
-| LFM2.5-8B-A1B (Liquid) | _in progress_ |
+| LFM2.5-8B-A1B (Liquid) | 23.2% |
 
-Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 88.5%** on the shuffled set — a ~9-point gain purely from reasoning.
+Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 89.0%** on the shuffled set — a ~10-point gain purely from reasoning. Reassuringly, models that had leaned on the "answer is A" shortcut (e.g. mistral, dropping 67.6% → 54.6%) were exposed, while genuinely capable models (gemma) held or improved.
 
 ## Features
 
