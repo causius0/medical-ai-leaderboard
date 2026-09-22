@@ -25,10 +25,13 @@ BASE = Path(__file__).resolve().parent.parent
 # Shuffled dataset: correct answers randomized across positions (bias-free).
 # The original had the correct answer at 'A' in ~91% of questions, which leaked
 # position and inflated scores. Use shuffled for valid results.
+# Multiple independent variants exist (see scripts/shuffle_answers.py); the
+# default is variant 0 (seed 42, backward-compatible with committed data).
 QUESTIONS_FILE = BASE / "data" / "ssm_questions_shuffled.json"
 RESULTS_DIR = BASE / "results" / "openrouter"
 LEADERBOARD_FILE = BASE / "frontend" / "public" / "leaderboard_data.json"
 DATASET_NAME = "italian_ssm_shuffled"  # overridable via --dataset
+VARIANT = 0
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODELS_URL = "http://localhost:11434/api/tags"
@@ -329,6 +332,7 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
         "overall_accuracy": round(correct_count / total * 100, 2),
         "specialty_scores": specialty_scores,
         "year_scores": year_scores,
+        "selection_bias": compute_selection_bias(responses, ordered),
         "responses": responses,
         "metadata": {
             "generated_by": "run_evaluation.py",
@@ -339,6 +343,64 @@ def run_model(model, questions, limit=None, progress_every=50, think=False, endp
             "note": "REAL local evaluation.",
             "elapsed_seconds": round(elapsed, 1),
         },
+    }
+
+
+def compute_selection_bias(responses, questions):
+    """Selection-bias metrics per Zheng et al. arXiv:2309.03882 (Sec 2.2).
+
+    Selection bias = a model's preference for certain option IDs regardless of
+    content. The paper measures it as the *imbalance of recalls across option
+    IDs*: for each option ID (letter), recall is the fraction of questions whose
+    correct answer is at that letter that the model got right. Low spread (std)
+    across letters -> unbiased; high spread -> the model systematically wins or
+    loses depending on where the answer sits.
+
+    Also reports a chi-square uniformity test on the letter distribution of the
+    model's *picks*, which surfaces the raw "always answers A/B..." token bias.
+    Requires matching responses <-> questions (by question_id).
+    """
+    from statistics import pstdev
+    from scipy import stats
+
+    by_id = {r["question_id"]: r for r in responses}
+    n_letters = 5
+    letters = ["A", "B", "C", "D", "E"]
+
+    recall_correct = {L: 0 for L in letters}
+    recall_total = {L: 0 for L in letters}
+    pick_counts = {L: 0 for L in letters}
+
+    for q in questions:
+        ans_l = (q.get("correct_answer") or {}).get("letter", "")
+        r = by_id.get(q["id"])
+        if not r or ans_l not in recall_total:
+            continue
+        recall_total[ans_l] += 1
+        if r.get("answer") == ans_l:
+            recall_correct[ans_l] += 1
+        if r.get("answer") in pick_counts:
+            pick_counts[r["answer"]] += 1
+
+    recall = {L: (recall_correct[L] / recall_total[L]) if recall_total[L] else None
+              for L in letters}
+    recall_vals = [recall[L] for L in letters if recall[L] is not None]
+
+    picked = [pick_counts[L] for L in letters]
+    total_picked = sum(picked)
+    expected = total_picked / n_letters if total_picked else 0
+    chi2 = (sum((o - expected) ** 2 / expected for o in picked)
+            if expected else 0.0)
+    p_value = stats.chi2.sf(chi2, df=n_letters - 1) if total_picked else None
+
+    return {
+        "per_letter_recall": {L: (round(v, 4) if v is not None else None) for L, v in recall.items()},
+        "recall_std": round(pstdev(recall_vals), 4) if recall_vals else None,
+        "recall_max_minus_min": round(max(recall_vals) - min(recall_vals), 4) if len(recall_vals) > 1 else None,
+        "pick_distribution": {L: pick_counts[L] for L in letters},
+        "pick_chi2": round(chi2, 4),
+        "pick_chi2_pvalue": (round(p_value, 6) if p_value is not None else None),
+        "method": "Zheng et al. 2023 (arXiv:2309.03882) Sec 2.2; std of per-letter recall",
     }
 
 
@@ -401,14 +463,29 @@ def main():
     ap.add_argument("--thinking", action="store_true", help="enable Qwen3 thinking mode (reason first, slower)")
     ap.add_argument("--endpoint", default=None, help="llama.cpp OpenAI-compatible server URL (e.g. http://127.0.0.1:8081)")
     ap.add_argument("--dataset", default=None, help="dataset label stored in results (default: italian_ssm_shuffled)")
+    ap.add_argument("--variant", type=int, default=0,
+                    help="which shuffled variant to evaluate (0 = seed 42, backward-compatible). "
+                         "Higher variants are independent option-permutations for selection-bias measurement.")
     args = ap.parse_args()
 
     # dataset label (module-level constant, read by run_model)
     if args.dataset:
         globals()["DATASET_NAME"] = args.dataset
 
+    # select the shuffled variant file + dataset label
+    if args.variant != 0:
+        vfile = BASE / "data" / f"ssm_questions_shuffled_v{args.variant}.json"
+        if not vfile.exists():
+            print(f"Variant {args.variant} file not found: {vfile}. "
+                  f"Generate it first: python3 scripts/shuffle_answers.py --variants {args.variant+1}")
+            sys.exit(1)
+        globals()["QUESTIONS_FILE"] = vfile
+        globals()["DATASET_NAME"] = f"italian_ssm_shuffled_v{args.variant}"
+    else:
+        globals()["VARIANT"] = 0
+
     questions = load_questions()
-    print(f"Loaded {len(questions)} questions from EuropeMedQA SSM (Italian)")
+    print(f"Loaded {len(questions)} questions from EuropeMedQA SSM (Italian) — variant {args.variant}")
 
     available = ollama_installed_models()
     if not args.rebuild:
