@@ -54,6 +54,10 @@ def main():
     parser.add_argument("--provider", default="Liquid AI")
     parser.add_argument("--backend", default="mlx")
     parser.add_argument("--param-size", default="24B-A2B")
+    parser.add_argument("--max-tokens", type=int, default=None,
+                        help="Override if the results file predates max_tokens recording")
+    parser.add_argument("--notes-extra", default=None,
+                        help="Free-text appended to the auto-generated notes")
     args = parser.parse_args()
 
     with open(args.results, encoding="utf-8") as f:
@@ -72,22 +76,38 @@ def main():
         ON CONFLICT (model_id) DO UPDATE SET name = EXCLUDED.name;
     """)
 
-    # 2. score
+    # 2. score + run parameters (recorded verbatim so runs stay comparable)
     total_answered = sum(1 for a in answers if a["answer"])
     total_correct = sum(1 for a in answers if a["answer"] and a["answer"] == key.get(a["id"]))
     accuracy = round(100.0 * total_correct / len(key), 2)
+
+    max_tokens = run.get("max_tokens", args.max_tokens)
+    notes = {
+        "model_repo": run.get("model"),
+        "adapter": run.get("adapter"),
+        "max_tokens": max_tokens,
+        "temperature": 0,
+        "harness": run.get("harness"),
+        "num_parsed": total_answered,
+        "quant": "4bit" if "4bit" in run.get("model", "").lower() else None,
+        "timestamp": run.get("timestamp"),
+    }
+    if args.notes_extra:
+        notes["extra"] = args.notes_extra
+    notes_sql = sql_str(json.dumps(notes, ensure_ascii=False))
 
     # 3. insert run, get run_id
     run_id = psql(args.db, f"""
         INSERT INTO shuffled_runs
             (model_id, dataset, prompt_template, temperature, max_tokens,
-             total_questions, total_answered, total_correct, overall_accuracy)
+             total_questions, total_answered, total_correct, overall_accuracy, notes)
         VALUES ({sql_str(model_id)}, {sql_str(args.dataset)}, {sql_str(args.prompt_template)},
-                0, 8, {len(key)}, {total_answered}, {total_correct}, {accuracy})
+                0, {max_tokens if max_tokens is not None else 'NULL'},
+                {len(key)}, {total_answered}, {total_correct}, {accuracy}, {notes_sql})
         RETURNING run_id;
     """, tuples=True).split("\n")[0].strip()
     print(f"inserted shuffled_runs run_id={run_id}: {run['model_name']} {accuracy}% "
-          f"({total_correct}/{len(key)}, answered={total_answered})")
+          f"({total_correct}/{len(key)}, answered={total_answered}, max_tokens={max_tokens})")
 
     # 4. bulk insert responses
     values = []

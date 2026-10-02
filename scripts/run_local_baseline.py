@@ -46,8 +46,14 @@ def render_prompt(q) -> str:
 
 
 def extract_letter(text: str):
-    m = LETTER_RE.search(text.strip().upper())
-    return m.group(1) if m else None
+    """Reasoning models emit <think>...</think>; score only the final answer
+    segment. If thinking never closed (truncated), there is no answer."""
+    if "</think>" in text:
+        text = text.split("</think>")[-1]
+    elif "<think>" in text:
+        return None
+    matches = LETTER_RE.findall(text.strip().upper())
+    return matches[-1] if matches else None
 
 
 def main():
@@ -57,7 +63,8 @@ def main():
     parser.add_argument("--questions", default=DEFAULT_QUESTIONS)
     parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR)
     parser.add_argument("--limit", type=int, help="Only first N questions (smoke test)")
-    parser.add_argument("--max-tokens", type=int, default=8)
+    parser.add_argument("--max-tokens", type=int, default=8,
+                        help="Raise (e.g. 512) for reasoning models that emit <think> blocks")
     parser.add_argument("--tag", default=None, help="Output filename tag")
     args = parser.parse_args()
 
@@ -121,6 +128,7 @@ def main():
                 "model_name": f"{args.model.split('/')[-1]}" + (" + LoRA" if args.adapter else ""),
                 "timestamp": datetime.now().isoformat(timespec="seconds"),
                 "harness": "local-single-question-v1 (greedy, LoRA-style prompt)",
+                "max_tokens": args.max_tokens,
                 "num_questions": len(questions),
                 "num_answered": len(answers),
                 "usage": {"prompt_tokens_last": prompt_tokens_total,
@@ -136,6 +144,7 @@ def main():
         "model_name": f"{args.model.split('/')[-1]}" + (" + LoRA" if args.adapter else ""),
         "timestamp": datetime.now().isoformat(timespec="seconds"),
         "harness": "local-single-question-v1 (greedy, LoRA-style prompt)",
+        "max_tokens": args.max_tokens,
         "num_questions": len(questions),
         "num_answered": len(answers),
         "usage": {"prompt_tokens_last": prompt_tokens_total,
