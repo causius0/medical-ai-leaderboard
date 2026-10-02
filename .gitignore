@@ -79,3 +79,6 @@ data/ssm_questions_text_only_shuffled.json
 
 # LoRA adapter checkpoints
 adapters/
+results/local/
+frontend/out/leaderboard.json
+frontend/public/leaderboard.json
