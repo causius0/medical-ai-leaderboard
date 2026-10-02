@@ -68,3 +68,7 @@ results/*.json
 tmp/
 temp/
 *.tmp
+
+# Local MLX venv and quantized model snapshots
+.venv/
+models/
