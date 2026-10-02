@@ -5,6 +5,14 @@
 # Correct answers - NEVER COMMIT
 data/solutions.json
 data/ssm_questions_with_solution.json
+data/ssm_questions_enriched.json
+
+# Exam image files (copyright - do not redistribute)
+data/images/
+
+# LoRA training artifacts (regenerable via scripts/prepare_lora_data.py)
+data/lora/
+data/europemedqa/
 
 # Python
 __pycache__/

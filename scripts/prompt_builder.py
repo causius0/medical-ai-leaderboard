@@ -9,6 +9,31 @@ import os
 from typing import List, Dict, Any
 
 
+def apply_image_descriptions(questions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Inject image descriptions into question text for test-time use.
+
+    For every question carrying an `image_description` field (produced by
+    scripts/build_enriched_dataset.py), appends a localized
+    "[<label>: <description>]" line to the question text so text-only models
+    can attempt image-dependent questions.
+
+    Does not mutate the input list (returns shallow copies). Questions without
+    a description are returned unchanged.
+    """
+    out = []
+    for q in questions:
+        description = q.get("image_description")
+        if not description:
+            out.append(q)
+            continue
+        label = q.get("image_description_label", "Image description")
+        q2 = dict(q)
+        q2["question"] = f"{q['question']}\n\n[{label}: {description}]"
+        out.append(q2)
+    return out
+
+
 class PromptBuilder:
     """Builds prompts for OpenRouter API calls"""
 
