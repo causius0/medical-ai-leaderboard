@@ -72,3 +72,7 @@ temp/
 # Local MLX venv and quantized model snapshots
 .venv/
 models/
+
+# Shuffled datasets containing correct answers - NEVER COMMIT
+data/ssm_questions_shuffled_with_solution.json
+data/ssm_questions_text_only_shuffled.json

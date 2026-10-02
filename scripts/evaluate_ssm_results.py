@@ -164,8 +164,9 @@ def main():
     # Print results
     print_results(results)
 
-    # Save detailed results
-    output_file = '/Users/causius/Desktop/evaluation_results.json'
+    # Save detailed results next to the predictions file
+    output_file = os.path.join(os.path.dirname(os.path.abspath(predictions_file)),
+                               'evaluation_results.json')
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
     print(f"\nDetailed results saved to: {output_file}")
