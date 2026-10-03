@@ -1,201 +1,97 @@
 # Medical AI Leaderboard
 
-A comprehensive benchmarking system for evaluating medical AI models on real medical examination questions from multiple countries and specialties.
+Benchmarking local LLMs on real European medical residency exams. The canonical
+leaderboard lives in a local **Postgres database (`medbench`)**; models are
+evaluated locally with **MLX** on Apple Silicon.
 
-## Project Overview
+Companion repos: [europemedqa](https://github.com/causius0/europemedqa) — the
+12,340-question multilingual dataset (IT/ES/FR/PT) that powers both evaluation
+and LoRA training.
 
-This leaderboard evaluates Large Language Models (LLMs) and medical AI systems on their ability to answer real medical examination questions from:
-- Italian National Medical Residency Exam (SSM - Selezione Specializzazioni in Medicina)
-- Spanish Medical Residency Exam (MIR - Médico Interno Residente)
-- Portuguese Medical Residency Examination
-- French Medical Residency Examination
+## What is being measured
 
-The system provides standardized metrics to compare model performance across different medical specialties and languages.
+- **Eval set**: 1,060 text-only questions from the Italian SSM exam
+  (2017–2024), with answer positions **shuffled to uniform A–E** so scores are
+  not confounded by position priors (the original exam is 91% "A").
+- **Harness**: single-question, greedy decoding, Italian chat prompt, letter
+  answer. Reasoning models are scored on the text after `</think>` only.
+- **Token budget is part of the score.** A reasoning model given too few
+  tokens refuses by truncation — see the cautionary tale in
+  `docs/TRAINING_PLAN.md`: LFM2.5-8B-A1B scored 23.21% at a 256-token budget
+  and 72.64% on a 1024/2048/4096 budget ladder. Every run records its budget
+  in `shuffled_runs.notes`.
 
-## Quick Start Guide
+## Current leaderboard (medbench.shuffled_runs)
 
-### Prerequisites
+| Model | Accuracy | Budget |
+|---|---|---|
+| qwen3:8b (thinking) | 88.96% | 256 |
+| gemma3:12b | 81.60% | 256 |
+| qwen3:8b | 79.34% | 256 |
+| LFM2.5-8B-A1B 4-bit | 72.64% | 1024→4096 ladder |
+| llama3.1:8b | 68.96% | 256 |
+| LFM2-24B-A2B 4-bit | 60.38% | 8 (non-thinking) |
+| mistral:7b | 54.62% | 256 |
 
-- Python 3.8 or higher
-- Git
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/medical-ai-leaderboard.git
-cd medical-ai-leaderboard
-```
-
-2. Create the data directory structure:
-```bash
-mkdir -p data results
-```
-
-3. Prepare your data:
-   - Add `data/solutions.json` with correct answers (see [SOLUTIONS-FORMAT.md](docs/SOLUTIONS-FORMAT.md))
-   - Add AI model responses to `data/` (see [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md))
-
-4. Run the evaluation:
-```bash
-python scripts/evaluate_model.py --answers data/model_x_answers.json --solutions data/solutions.json
-```
-
-## Workflow Explanation
-
-```
-1. Collect Questions → 2. Generate AI Responses → 3. Evaluate → 4. Update Leaderboard
-```
-
-### Step 1: Collect Questions
-- Gather medical exam questions from official sources
-- Add to `data/solutions.json` with correct answers
-- Document source in `docs/SOURCES.md`
-
-### Step 2: Generate AI Responses
-- Use LM Studio or similar tool to prompt models
-- Output responses in JSON format (see [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md))
-- Save to `data/[model_name]_answers.json`
-
-### Step 3: Evaluate Performance
-- Run evaluation script to compare AI answers with solutions
-- Calculate accuracy, confidence scores, and specialty breakdowns
-- Generate detailed performance reports
-
-### Step 4: Update Leaderboard
-- Add results to `results/leaderboard.json`
-- Generate visualizations and summary statistics
-- Commit results (but never commit solutions!)
-
-## Directory Structure
-
-```
-medical-ai-leaderboard/
-├── README.md                          # This file
-├── .gitignore                         # Git ignore rules (solutions.json included)
-├── docs/
-│   ├── SOURCES.md                     # List of exam sources and templates
-│   ├── SOLUTIONS-FORMAT.md            # Solutions JSON specification
-│   └── ANSWERS-FORMAT.md              # AI answers JSON specification
-├── data/
-│   ├── solutions.json                 # Correct answers (GITIGNORED)
-│   └── [model_name]_answers.json      # AI model responses
-├── scripts/
-│   ├── evaluate_model.py              # Evaluation script
-│   ├── generate_leaderboard.py        # Leaderboard generator
-│   └── visualize_results.py           # Visualization tools
-└── results/
-    ├── leaderboard.json               # Current leaderboard
-    └── [model_name]_report.json       # Individual model reports
-```
-
-## How to Add New Model Results
-
-### 1. Generate Responses
-
-Use LM Studio or your preferred tool to prompt the model with questions. Structure your prompts to output JSON in the format specified in [ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md).
-
-Example prompt structure:
-```
-Answer the following medical questions. For each question, provide:
-1. Your chosen answer (A, B, C, D, or E)
-2. Your confidence level (0-100)
-3. Brief explanation
-
-Output in JSON format with structure:
-{
-  "model_name": "Model Name",
-  "test_date": "2025-03-05",
-  "responses": [
-    {
-      "question_id": "unique_id",
-      "answer": "B",
-      "confidence": 85,
-      "explanation": "..."
-    }
-  ]
-}
-
-Questions:
-[Insert questions here]
-```
-
-### 2. Save Responses
-
-Save the model's output to `data/[model_name]_answers.json`
-
-### 3. Evaluate
-
-Run the evaluation script:
-```bash
-python scripts/evaluate_model.py \
-    --answers data/[model_name]_answers.json \
-    --solutions data/solutions.json \
-    --output results/[model_name]_report.json
-```
-
-### 4. Update Leaderboard
+## How to run an evaluation
 
 ```bash
-python scripts/generate_leaderboard.py
+# 1. (once) canonical eval set, reconstructed from the DB's pinned letters
+python3 scripts/build_pg_shuffle.py
+
+# 2. answer the 1,060 questions with a local model
+.venv/bin/python scripts/run_local_baseline.py \
+    --model models/LFM2.5-8B-A1B-4bit \
+    --questions data/ssm_questions_text_only_shuffled_no_answers.json \
+    --tag my_run --max-tokens 1024        # raise budget for thinking models
+
+# 3. score + publish to the leaderboard
+.venv/bin/python scripts/evaluate_ssm_results.py \
+    results/local/<model>_<tag>.json data/ssm_questions_text_only_shuffled.json
+python3 scripts/publish_to_medbench.py results/local/<model>_<tag>.json \
+    --param-size 8B-A1B --notes-extra "anything that matters"
 ```
 
-## JSON Format Specifications
+Runs are resumeable (answered questions are skipped) and every publish
+records model repo, quantization, budget, and parse rate alongside the score.
 
-The project uses two main JSON formats:
+## LoRA fine-tuning project
 
-### Solutions Format
-See [docs/SOLUTIONS-FORMAT.md](docs/SOLUTIONS-FORMAT.md) for the complete specification of the `solutions.json` file.
+Can LoRA teach LFM2.5-8B to answer directly (no reasoning spiral) at an
+8-token budget, matching its own thinking-mode ceiling? Staged plan with
+review gates and decision rules: **[docs/TRAINING_PLAN.md](docs/TRAINING_PLAN.md)**.
+Training data (9,401 examples, contamination-guarded, position-balanced):
+**[docs/LoRA_DATA_PREP.md](docs/LoRA_DATA_PREP.md)**.
 
-**Important**: `solutions.json` contains correct answers and should NEVER be committed to Git. It is included in `.gitignore`.
+## Image questions
 
-### Answers Format
-See [docs/ANSWERS-FORMAT.md](docs/ANSWERS-FORMAT.md) for the complete specification of AI model response format.
+The 60 image-dependent SSM questions (and ~440 more in other exams) are
+described by a vision model and injected as text at test time:
+**[docs/IMAGE_DESCRIPTIONS.md](docs/IMAGE_DESCRIPTIONS.md)**.
 
-## Metrics and Scoring
+## Repo layout
 
-The leaderboard tracks multiple metrics:
-
-- **Overall Accuracy**: Percentage of correct answers across all questions
-- **Specialty Breakdown**: Performance by medical specialty (Cardiology, Neurology, etc.)
-- **Source Breakdown**: Performance by exam source (Italian SSM, Spanish MIR, etc.)
-- **Confidence-Accuracy Correlation**: How well model confidence predicts correctness
-- **Confidence Score**: Weighted accuracy based on confidence levels
-
-## Contributing
-
-Contributions are welcome! To add new exam sources or improve evaluation:
-
-1. Document new sources in `docs/SOURCES.md`
-2. Follow the JSON format specifications in `docs/`
-3. Add evaluation scripts to `scripts/`
-4. Update this README with any workflow changes
-
-## Data Sources
-
-Current medical examination sources are documented in [docs/SOURCES.md](docs/SOURCES.md).
-
-Please see that file for:
-- Complete list of current sources
-- Templates for adding new sources
-- Source-specific considerations
-
-## License
-
-[Your License Here]
-
-## Citation
-
-If you use this leaderboard in your research, please cite:
 ```
-@software{medical_ai_leaderboard,
-  title={Medical AI Leaderboard: Comprehensive Evaluation of Medical LLMs},
-  author={[Your Name]},
-  year={2025},
-  url={https://github.com/yourusername/medical-ai-leaderboard}
-}
+scripts/
+  build_pg_shuffle.py        # eval set from medbench's pinned letters
+  run_local_baseline.py      # local MLX eval harness (base or +LoRA adapter)
+  evaluate_ssm_results.py    # score a results file
+  publish_to_medbench.py     # insert runs into the Postgres leaderboard
+  prepare_lora_data.py       # build data/lora/ train/dev JSONL
+  shuffle_answer_keys.py     # standalone position-shuffler (legacy of eval set)
+  extract_drive_links.py / download_images.py /
+  generate_image_descriptions.py / build_enriched_dataset.py   # image pipeline
+  openrouter_client.py, run_*_text_only.py, ...               # legacy batch path (dead scale)
+data/                        # gitignored where answers live — see SECURITY
+models/                      # patched local MLX snapshots (4-bit)
+.venv/                       # MLX environment (python3.9)
+results/local/               # harness outputs (committed)
 ```
 
-## Contact
+## Security
 
-[Your Contact Information]
+Files containing correct answers are gitignored and must never be committed:
+`data/ssm_questions_with_solution.json`, `data/ssm_questions_*shuffled*.json`
+(with answers), `data/shuffle_mapping.json`, `data/ssm_questions_enriched.json`,
+`data/lora/` (contains answers in targets), `data/images/` (copyright).
+Questions sent to models must not contain `correct_answer`.
