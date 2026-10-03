@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Temporarily disabled for dev server
+  output: "export",
+  basePath: "/medical-ai-leaderboard",
+  assetPrefix: "/medical-ai-leaderboard/",
   typescript: {
     ignoreBuildErrors: true,
   },

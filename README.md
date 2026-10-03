@@ -1,97 +1,105 @@
 # Medical AI Leaderboard
 
-Benchmarking local LLMs on real European medical residency exams. The canonical
-leaderboard lives in a local **Postgres database (`medbench`)**; models are
-evaluated locally with **MLX** on Apple Silicon.
+**Benchmark local LLMs on real European medical residency examinations — with a live, interactive leaderboard.**
 
-Companion repos: [europemedqa](https://github.com/causius0/europemedqa) — the
-12,340-question multilingual dataset (IT/ES/FR/PT) that powers both evaluation
-and LoRA training.
+> 🚀 **Live demo:** [causius0.github.io/medical-ai-leaderboard](https://causius0.github.io/medical-ai-leaderboard/)
+>
+> Real models, real questions, real results — run locally on an Apple Silicon Mac.
 
-## What is being measured
+## What this is
 
-- **Eval set**: 1,060 text-only questions from the Italian SSM exam
-  (2017–2024), with answer positions **shuffled to uniform A–E** so scores are
-  not confounded by position priors (the original exam is 91% "A").
-- **Harness**: single-question, greedy decoding, Italian chat prompt, letter
-  answer. Reasoning models are scored on the text after `</think>` only.
-- **Token budget is part of the score.** A reasoning model given too few
-  tokens refuses by truncation — see the cautionary tale in
-  `docs/TRAINING_PLAN.md`: LFM2.5-8B-A1B scored 23.21% at a 256-token budget
-  and 72.64% on a 1024/2048/4096 budget ladder. Every run records its budget
-  in `shuffled_runs.notes`.
+A full-stack benchmark that runs **open-weight LLMs locally** (via Ollama / llama.cpp on Apple Silicon) against **1,060 real questions** from the **Italian national medical residency exam (SSM)**, sourced from the [EuropeMedQA](https://github.com/causius0/SIIAM) dataset. It scores each model across **54 medical specialties** and **8 exam years**, then publishes the results to a polished, interactive leaderboard.
 
-## Current leaderboard (medbench.shuffled_runs)
+## Key results (local models, zero-shot, temperature 0, **shuffled answers**)
 
-| Model | Accuracy | Budget |
+> **Methodology note:** The correct answers are **randomized across option positions** (the original SSM dataset has the correct answer at letter "A" in ~91% of questions — an answer-position leak). Every model is re-scored on a shuffled version where correct answers are uniformly distributed (A–E), so scores reflect genuine medical knowledge, not format exploitation.
+
+| Model | Accuracy | Token budget |
 |---|---|---|
-| qwen3:8b (thinking) | 88.96% | 256 |
-| gemma3:12b | 81.60% | 256 |
-| qwen3:8b | 79.34% | 256 |
-| LFM2.5-8B-A1B 4-bit | 72.64% | 1024→4096 ladder |
-| llama3.1:8b | 68.96% | 256 |
-| LFM2-24B-A2B 4-bit | 60.38% | 8 (non-thinking) |
-| mistral:7b | 54.62% | 256 |
+| qwen3:8b (thinking) | **89.0%** | 256 |
+| gemma3:12b | **81.6%** | 256 |
+| qwen3:8b | 79.3% | 256 |
+| LFM2.5-8B-A1B 4-bit (MLX) | 72.6% | 1024→4096 |
+| llama3.1:8b | 69.0% | 256 |
+| mistral:7b | 54.6% | 256 |
 
-## How to run an evaluation
+> **Update (Oct 2026): the "Liquid is bad" result was a token-budget artifact.**
+> LFM2.5-8B-A1B is a reasoning model that thinks 500+ tokens before answering.
+> Re-run locally with MLX and an adequate budget, it climbs 23.2% → 67.6% →
+> 71.9% → **72.6%** as the thinking budget ladder widens (256 → 1024 → 4096).
+> Accuracy falls monotonically with think-length — when this model spirals, it
+> usually answers wrong or never finishes. That finding now drives a LoRA
+> experiment: [docs/TRAINING_PLAN.md](docs/TRAINING_PLAN.md) — can fine-tuning
+> teach it to answer *directly* (8-token budget) at its thinking-mode ceiling?
+
+Notably, **enabling chain-of-thought reasoning lifted Qwen3-8B from 79.3% → 89.0%** on the shuffled set — a ~10-point gain purely from reasoning. Reassuringly, models that had leaned on the "answer is A" shortcut (e.g. mistral, dropping 67.6% → 54.6%) were exposed, while genuinely capable models (gemma) held or improved.
+
+## Features
+
+- **Bias-free evaluation** — `scripts/shuffle_answers.py` randomizes correct-answer positions (seed 42, reproducible), so results aren't inflated by answer-position leakage.
+- **Real local evaluation** — `scripts/run_evaluation.py` runs Ollama / llama.cpp models against the shuffled dataset, parses answer letters, and scores by specialty + year. (No fabricated/mock results.)
+- **PostgreSQL persistence** — `scripts/db_load.py` stores questions, runs, responses, and derived per-specialty/year scores in a local Postgres DB (`medbench`), which is the source of truth. Shuffled results live in a **separate `shuffled_*` relation** so the original dataset is preserved.
+- **Interactive leaderboard** — Next.js static site with:
+  - Live ranking with per-model brand logos
+  - **Filter by medical specialty** (rank models by accuracy in e.g. Cardiology)
+  - Per-model detail with full specialty breakdown (correct/total per specialty)
+  - Performance heatmap, year-over-year trends, and side-by-side model comparison
+  - Dark **and** light themes
+- **Real data discipline** — answer keys are never committed; only scored results are published.
+
+## Architecture
+
+```
+EuropeMedQA SSM (1060 Q) ──▶ run_evaluation.py ──▶ result JSONs
+                              (Ollama/llama.cpp)        │
+                                                       ▼
+                                PostgreSQL (medbench) ◀── db_load.py (ingest)
+                                                       │
+                                                       ▼
+                                frontend/public/leaderboard_data.json ──▶ GitHub Pages
+```
+
+## Tech stack
+
+- **Python** — evaluation pipeline, Postgres ingestion/export (psycopg)
+- **Ollama / llama.cpp** — local model inference (Metal-accelerated on Apple Silicon)
+- **PostgreSQL 16** — schema, ingestion, derived scores
+- **Next.js 16 / React 19 / TypeScript** — static leaderboard site
+- **GitHub Actions + Pages** — CI build and deployment
+
+## Running it yourself
 
 ```bash
-# 1. (once) canonical eval set, reconstructed from the DB's pinned letters
-python3 scripts/build_pg_shuffle.py
+# 1. Pull models locally
+ollama pull qwen3:8b
+ollama pull gemma3:12b
+ollama pull llama3.1:8b
 
-# 2. answer the 1,060 questions with a local model
-.venv/bin/python scripts/run_local_baseline.py \
-    --model models/LFM2.5-8B-A1B-4bit \
-    --questions data/ssm_questions_text_only_shuffled_no_answers.json \
-    --tag my_run --max-tokens 1024        # raise budget for thinking models
+# 2. Run a real evaluation (full SSM set)
+python3 scripts/run_evaluation.py --models qwen3:8b,gemma3:12b,llama3.1:8b
 
-# 3. score + publish to the leaderboard
-.venv/bin/python scripts/evaluate_ssm_results.py \
-    results/local/<model>_<tag>.json data/ssm_questions_text_only_shuffled.json
-python3 scripts/publish_to_medbench.py results/local/<model>_<tag>.json \
-    --param-size 8B-A1B --notes-extra "anything that matters"
+# 3. Persist to PostgreSQL (requires local Postgres 16 + psycopg)
+createdb medbench
+python3 scripts/db_load.py --init    # schema + load 1060 questions
+python3 scripts/db_load.py --ingest  # ingest results
+python3 scripts/db_load.py --export  # rebuild leaderboard JSON
+
+# 4. Serve the site
+cd frontend && npm install && npm run build
 ```
 
-Runs are resumeable (answered questions are skipped) and every publish
-records model repo, quantization, budget, and parse rate alongside the score.
+See [`docs/REAL_EVALUATION.md`](docs/REAL_EVALUATION.md) for the full pipeline, Postgres schema, and example queries.
 
-## LoRA fine-tuning project
+## Roadmap
 
-Can LoRA teach LFM2.5-8B to answer directly (no reasoning spiral) at an
-8-token budget, matching its own thinking-mode ceiling? Staged plan with
-review gates and decision rules: **[docs/TRAINING_PLAN.md](docs/TRAINING_PLAN.md)**.
-Training data (9,401 examples, contamination-guarded, position-balanced):
-**[docs/LoRA_DATA_PREP.md](docs/LoRA_DATA_PREP.md)**.
+- Add Spanish (MIR), Portuguese, and French residency exams from EuropeMedQA
+- Run vision-language models on image-based questions
+- Calibrated confidence scores and position-bias analysis
 
-## Image questions
+## Related
 
-The 60 image-dependent SSM questions (and ~440 more in other exams) are
-described by a vision model and injected as text at test time:
-**[docs/IMAGE_DESCRIPTIONS.md](docs/IMAGE_DESCRIPTIONS.md)**.
+- [SIIAM](https://github.com/causius0/SIIAM) — EuropeMedQA dataset + medical vision-language research
 
-## Repo layout
+## License
 
-```
-scripts/
-  build_pg_shuffle.py        # eval set from medbench's pinned letters
-  run_local_baseline.py      # local MLX eval harness (base or +LoRA adapter)
-  evaluate_ssm_results.py    # score a results file
-  publish_to_medbench.py     # insert runs into the Postgres leaderboard
-  prepare_lora_data.py       # build data/lora/ train/dev JSONL
-  shuffle_answer_keys.py     # standalone position-shuffler (legacy of eval set)
-  extract_drive_links.py / download_images.py /
-  generate_image_descriptions.py / build_enriched_dataset.py   # image pipeline
-  openrouter_client.py, run_*_text_only.py, ...               # legacy batch path (dead scale)
-data/                        # gitignored where answers live — see SECURITY
-models/                      # patched local MLX snapshots (4-bit)
-.venv/                       # MLX environment (python3.9)
-results/local/               # harness outputs (committed)
-```
-
-## Security
-
-Files containing correct answers are gitignored and must never be committed:
-`data/ssm_questions_with_solution.json`, `data/ssm_questions_*shuffled*.json`
-(with answers), `data/shuffle_mapping.json`, `data/ssm_questions_enriched.json`,
-`data/lora/` (contains answers in targets), `data/images/` (copyright).
-Questions sent to models must not contain `correct_answer`.
+MIT
