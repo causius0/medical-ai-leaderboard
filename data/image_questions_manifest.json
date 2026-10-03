@@ -1,0 +1,5538 @@
+{
+  "generated_at": "2026-10-02T17:48:03",
+  "source_csv": "data/europemedqa/EuropeMedQA.csv",
+  "image_dir": "data/images",
+  "summary": {
+    "total_image_questions": 622,
+    "by_exam": {
+      "ECN_France": 225,
+      "PNA_Portugal": 10,
+      "SSM_Italy": 60,
+      "MIR_Spain": 327
+    },
+    "with_local_image_available": 537,
+    "clean_records": 376,
+    "with_flags": 246
+  },
+  "questions": [
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0018",
+      "picture_link": "FR_D02_03.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D02_03.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0019",
+      "picture_link": "FR_D02_04.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D02_04.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0023",
+      "picture_link": "FR_D02_08.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D02_08.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0034",
+      "picture_link": "FR_D03_04.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/FR_D03_04.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0035",
+      "picture_link": "FR_D03_05.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/FR_D03_05.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0039",
+      "picture_link": "FR_D03_09.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/FR_D03_09.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0043",
+      "picture_link": "FR_D03_13.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D03_13.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0046",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0047",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0048",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0049",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0050",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0051",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0052",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0053",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0054",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0055",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0056",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0057",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0058",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0059",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0060",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0084",
+      "picture_link": "FR_D06_08.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D06_08.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0091",
+      "picture_link": "FR_D07_01.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D07_01.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0108",
+      "picture_link": "FR_D08_05.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D08_05.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0119",
+      "picture_link": "FR_D09_07.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D09_07.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0135",
+      "picture_link": "FR_D10_08.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D10_08.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0138",
+      "picture_link": "FR_D10_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D10_11.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0149",
+      "picture_link": "FR_D11_07.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D11_07.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0171",
+      "picture_link": "FR_D12_14.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D12_14.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0174",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0175",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0176",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0177",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0178",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0179",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0180",
+      "picture_link": "FR_D13_07.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D13_07.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0181",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0182",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0183",
+      "picture_link": "FR_D13_10.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D13_10.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0184",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0185",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0186",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0187",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0188",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0239",
+      "picture_link": "FR_D17_06.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D17_06.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0241",
+      "picture_link": "FR_D17_08.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D17_08.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0261",
+      "picture_link": "FR_D18_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/FR_D18_11.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0275",
+      "picture_link": "FR275.jpg",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR275.jpg"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0311",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0312",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0313",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0314",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0315",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0316",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0317",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0318",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0319",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0320",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0321",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0322",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0323",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0324",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0325",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0326",
+      "picture_link": "FR0326.jpg",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0326.jpg"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0340",
+      "picture_link": "FR0340.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0340.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0342",
+      "picture_link": "FR0342.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0342.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0344",
+      "picture_link": "FR0344.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0344.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0350",
+      "picture_link": "FR0350.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0350.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0357",
+      "picture_link": "FR0357.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0357.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0372",
+      "picture_link": "FR0372.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0372.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0377",
+      "picture_link": "FR0377.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0377.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0394",
+      "picture_link": "FR0394.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0394.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0396",
+      "picture_link": "FR0396.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0396.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0399",
+      "picture_link": "FR0399.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0399.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0403",
+      "picture_link": "FR0403.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0403.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0420",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0421",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0422",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0423",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0424",
+      "picture_link": "FR0424.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0424.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0425",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0426",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0427",
+      "picture_link": "FR0427.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0427.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0428",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0429",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0430",
+      "picture_link": "FR0430.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0430.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0431",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0432",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0433",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0437",
+      "picture_link": "FR0437.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0437.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0450",
+      "picture_link": "FR0450.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0450.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0458",
+      "picture_link": "FR0458.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0458.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0467",
+      "picture_link": "FR0467.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0467.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0481",
+      "picture_link": "FR0481.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0481.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0482",
+      "picture_link": "FR0482.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0482.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0483",
+      "picture_link": "FR0483.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0483.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0501",
+      "picture_link": "FR0501.png",
+      "picture_provided_raw": "no",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/FR0501.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0505",
+      "picture_link": "FR0505.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0505.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0506",
+      "picture_link": "FR0506.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0506.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0539",
+      "picture_link": "FR0539.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0539.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0548",
+      "picture_link": "FR0548.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0548.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0554",
+      "picture_link": "FR0554.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0554.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0564",
+      "picture_link": "FR0564.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0564.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0565",
+      "picture_link": "FR0565.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0565.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0572",
+      "picture_link": "FR0572.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0572.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0578",
+      "picture_link": "FR0578.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0578.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0610",
+      "picture_link": "FR0610.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0610.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0619",
+      "picture_link": "FR0619.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0619.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0638",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0639",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0640",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0641",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0642",
+      "picture_link": "FR0642.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0642.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0643",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0644",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0645",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0646",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0647",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0648",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0649",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0650",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0651",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0652",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0656",
+      "picture_link": "FR0656.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0656.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0659",
+      "picture_link": "FR0659.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0659.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0673",
+      "picture_link": "FR0673.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0673.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0677",
+      "picture_link": "FR0677.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0677.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0694",
+      "picture_link": "FR0694.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0694.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0716",
+      "picture_link": "FR0716.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0716.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0732",
+      "picture_link": "FR0732.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0732.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0739",
+      "picture_link": "FR0739.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0739.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0764",
+      "picture_link": "FR0764.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0764.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0766",
+      "picture_link": "FR0766.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0766.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0777",
+      "picture_link": "FR0777.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0777.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0790",
+      "picture_link": "FR0790.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0790.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0815",
+      "picture_link": "FR0815.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0815.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0837",
+      "picture_link": "FR0837.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0837.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0841",
+      "picture_link": "FR0841.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0841.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0858",
+      "picture_link": "FR0858.1.png  FR0858.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0858.1.png  FR0858.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0867",
+      "picture_link": "FR0867.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0867.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0878",
+      "picture_link": "FR0878.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0878.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0880",
+      "picture_link": "FR0880.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0880.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0885",
+      "picture_link": "FR0885.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0885.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0893",
+      "picture_link": "FR0893.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0893.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0919",
+      "picture_link": "FR0919.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0919.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0921",
+      "picture_link": "FR0921.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0921.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0923",
+      "picture_link": "FR0923.1.png FR0923.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0923.1.png FR0923.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0924",
+      "picture_link": "FR0924.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0924.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0948",
+      "picture_link": "FR0948.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0948.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0953",
+      "picture_link": "FR0953.1.png FR0953.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0953.1.png FR0953.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0958",
+      "picture_link": "FR0958.1.png FR0958.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0958.1.png FR0958.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0976",
+      "picture_link": "FR0976.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0976.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0990",
+      "picture_link": "FR0990.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0990.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR0997",
+      "picture_link": "FR0997.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR0997.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1010",
+      "picture_link": "FR1010.1.png FR1010.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1010.1.png FR1010.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1011",
+      "picture_link": "FR1011.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1011.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1022",
+      "picture_link": "FR1022.1.png FR1022.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1022.1.png FR1022.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1023",
+      "picture_link": "FR1023.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1023.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1028",
+      "picture_link": "FR1028.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1028.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1030",
+      "picture_link": "FR1030.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1030.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1043",
+      "picture_link": "FR1043.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1043.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1052",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1053",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1054",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1055",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1056",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1057",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1058",
+      "picture_link": "FR1058.1.png FR1058.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1058.1.png FR1058.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1059",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1060",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1061",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1062",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1063",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1064",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1065",
+      "picture_link": null,
+      "picture_provided_raw": "yes",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1076",
+      "picture_link": "FR1076.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1076.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1078",
+      "picture_link": "FR1078.1 FR1078.2",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "malformed_ext:2"
+      ],
+      "local_image": "data/images/FR1078.1 FR1078.2"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1084",
+      "picture_link": "FR1084.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1084.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1085",
+      "picture_link": "FR1085.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1085.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1087",
+      "picture_link": "FR1087.1.png FR1087.2.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1087.1.png FR1087.2.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1095",
+      "picture_link": "FR1095.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1095.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1096",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1097",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1098",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1099",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1100",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1101",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1102",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1103",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1104",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1105",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1106",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1107",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1108",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1109",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1110",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1111",
+      "picture_link": "FR_LCA1_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA1_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1112",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1113",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1114",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1115",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1116",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1117",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1118",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1119",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1120",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1121",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1122",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1123",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1124",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1125",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1126",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1127",
+      "picture_link": "FR_LCA2_2022.pdf",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "pdf_not_image",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/FR_LCA2_2022.pdf"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1131",
+      "picture_link": "FR1131.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1131.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1136",
+      "picture_link": "FR1136.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1136.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1137",
+      "picture_link": "FR1137.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1137.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1140",
+      "picture_link": "FR1140.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1140.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1145",
+      "picture_link": "FR1145.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1145.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1148",
+      "picture_link": "FR1148.1 FR1148.2",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "malformed_ext:2"
+      ],
+      "local_image": "data/images/FR1148.1 FR1148.2"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1152",
+      "picture_link": "FR1152.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1152.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1162",
+      "picture_link": "FR1162.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1162.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1165",
+      "picture_link": "FR1165.1.png FR1165.2.png FR1165.3.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1165.1.png FR1165.2.png FR1165.3.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1180",
+      "picture_link": "FR1180.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/FR1180.png"
+    },
+    {
+      "exam": "ECN_France",
+      "question_id": "FR1191",
+      "picture_link": "FR1191.1 FR1191.2",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "malformed_ext:2"
+      ],
+      "local_image": "data/images/FR1191.1 FR1191.2"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO175",
+      "picture_link": "PO175.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO175.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO242",
+      "picture_link": "PO242.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO242.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO353",
+      "picture_link": "PO353.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO353.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO383",
+      "picture_link": "PO383.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO383.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO406",
+      "picture_link": "PO406.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO406.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO482",
+      "picture_link": "PO482.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO482.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO491",
+      "picture_link": "PO491.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO491.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO602",
+      "picture_link": "PO602.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO602.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO676",
+      "picture_link": "PO676.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO676.png"
+    },
+    {
+      "exam": "PNA_Portugal",
+      "question_id": "PO834",
+      "picture_link": "PO834.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/PO834.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0006",
+      "picture_link": "IT0006.PNG",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT0006.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0007",
+      "picture_link": "IT0006.PNG",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT0006.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0031",
+      "picture_link": "IT031.PNG",
+      "picture_provided_raw": "SI",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT031.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0032",
+      "picture_link": "IT031.PNG",
+      "picture_provided_raw": "SI",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT031.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0053",
+      "picture_link": "IT053.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT053.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0054",
+      "picture_link": "IT053.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT053.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0063",
+      "picture_link": "IT063.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT063.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0064",
+      "picture_link": "IT063.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT063.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0065",
+      "picture_link": "IT0063.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0063.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0095",
+      "picture_link": "IT095.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT095.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0111",
+      "picture_link": "IT111.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT111.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0130",
+      "picture_link": "IT130.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT130.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0131",
+      "picture_link": "IT130.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT130.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0136",
+      "picture_link": "IT136.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT136.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0169",
+      "picture_link": "IT169.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT169.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0198",
+      "picture_link": "IT0200.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0200.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0200",
+      "picture_link": "IT0202.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0202.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0213",
+      "picture_link": "IT0215.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT0215.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0214",
+      "picture_link": "IT0215.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/IT0215.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0229",
+      "picture_link": "IT0231.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0231.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0235",
+      "picture_link": "IT0237.PNG",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0237.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0236",
+      "picture_link": "IT0238.PNG",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0238.PNG"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0250",
+      "picture_link": "IT0252.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0252.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0311",
+      "picture_link": "IT0313.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0313.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0340",
+      "picture_link": "IT0342.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0342.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0375",
+      "picture_link": "IT0375.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0375.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0390",
+      "picture_link": "IT0392.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0392.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0455",
+      "picture_link": "IT0455.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0455.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0456",
+      "picture_link": "IT0456.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0456.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0507",
+      "picture_link": "IT0507.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0507.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0512",
+      "picture_link": "IT0512.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0512.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0532",
+      "picture_link": "IT0532.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0532.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0533",
+      "picture_link": "IT0533.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0533.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0563",
+      "picture_link": "IT0563.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0563.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0593",
+      "picture_link": "IT0593.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0593.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0597",
+      "picture_link": "IT0597.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0597.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0653",
+      "picture_link": "IT0653.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0653.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0675",
+      "picture_link": "IT0675.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0675.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0676",
+      "picture_link": "IT0676.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0676.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0713",
+      "picture_link": "IT0713.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0713.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0783",
+      "picture_link": "IT0783.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0783.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0784",
+      "picture_link": "IT0784.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0784.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0785",
+      "picture_link": "IT0785.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0785.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0860",
+      "picture_link": "IT0860.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0860.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0861",
+      "picture_link": "IT0861.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0861.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0890",
+      "picture_link": "IT0890.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0890.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0891",
+      "picture_link": "IT0891.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0891.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0892",
+      "picture_link": "IT0892.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0892.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0908",
+      "picture_link": "IT0908.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0908.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0919",
+      "picture_link": "IT0919.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0919.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0949",
+      "picture_link": "IT0949.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0949.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT0972",
+      "picture_link": "IT0972.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT0972.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1022",
+      "picture_link": "IT1022.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1022.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1023",
+      "picture_link": "IT1023.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1023.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1044",
+      "picture_link": "IT1044.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1044.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1053",
+      "picture_link": "IT1053.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1053.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1100",
+      "picture_link": "IT1100.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1100.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1113",
+      "picture_link": "IT1113.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1113.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1114",
+      "picture_link": "IT1114.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1114.png"
+    },
+    {
+      "exam": "SSM_Italy",
+      "question_id": "IT1118",
+      "picture_link": "IT1118.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/IT1118.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0001",
+      "picture_link": "ES13_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0002",
+      "picture_link": "ES13_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0003",
+      "picture_link": "ES13_2.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_2.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0004",
+      "picture_link": "ES13_2.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_2.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0005",
+      "picture_link": "ES13_3.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_3.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0006",
+      "picture_link": "ES13_3.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_3.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0007",
+      "picture_link": "ES13_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0008",
+      "picture_link": "ES13_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0009",
+      "picture_link": "ES13_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0010",
+      "picture_link": "ES13_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0011",
+      "picture_link": "ES13_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0012",
+      "picture_link": "ES13_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0013",
+      "picture_link": "ES13_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0014",
+      "picture_link": "ES13_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0015",
+      "picture_link": "ES13_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0016",
+      "picture_link": "ES13_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0017",
+      "picture_link": "ES13_9.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0018",
+      "picture_link": "ES13_9.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0019",
+      "picture_link": "ES13_10.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0020",
+      "picture_link": "ES13_10.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0021",
+      "picture_link": "ES13_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0022",
+      "picture_link": "ES13_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0023",
+      "picture_link": "ES13_12.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0024",
+      "picture_link": "ES13_12.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0025",
+      "picture_link": "ES13_13.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0026",
+      "picture_link": "ES13_13.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0027",
+      "picture_link": "ES13_14.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0028",
+      "picture_link": "ES13_14.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0029",
+      "picture_link": "ES13_15.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_15.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0030",
+      "picture_link": "ES13_15.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_15.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0031",
+      "picture_link": "ES13_16.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0032",
+      "picture_link": "ES13_16.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0033",
+      "picture_link": "ES13_17.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0034",
+      "picture_link": "ES13_17.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES13_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0236",
+      "picture_link": "ES14_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0237",
+      "picture_link": "ES14_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0238",
+      "picture_link": "ES14_2.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_2.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0239",
+      "picture_link": "ES14_2.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_2.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0240",
+      "picture_link": "ES14_3.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_3.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0241",
+      "picture_link": "ES14_3.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_3.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0242",
+      "picture_link": "ES14_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0243",
+      "picture_link": "ES14_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0244",
+      "picture_link": "ES14_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0245",
+      "picture_link": "ES14_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0246",
+      "picture_link": "ES14_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0247",
+      "picture_link": "ES14_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0248",
+      "picture_link": "ES14_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0249",
+      "picture_link": "ES14_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0250",
+      "picture_link": "ES14_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0251",
+      "picture_link": "ES14_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0252",
+      "picture_link": "ES14_9.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0253",
+      "picture_link": "ES14_9.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0254",
+      "picture_link": "ES14_10.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0255",
+      "picture_link": "ES14_10.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0256",
+      "picture_link": "ES14_11.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0257",
+      "picture_link": "ES14_11.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0258",
+      "picture_link": "ES14_12.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0259",
+      "picture_link": "ES14_12.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0260",
+      "picture_link": "ES14_13.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0261",
+      "picture_link": "ES14_13.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0262",
+      "picture_link": "ES14_14.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0263",
+      "picture_link": "ES14_14.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0264",
+      "picture_link": "ES14_15.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link",
+        "no_drive_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0265",
+      "picture_link": "ES14_15.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link",
+        "no_drive_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0266",
+      "picture_link": "ES14_16.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0267",
+      "picture_link": "ES14_16.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0268",
+      "picture_link": "ES14_17.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0269",
+      "picture_link": "ES14_17.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided",
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES14_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0471",
+      "picture_link": "ES15_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0472",
+      "picture_link": "ES15_2.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_2.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0473",
+      "picture_link": "ES15_3.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_3.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0474",
+      "picture_link": "ES15_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0475",
+      "picture_link": "ES15_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0476",
+      "picture_link": "ES15_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0477",
+      "picture_link": "ES15_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0478",
+      "picture_link": "ES15_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0479",
+      "picture_link": "ES15_9.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0480",
+      "picture_link": "ES15_10.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0481",
+      "picture_link": "ES15_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0482",
+      "picture_link": "ES15_12.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0483",
+      "picture_link": "ES15_13.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0484",
+      "picture_link": "ES15_14.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0485",
+      "picture_link": "ES15_15.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_15.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0486",
+      "picture_link": "ES15_16.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0487",
+      "picture_link": "ES15_17.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0488",
+      "picture_link": "ES15_18.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_18.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0489",
+      "picture_link": "ES15_19.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_19.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0490",
+      "picture_link": "ES15_20.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_20.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0491",
+      "picture_link": "ES15_21.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_21.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0492",
+      "picture_link": "ES15_22.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_22.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0493",
+      "picture_link": "ES15_23.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_23.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0494",
+      "picture_link": "ES15_24.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_24.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0495",
+      "picture_link": "ES15_25.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_25.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0496",
+      "picture_link": "ES15_26.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_26.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0497",
+      "picture_link": "ES15_27.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_27.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0498",
+      "picture_link": "ES15_28.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_28.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0499",
+      "picture_link": "ES15_29.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_29.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0500",
+      "picture_link": "ES15_30.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES15_30.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0706",
+      "picture_link": "ES16_1.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_1.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0707",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0708",
+      "picture_link": null,
+      "picture_provided_raw": "YES",
+      "flags": [
+        "marked_provided_but_no_link"
+      ],
+      "local_image": null
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0709",
+      "picture_link": "ES16_4.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_4.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0710",
+      "picture_link": "ES16_5.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_5.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0711",
+      "picture_link": "ES16_6.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_6.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0712",
+      "picture_link": "ES16_7.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_7.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0713",
+      "picture_link": "ES16_8.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_8.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0714",
+      "picture_link": "ES16_9.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_9.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0715",
+      "picture_link": "ES16_10.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_10.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0716",
+      "picture_link": "ES16_11.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_11.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0717",
+      "picture_link": "ES16_12.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_12.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0718",
+      "picture_link": "ES16_13.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_13.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0719",
+      "picture_link": "ES16_14.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_14.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0720",
+      "picture_link": "ES16_15.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_15.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0721",
+      "picture_link": "ES16_16.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_16.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0722",
+      "picture_link": "ES16_17.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_17.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0723",
+      "picture_link": "ES16_18.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_18.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0724",
+      "picture_link": "ES16_19.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_19.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0725",
+      "picture_link": "ES16_20.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_20.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0726",
+      "picture_link": "ES16_21.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_21.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0727",
+      "picture_link": "ES16_22.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_22.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0728",
+      "picture_link": "ES16_23.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_23.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0729",
+      "picture_link": "ES16_24.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_24.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0730",
+      "picture_link": "ES16_25.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_25.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0731",
+      "picture_link": "ES16_26.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_26.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0732",
+      "picture_link": "ES16_27.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_27.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0733",
+      "picture_link": "ES16_28.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_28.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0734",
+      "picture_link": "ES16_29.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_29.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0735",
+      "picture_link": "ES16_30.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_30.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0736",
+      "picture_link": "ES16_31.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_31.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0737",
+      "picture_link": "ES16_32.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES16_32.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0941",
+      "picture_link": "ES0001.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0001.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0942",
+      "picture_link": "ES0002.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0002.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0943",
+      "picture_link": "ES0003.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0003.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0944",
+      "picture_link": "ES0004.png",
+      "picture_provided_raw": "yes",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0004.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0945",
+      "picture_link": "ES0005.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0005.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0946",
+      "picture_link": "ES0004.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0004.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0947",
+      "picture_link": "ES0005.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0005.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0948",
+      "picture_link": "ES0004.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0004.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0949",
+      "picture_link": "ES0005.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0005.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0950",
+      "picture_link": "ES0004.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0004.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0951",
+      "picture_link": "ES0005.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0005.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0952",
+      "picture_link": "ES0004.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0004.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0953",
+      "picture_link": "ES0005.png",
+      "picture_provided_raw": "YES",
+      "flags": [
+        "duplicate_link"
+      ],
+      "local_image": "data/images/ES0005.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0954",
+      "picture_link": "ES0014.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0014.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0955",
+      "picture_link": "ES0015.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0015.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0956",
+      "picture_link": "ES0016.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0016.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0957",
+      "picture_link": "ES0017.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0017.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0958",
+      "picture_link": "ES0018.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0018.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0959",
+      "picture_link": "ES0019.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0019.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0960",
+      "picture_link": "ES0020.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0020.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0961",
+      "picture_link": "ES0021.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0021.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0962",
+      "picture_link": "ES0022.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0022.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0963",
+      "picture_link": "ES0023.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0023.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0964",
+      "picture_link": "ES0024.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0024.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0965",
+      "picture_link": "ES0025.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0025.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0966",
+      "picture_link": "ES0026.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0026.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0967",
+      "picture_link": "ES0027.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0027.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0968",
+      "picture_link": "ES0028.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0028.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0969",
+      "picture_link": "ES0029.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0029.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0970",
+      "picture_link": "ES0030.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0030.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0971",
+      "picture_link": "ES0031.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0031.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0972",
+      "picture_link": "ES0032.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0032.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0973",
+      "picture_link": "ES0033.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0033.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0974",
+      "picture_link": "ES0034.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0034.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES0975",
+      "picture_link": "ES0035.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0035.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1176",
+      "picture_link": "ES0236.png",
+      "picture_provided_raw": "YES",
+      "flags": [],
+      "local_image": "data/images/ES0236.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1177",
+      "picture_link": "ES0237.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0237.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1178",
+      "picture_link": "ES0238.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0238.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1179",
+      "picture_link": "ES0239.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0239.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1180",
+      "picture_link": "ES0240.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0240.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1181",
+      "picture_link": "ES0241.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0241.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1182",
+      "picture_link": "ES0242.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0242.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1183",
+      "picture_link": "ES0243.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0243.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1184",
+      "picture_link": "ES0244.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0244.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1185",
+      "picture_link": "ES0245.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0245.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1186",
+      "picture_link": "ES0246.png",
+      "picture_provided_raw": "NO",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0246.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1187",
+      "picture_link": "ES0247.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0247.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1188",
+      "picture_link": "ES0248.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0248.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1189",
+      "picture_link": "ES0249.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0249.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1190",
+      "picture_link": "ES0250.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0250.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1191",
+      "picture_link": "ES0251.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0251.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1192",
+      "picture_link": "ES0252.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0252.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1193",
+      "picture_link": "ES0253.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0253.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1194",
+      "picture_link": "ES0254.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0254.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1195",
+      "picture_link": "ES0255.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0255.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1196",
+      "picture_link": "ES0256.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0256.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1197",
+      "picture_link": "ES0257.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0257.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1198",
+      "picture_link": "ES0258.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0258.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1199",
+      "picture_link": "ES0259.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0259.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1200",
+      "picture_link": "ES0260.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0260.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1201",
+      "picture_link": "ES0261.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0261.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1202",
+      "picture_link": "ES0262.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0262.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1203",
+      "picture_link": "ES0263.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0263.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1204",
+      "picture_link": "ES0264.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0264.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1205",
+      "picture_link": "ES0265.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0265.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1206",
+      "picture_link": "ES0266.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0266.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1207",
+      "picture_link": "ES0267.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0267.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1208",
+      "picture_link": "ES0268.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0268.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1209",
+      "picture_link": "ES0269.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0269.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1210",
+      "picture_link": "ES0270.png",
+      "picture_provided_raw": "N/A",
+      "flags": [
+        "link_but_not_marked_provided"
+      ],
+      "local_image": "data/images/ES0270.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1411",
+      "picture_link": "ES0471.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0471.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1412",
+      "picture_link": "ES0472.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0472.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1413",
+      "picture_link": "ES0473.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0473.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1414",
+      "picture_link": "ES0474.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0474.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1415",
+      "picture_link": "ES0475.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0475.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1416",
+      "picture_link": "ES0476.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0476.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1417",
+      "picture_link": "ES0477.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0477.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1418",
+      "picture_link": "ES0478.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0478.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1419",
+      "picture_link": "ES0479.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0479.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1420",
+      "picture_link": "ES0480.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0480.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1421",
+      "picture_link": "ES0481.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0481.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1422",
+      "picture_link": "ES0482.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0482.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1423",
+      "picture_link": "ES0483.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0483.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1424",
+      "picture_link": "ES0484.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0484.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1425",
+      "picture_link": "ES0485.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0485.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1426",
+      "picture_link": "ES0486.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0486.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1427",
+      "picture_link": "ES0487.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0487.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1428",
+      "picture_link": "ES0488.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0488.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1429",
+      "picture_link": "ES0489.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0489.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1430",
+      "picture_link": "ES0490.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0490.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1431",
+      "picture_link": "ES0491.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0491.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1432",
+      "picture_link": "ES0492.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0492.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1433",
+      "picture_link": "ES0493.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0493.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1434",
+      "picture_link": "ES0494.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0494.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1435",
+      "picture_link": "ES0495.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0495.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1436",
+      "picture_link": "ES0496.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0496.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1437",
+      "picture_link": "ES0497.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0497.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1596",
+      "picture_link": "ES0656.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0656.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1597",
+      "picture_link": "ES0657.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0657.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1598",
+      "picture_link": "ES0658.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0658.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1599",
+      "picture_link": "ES0659.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0659.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1600",
+      "picture_link": "ES0660.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0660.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1601",
+      "picture_link": "ES0661.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0661.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1602",
+      "picture_link": "ES0662.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0662.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1603",
+      "picture_link": "ES0663.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0663.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1604",
+      "picture_link": "ES0664.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0664.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1605",
+      "picture_link": "ES0665.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0665.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1606",
+      "picture_link": "ES0666.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0666.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1607",
+      "picture_link": "ES0667.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0667.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1608",
+      "picture_link": "ES0668.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0668.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1609",
+      "picture_link": "ES0669.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0669.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1610",
+      "picture_link": "ES0670.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0670.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1611",
+      "picture_link": "ES0671.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0671.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1612",
+      "picture_link": "ES0672.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0672.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1613",
+      "picture_link": "ES0673.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0673.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1614",
+      "picture_link": "ES0674.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0674.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1615",
+      "picture_link": "ES0675.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0675.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1616",
+      "picture_link": "ES0677.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0677.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1617",
+      "picture_link": "ES0676.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0676.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1618",
+      "picture_link": "ES0678.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0678.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1619",
+      "picture_link": "ES0679.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0679.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1620",
+      "picture_link": "ES0680.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0680.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1781",
+      "picture_link": "ES0841.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0841.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1782",
+      "picture_link": "ES0842.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0842.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1783",
+      "picture_link": "ES0843.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0843.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1784",
+      "picture_link": "ES0844.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0844.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1785",
+      "picture_link": "ES0845.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0845.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1786",
+      "picture_link": "ES0846.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0846.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1787",
+      "picture_link": "ES0847.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0847.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1788",
+      "picture_link": "ES0848.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0848.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1789",
+      "picture_link": "ES0849.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0849.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1790",
+      "picture_link": "ES0850.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0850.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1791",
+      "picture_link": "ES0851.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0851.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1792",
+      "picture_link": "ES0852.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0852.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1793",
+      "picture_link": "ES0853.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0853.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1794",
+      "picture_link": "ES0854.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0854.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1795",
+      "picture_link": "ES0855.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0855.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1796",
+      "picture_link": "ES0856.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0856.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1797",
+      "picture_link": "ES0857.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0857.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1798",
+      "picture_link": "ES0858.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0858.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1799",
+      "picture_link": "ES0859.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0859.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1800",
+      "picture_link": "ES0860.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0860.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1801",
+      "picture_link": "ES0861.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0861.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1802",
+      "picture_link": "ES0862.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0862.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1803",
+      "picture_link": "ES0863.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0863.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1804",
+      "picture_link": "ES0864.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0864.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1805",
+      "picture_link": "ES0865.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES0865.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1991",
+      "picture_link": "ES1051.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1051.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1992",
+      "picture_link": "ES1052.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1052.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1993",
+      "picture_link": "ES1053.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1053.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1994",
+      "picture_link": "ES1054.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1054.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1995",
+      "picture_link": "ES1055.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1055.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1996",
+      "picture_link": "ES1056.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1056.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1997",
+      "picture_link": "ES1057.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1057.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1998",
+      "picture_link": "ES1058.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1058.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES1999",
+      "picture_link": "ES1059.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1059.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2000",
+      "picture_link": "ES1060.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1060.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2001",
+      "picture_link": "ES1061.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1061.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2002",
+      "picture_link": "ES1062.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1062.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2003",
+      "picture_link": "ES1063.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1063.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2004",
+      "picture_link": "ES1064.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1064.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2005",
+      "picture_link": "ES1065.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1065.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2006",
+      "picture_link": "ES1066.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1066.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2007",
+      "picture_link": "ES1067.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1067.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2008",
+      "picture_link": "ES1068.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1068.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2009",
+      "picture_link": "ES1069.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1069.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2010",
+      "picture_link": "ES1070.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1070.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2011",
+      "picture_link": "ES1071.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1071.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2012",
+      "picture_link": "ES1072.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1072.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2013",
+      "picture_link": "ES1073.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1073.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2014",
+      "picture_link": "ES1074.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1074.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2015",
+      "picture_link": "ES1075.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1075.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2201",
+      "picture_link": "ES1261.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1261.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2202",
+      "picture_link": "ES1262.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1262.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2203",
+      "picture_link": "ES1263.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1263.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2204",
+      "picture_link": "ES1264.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1264.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2205",
+      "picture_link": "ES1265.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1265.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2206",
+      "picture_link": "ES1266.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1266.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2207",
+      "picture_link": "ES1267.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1267.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2208",
+      "picture_link": "ES1268.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1268.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2209",
+      "picture_link": "ES1269.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1269.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2210",
+      "picture_link": "ES1270.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1270.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2211",
+      "picture_link": "ES1271.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1271.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2212",
+      "picture_link": "ES1272.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1272.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2213",
+      "picture_link": "ES1273.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1273.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2214",
+      "picture_link": "ES1274.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1274.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2215",
+      "picture_link": "ES1275.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1275.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2216",
+      "picture_link": "ES1276.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1276.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2217",
+      "picture_link": "ES1277.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1277.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2218",
+      "picture_link": "ES1278.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1278.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2219",
+      "picture_link": "ES1279.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1279.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2220",
+      "picture_link": "ES1280.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1280.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2221",
+      "picture_link": "ES1281.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1281.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2222",
+      "picture_link": "ES1282.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1282.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2223",
+      "picture_link": "ES1283.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1283.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2224",
+      "picture_link": "ES1284.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1284.png"
+    },
+    {
+      "exam": "MIR_Spain",
+      "question_id": "ES2225",
+      "picture_link": "ES1285.png",
+      "picture_provided_raw": "yes",
+      "flags": [],
+      "local_image": "data/images/ES1285.png"
+    }
+  ]
+}

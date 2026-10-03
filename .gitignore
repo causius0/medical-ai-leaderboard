@@ -82,3 +82,6 @@ adapters/
 results/local/
 frontend/out/leaderboard.json
 frontend/public/leaderboard.json
+
+# Answer key mapping - NEVER COMMIT
+data/shuffle_mapping.json
