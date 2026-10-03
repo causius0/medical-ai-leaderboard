@@ -114,7 +114,13 @@ def main():
             gen_tokens_total += 1
         letter = extract_letter(raw)
 
-        answers[q["id"]] = {"id": q["id"], "answer": letter, "raw": raw}
+        answers[q["id"]] = {
+            "id": q["id"],
+            "answer": letter,
+            "raw": raw,
+            "think_chars": (len(raw.split("</think>")[0]) if "<think>" in raw else 0),
+            "think_closed": "</think>" in raw,
+        }
         if i % 25 == 0 or i == len(pending):
             elapsed = time.time() - t_start
             answered = len(answers)

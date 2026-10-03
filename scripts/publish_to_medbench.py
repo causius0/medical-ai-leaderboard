@@ -109,18 +109,25 @@ def main():
     print(f"inserted shuffled_runs run_id={run_id}: {run['model_name']} {accuracy}% "
           f"({total_correct}/{len(key)}, answered={total_answered}, max_tokens={max_tokens})")
 
-    # 4. bulk insert responses
+    # 4. bulk insert responses (reasoning = the <think> block, refusal = never answered)
     values = []
     for a in answers:
         letter = a["answer"]
         correct = letter is not None and letter == key.get(a["id"])
-        values.append(f"({run_id}, {sql_str(a['id'])}, {sql_str(letter)}, {str(bool(correct)).lower()})")
+        raw = a.get("raw", "") or ""
+        if "<think>" in raw:
+            reasoning = raw.split("</think>")[0].replace("<think>", "").strip()
+        else:
+            reasoning = None
+        refusal = not a.get("think_closed", True) or letter is None
+        values.append(f"({run_id}, {sql_str(a['id'])}, {sql_str(letter)}, "
+                      f"{sql_str(reasoning)}, {str(bool(refusal)).lower()}, {str(bool(correct)).lower()})")
     # questions with no response row at all (harness skipped): none expected, key covers full set
     chunk = 250
     for i in range(0, len(values), chunk):
-        psql(args.db, "INSERT INTO shuffled_responses (run_id, question_id, answer_letter, is_correct) VALUES "
+        psql(args.db, "INSERT INTO shuffled_responses (run_id, question_id, answer_letter, reasoning, refusal, is_correct) VALUES "
                       + ", ".join(values[i:i + chunk]) + " ON CONFLICT DO NOTHING;")
-    print(f"inserted {len(values)} shuffled_responses rows")
+    print(f"inserted {len(values)} shuffled_responses rows (reasoning + refusal populated)")
 
 
 if __name__ == "__main__":
