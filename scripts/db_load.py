@@ -9,6 +9,10 @@ Usage:
     python3 scripts/db_load.py --init          # create schema + load questions
     python3 scripts/db_load.py --ingest        # ingest result JSONs into runs/responses/scores
     python3 scripts/db_load.py --export        # rebuild leaderboard_data.json from DB
+    python3 scripts/db_load.py --load-exams    # load the 2023-2026 exam corpus (data/new_exams/)
+                                               # into exam_questions (SSM 25/26, MIR 25/26,
+                                               # EDN 23-25, PNA 25, PES Poland x50)
+    python3 scripts/db_load.py --exam-stats    # per-exam counts from exam_questions
 """
 
 import argparse
@@ -20,6 +24,7 @@ import psycopg
 
 BASE = Path(__file__).resolve().parent.parent
 QUESTIONS_FILE = BASE / "data" / "ssm_questions_shuffled.json"
+EXAMS_DIR = BASE / "data" / "new_exams"
 RESULTS_DIR = BASE / "results" / "openrouter"
 LEADERBOARD_FILE = BASE / "frontend" / "public" / "leaderboard_data.json"
 
@@ -156,6 +161,97 @@ def load_questions():
 def shuffled_correct_map():
     """question_id -> correct letter from the shuffled evaluation dataset."""
     return {q["id"]: q["correct_answer"]["letter"] for q in load_questions()}
+
+
+# Expanded exam corpus added Oct 2026 (downloaded 2023-2026 papers). Unlike the
+# SSM-only relations above, questions here carry their options and (when
+# published) the official correct letter; several exams have no specialty
+# labels and some questions are annulled or key-less. Kept in its own relation
+# so the original/shuffled SSM leaderboard tables stay untouched.
+SCHEMA_EXAMS = """
+CREATE TABLE IF NOT EXISTS exam_questions (
+    question_id    TEXT PRIMARY KEY,
+    exam_id        TEXT NOT NULL,
+    family         TEXT NOT NULL,
+    test_year      INT,
+    number_in_test INT,
+    question_text  TEXT NOT NULL,
+    options        JSONB,
+    correct_letter CHAR(1),
+    specialty      TEXT,
+    language       TEXT,
+    country        TEXT,
+    has_image      BOOLEAN DEFAULT FALSE,
+    nullified      BOOLEAN DEFAULT FALSE,
+    answer_key_source TEXT,
+    source_csv     TEXT
+);
+CREATE INDEX IF NOT EXISTS exam_questions_exam_idx ON exam_questions (exam_id);
+CREATE INDEX IF NOT EXISTS exam_questions_family_idx ON exam_questions (family);
+"""
+
+
+def init_exam_db(conn):
+    with conn.cursor() as cur:
+        cur.execute(SCHEMA_EXAMS)
+        total = 0
+        for path in sorted(EXAMS_DIR.glob("*.json")):
+            with open(path, encoding="utf-8") as f:
+                qs = json.load(f)
+            for q in qs:
+                m = q["metadata"]
+                cur.execute(
+                    """
+                    INSERT INTO exam_questions (question_id, exam_id, family,
+                        test_year, number_in_test, question_text, options,
+                        correct_letter, specialty, language, country,
+                        has_image, nullified, answer_key_source, source_csv)
+                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                    ON CONFLICT (question_id) DO UPDATE SET
+                        question_text = EXCLUDED.question_text,
+                        options = EXCLUDED.options,
+                        correct_letter = EXCLUDED.correct_letter,
+                        nullified = EXCLUDED.nullified
+                    """,
+                    (
+                        q["id"],
+                        m["exam_id"],
+                        path.stem.split("_")[0],
+                        m.get("test_year"),
+                        m.get("number_in_test"),
+                        q["question"],
+                        json.dumps(q["options"], ensure_ascii=False),
+                        q["correct_answer"]["letter"] if q["correct_answer"] else None,
+                        q.get("specialty"),
+                        m.get("language"),
+                        m.get("country"),
+                        q.get("has_image", False),
+                        m.get("nullified", False),
+                        m.get("answer_key_source"),
+                        m.get("source_csv"),
+                    ),
+                )
+            total += len(qs)
+    conn.commit()
+    print(f"Loaded {total} exam questions from {EXAMS_DIR.name}/ into exam_questions")
+
+
+def exam_stats(conn):
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT family, COUNT(*) AS questions,
+                   COUNT(correct_letter) AS keyed,
+                   COUNT(*) FILTER (WHERE nullified) AS annulled,
+                   COUNT(*) FILTER (WHERE options = '[]'::jsonb) AS no_options
+            FROM exam_questions GROUP BY family ORDER BY family
+            """
+        )
+        print(f"{'family':6s} {'questions':>9s} {'keyed':>7s} {'annulled':>8s} {'no_options':>10s}")
+        for family, n, keyed, annulled, no_opts in cur.fetchall():
+            print(f"{family:6s} {n:9d} {keyed:7d} {annulled:8d} {no_opts:10d}")
+        cur.execute("SELECT COUNT(DISTINCT exam_id) FROM exam_questions")
+        print(f"\n{cur.fetchone()[0]} distinct exams")
 
 
 def init_db(conn):
@@ -604,12 +700,22 @@ def main():
     ap.add_argument("--export", action="store_true")
     ap.add_argument("--shuffled", action="store_true", help="operate on the shuffled_* relation (separate from original)")
     ap.add_argument("--export-shuffled", action="store_true", help="rebuild leaderboard_data.json from the shuffled relation")
+    ap.add_argument("--load-exams", action="store_true", help="load data/new_exams/ into the exam_questions relation")
+    ap.add_argument("--exam-stats", action="store_true", help="print per-family counts from exam_questions")
     args = ap.parse_args()
 
     with psycopg.connect(DSN) as conn:
         if args.export_shuffled:
             export_shuffled_leaderboard(conn)
             return
+        if args.load_exams:
+            init_exam_db(conn)
+            if not (args.exam_stats or args.init or args.ingest or args.export):
+                return
+        if args.exam_stats:
+            exam_stats(conn)
+            if not (args.init or args.ingest or args.export):
+                return
         if args.shuffled:
             if args.init:
                 init_shuffled_db(conn)

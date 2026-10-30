@@ -2,6 +2,8 @@
 
 Entry point for anyone (human or agent) working in this repo.
 Read `docs/TRAINING_PLAN.md` for the active LoRA experiment and its session log.
+For the expanded 2023–2026 exam corpus (SSM 25/26, MIR 25/26, EDN 23–25,
+PNA 25, PES Poland — `exam_questions` in medbench), read `AGENTS.md`.
 
 ## Ground truth and scale discipline
 

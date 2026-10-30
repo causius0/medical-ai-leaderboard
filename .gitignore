@@ -85,3 +85,14 @@ frontend/public/leaderboard.json
 
 # Answer key mapping - NEVER COMMIT
 data/shuffle_mapping.json
+
+# Downloaded exam updates 2023-2026 (contain answer keys) - NEVER COMMIT
+# git cannot re-include files inside an ignored directory, so ignore children
+# with ** and keep only the provenance docs trackable
+data/processed_csv/**
+!data/processed_csv
+!data/processed_csv/SUMMARY.md
+!data/processed_csv/build_edn_csvs.py
+!data/processed_csv/edn_france_build_issues.log
+data/new_exams/**
+!data/new_exams
